@@ -2,20 +2,20 @@
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 body {
-     background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
-     background-size: cover;
-     height: auto;
+  background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
+  background-size: cover;
+  height: auto;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 }
 
 .navbar a {
   float: left;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   color: black;
   text-align: center;
   padding: 1vw 1vw;
@@ -32,7 +32,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 1.5vw;  
+  font-size: 1.25vw;  
   border: none;
   outline: none;
   padding: 1vw 1vw;
@@ -75,7 +75,7 @@ body {
 }
 
 .a{
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 }
 
 .footer{
@@ -107,6 +107,59 @@ body {
      height: auto;
 }
 
+/* Fixed sidenav, full height */
+.navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.navbar a, .dropbtn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.navbar a:hover, .dropbtn:hover {
+  color: #f1f1f1;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #ed5f2f;
+  color: black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-content {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/*
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
@@ -177,6 +230,7 @@ body {
 .a{
   font-size: 2.3vw;
 }
+*/
 
 .footer{
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
@@ -195,4 +249,11 @@ body {
   font-size: 15px;
   padding-left: 30vw;
 }
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 }
