@@ -15,7 +15,7 @@ body {
 .navbar a {
   float: left;
   font-size: 1.5vw;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1vw 1vw;
   text-decoration: none;
@@ -34,7 +34,7 @@ body {
   font-size: 1.5vw;  
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 1vw 1vw;
   background-color: inherit;
   font-family: inherit;
