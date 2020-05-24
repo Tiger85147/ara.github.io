@@ -79,7 +79,8 @@ body {
 }
 
 .footer{
-  padding-top: 3vw;
+  background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
+  background-size: cover;
 }
 
 .icons{
@@ -93,8 +94,7 @@ body {
   font-family:'Libre Franklin', serif;
   font-size: 1.5vw;
   text-align: center;
-  padding-left: 49.5vw;
-  color:#000000;
+  padding-left: 50vw;
 }
 }
 
@@ -179,7 +179,8 @@ body {
 }
 
 .footer{
-  padding-top: 5vw;
+  background-image:url('https://Tiger85147.github.io/diamonds%20crop.jpg');
+  background-size: cover;
 }
 
 .icons{
@@ -191,8 +192,7 @@ body {
 
 .foottext{
   font-family:'Libre Franklin', serif;
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 30vw;
-  color:#000000;
 }
 }
