@@ -70,6 +70,20 @@
   text-align: left;
   font-weight: 500;
 }
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+}
 }
 
 @media screen and (max-width: 800px){
@@ -130,6 +144,22 @@
   font-size: 22px;
   text-align: left; 
   padding-top: 2vw;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+}
+
 }
 
 </style>
@@ -238,7 +268,7 @@ enjoyable…”
 </div>
 
 <div class="footer">
-<br>
+<br><br>
 
   <div style="display:flex;flex-wrap:wrap; padding-left: 13vw;">
 

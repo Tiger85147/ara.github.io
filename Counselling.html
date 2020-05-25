@@ -54,6 +54,20 @@
   text-align: left;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+}
+
 }
 
 @media screen and (max-width: 800px){
@@ -97,6 +111,21 @@
   font-size: 15px;
   text-align: left;
 }
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+}
+
 }
 
 </style>
@@ -191,7 +220,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 <div class="footer">
-<br>
+<br><br>
 
   <div style="display:flex;flex-wrap:wrap; padding-left: 13vw;">
 
