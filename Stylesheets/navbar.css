@@ -78,6 +78,10 @@ body {
   font-size: 1.25vw;
 }
 
+.search{
+  width: 1.7vw;
+}
+
 .footer{
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
   background-size: cover;
@@ -106,7 +110,7 @@ body {
      background-size: cover;
      height: auto;
 }
-  
+
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
@@ -176,6 +180,10 @@ body {
 
 .a{
   font-size: 2.3vw;
+}
+
+.search{
+  width: 3.5vw;
 }
 
 .footer{
