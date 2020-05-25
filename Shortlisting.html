@@ -43,6 +43,18 @@
   background-color: #CC5500;
 }
 
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  font-family:'Libre Franklin', serif;
+  font-size: 20px;
+  text-align: left;
+}
+
 html, body {
   height: 100%;
   display: flex;
@@ -55,21 +67,6 @@ body > * {
 
 .footer {
   flex-grow: 1;
-}
-
-}
-
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  width: 100%;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  font-family:'Libre Franklin', serif;
-  font-size: 20px;
-  text-align: left;
 }
 
 }
@@ -129,13 +126,14 @@ body > * {
 .footer {
   flex-grow: 1;
 }
-
 }
 
 </style>
 </head>
 
-<body scroll="no" style="overflow: visible"><div id="nav-placeholder"></div>
+<body scroll="no" style="overflow: visible">
+
+<div id="nav-placeholder"></div>
 
 <script>
 $(function(){
