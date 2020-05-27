@@ -5,6 +5,7 @@ body {
   background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
   background-size: cover;
   height: auto;
+  overflow: scroll;
 }
 
 .navbar {
@@ -112,6 +113,7 @@ body {
      background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
      background-size: cover;
      height: auto;
+     overflow: scroll;
 }
 
 .navbar {
