@@ -5,15 +5,15 @@ body {
   background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
   background-size: cover;
   height: auto;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
 }
 
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
   font-size: 1.25vw;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .navbar a {
