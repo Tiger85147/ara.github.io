@@ -110,6 +110,12 @@ body {
 
 @media screen and (max-width: 800px){
 
+body {
+  background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
+  background-size: cover;
+  height: auto;
+  }
+
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
