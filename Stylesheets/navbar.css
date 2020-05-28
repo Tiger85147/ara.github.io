@@ -108,17 +108,12 @@ body {
 body {
      background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
      background-size: cover;
-     height: auto;
-     overflow: scroll;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
   font-size: 2.3vw;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
 }
 
 .navbar a {
