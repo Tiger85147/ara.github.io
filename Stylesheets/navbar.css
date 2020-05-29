@@ -16,6 +16,11 @@ body {
   width: 100%; /* Full width */
 }
 
+.thumb{
+  width: 100px;
+  padding: 8px;
+}
+
 .navbar a {
   float: left;
   font-size: 1.25vw;
@@ -105,6 +110,7 @@ body {
   text-align: center;
   padding-left: 50vw;
 }
+
 }
 
 
@@ -123,7 +129,10 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+}
 
+.thumb{
+  display: none;
 }
 
 .navbar a {
@@ -211,7 +220,7 @@ body {
 .foottext{
   font-family:'Libre Franklin', serif;
   font-size: 15px;
-  padding-left: 30vw;
+  padding-left: 10vw;
 }
 
 }
