@@ -117,6 +117,10 @@
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
+
+$(function(){
+  $("#nav-footer").load("footer.html");
+});
 </script>
 
 <div class="titlebox">
@@ -159,14 +163,7 @@ We help build a resume for our students to highlight their unique achievements, 
 </div>
 </div>
 
-<div id="nav-footer"></div>
-
 <script>
-
-$(function(){
-  $("#nav-footer").load("footer.html");
-});
-
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -183,6 +180,8 @@ for (i = 0; i < coll.length; i++) {
 }
 
 </script>
+
+<div id="nav-footer"></div>
 
 </body>
 </html>
