@@ -111,6 +111,20 @@ body {
   padding-left: 50vw;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+}
+
 }
 
 
@@ -221,6 +235,20 @@ body {
   font-family:'Libre Franklin', serif;
   font-size: 15px;
   padding-left: 10vw;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
 }
 
 }
