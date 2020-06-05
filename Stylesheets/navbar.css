@@ -97,6 +97,14 @@ body {
   background-size: cover;
 }
 
+.infooter{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 13vw; 
+  align-items:center;
+}
+
 .icons{
   width: 3vw;
   height: 3vw;
@@ -224,6 +232,14 @@ body {
   background-size: cover;
 }
 
+.infooter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 5vw; 
+  align-items:center;
+}
+
 .icons{
   width: 40px;
   height: 40px;
@@ -234,7 +250,8 @@ body {
 .foottext{
   font-family:'Libre Franklin', serif;
   font-size: 15px;
-  padding-left: 10vw;
+  padding-left: 10px;
+  padding-right: 5vw;
 }
 
 html, body {
