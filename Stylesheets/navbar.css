@@ -95,14 +95,15 @@ body {
 .footer{
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
   background-size: cover;
+  display:flex;flex-wrap:wrap;
+  padding-left: 13vw;
+  align-items: center;
 }
 
 .infooter{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-left: 13vw; 
-  align-items:center;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
 }
 
 .icons{
@@ -112,11 +113,19 @@ body {
   margin: 0.1vw;
 }
 
+.followus{
+  font-family:'Libre Franklin', serif;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
 .foottext{
   font-family:'Libre Franklin', serif;
   font-size: 1.5vw;
   text-align: center;
-  padding-left: 50vw;
+  color: #ffffff;
+  font-weight: 300;
 }
 
 html, body {
@@ -252,6 +261,8 @@ body {
   font-size: 15px;
   padding-left: 10px;
   padding-right: 5vw;
+  color: #ffffff;
+  font-weight: 300;
 }
 
 html, body {
