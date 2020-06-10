@@ -116,10 +116,10 @@ body {
 }
 
 .followus{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 20px;
-  text-align: left;
-  color: #ffffff;
+ font-family: 'Hind Guntur', sans-serif;
+ font-size: 1.5vw;
+ text-align: left;
+ color: #ffffff;
 }
 
 .foottext{
@@ -244,12 +244,20 @@ body {
   background-size: cover;
 }
 
+
 .infooter{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 5vw; 
   align-items:center;
+}
+
+.followus{
+ font-family: 'Hind Guntur', sans-serif;
+ font-size: 15px;
+ text-align: left;
+ color: #ffffff;
 }
 
 .icons{
