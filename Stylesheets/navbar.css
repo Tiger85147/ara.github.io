@@ -29,7 +29,7 @@ body {
   padding: 1vw 1vw;
   text-decoration: none;
   float: right;
-  font-family:'Arvo', serif;
+  font-family: 'Hind Guntur', sans-serif;
   color: #000000;
 }
 
@@ -45,7 +45,7 @@ body {
   outline: none;
   padding: 1vw 1vw;
   background-color: inherit;
-  font-family:'Arvo', serif;
+  font-family: 'Hind Guntur', sans-serif;
   color: #000000;
   margin: 0; 
 }
@@ -116,14 +116,14 @@ body {
 }
 
 .followus{
-  font-family:'Libre Franklin', serif;
+  font-family: 'Hind Guntur', sans-serif;
   font-size: 20px;
   text-align: left;
   color: #ffffff;
 }
 
 .foottext{
-  font-family:'Libre Franklin', serif;
+  font-family: 'Hind Guntur', sans-serif;
   font-size: 1.5vw;
   text-align: center;
   color: #ffffff;
@@ -177,7 +177,7 @@ body {
   padding: 1vw 1vw;
   text-decoration: none;
   float: right;
-  font-family: 'Arvo', serif;
+  font-family: 'Hind Guntur', sans-serif;
   color: #000000;
 }
 
@@ -193,7 +193,7 @@ body {
   outline: none;
   padding: 1vw 1vw;
   background-color: inherit;
-  font-family: 'Arvo', serif;
+  font-family: 'Hind Guntur', sans-serif;
   color: #000000;
   margin: 0;
 }
@@ -260,7 +260,7 @@ body {
 }
 
 .foottext{
-  font-family:'Libre Franklin', serif;
+  font-family: 'Hind Guntur', sans-serif;
   font-size: 15px;
   padding-left: 10px;
   padding-right: 5vw;
