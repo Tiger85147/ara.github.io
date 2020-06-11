@@ -30,28 +30,23 @@
   color: #ffffff;
   background-color: #ed5f2f;
   padding: 20px;
-  font-weight: 300;
 }
 
 .footer{
   background-image: none;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 13vw;
-  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.socialbox{
-  padding-left: 2vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center
+.footer span:last-child {
+  position: absolute;
+  right: 10%;   /* must be equal to parent's right padding */
 }
-
 
 .social{
   width: 40px;
-  height: 40px;
   padding: 1px;
   margin: 1px;
 }
@@ -61,7 +56,6 @@
   font-size: 1.5vw;
   color:#ffffff;
   font-weight: 500;
-  padding-left: 48vw;
   text-shadow:
               -1px -1px 0 #000,
                1px -1px 0 #000,
@@ -95,11 +89,14 @@
 .footer{
   background-image: none;
   display: flex;
-  flex-direction: row;
-  padding-left: 5vw;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer span:last-child {
+  position: absolute;
+  right: 5%;   /* must be equal to parent's right padding */
 }
 
 .social{
@@ -112,13 +109,12 @@
   font-family: 'Hind Guntur', sans-serif;
   font-size: 15px;
   color:#ffffff;
-  padding-right: 5vw;
+  font-weight: 500;
   text-shadow:
               -1px -1px 0 #000,
                1px -1px 0 #000,
               -1px 1px 0 #000,
                1px 1px 0 #000;
-
 }
 
 
@@ -146,11 +142,13 @@ $(function(){
 <div class="logobox" width=auto>
 <img class="logo" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png">
 </div>
+
 <br><br><br><br><br>
+
 <div class="banner">
 Giving an Edge to the Jewel of your Family
-
 </div>
+
 <br>
 <div class="footer">
 
@@ -162,16 +160,12 @@ Giving an Edge to the Jewel of your Family
     <a href="https://www.linkedin.com/company/araconsulting">
       <img class="social" src="https://Tiger85147.github.io/Misc/linkedin.png"></a>
     </span>
-    
-    &nbsp&nbsp&nbsp&nbsp
 
     <span class="foottext">
-    <b>©2020 araconsulting</b>
+       ©2020 araconsulting
     </span>
 
-<br>
 </div>
-
 
 </body>
 </html>
