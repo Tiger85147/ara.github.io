@@ -115,11 +115,11 @@ body {
   margin: 0.1vw;
 }
 
-.social{
-  width: 40px;
-  height: 40px;
-  padding: 1px;
-  margin: 1px;
+.followus{
+ font-family: 'Hind Guntur', sans-serif;
+ font-size: 1.5vw;
+ text-align: left;
+ color: #ffffff;
 }
 
 .foottext{
@@ -127,6 +127,8 @@ body {
   font-size: 1.5vw;
   text-align: center;
   color: #ffffff;
+  font-weight: 300;
+  padding-left: 46.5vw;
 }
 
 html, body {
