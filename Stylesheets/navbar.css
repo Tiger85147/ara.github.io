@@ -95,40 +95,32 @@ body {
 .footer{
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
   background-size: cover;
-  display:flex;flex-wrap:wrap;
-  padding-left: 13vw;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
+.infooter span:last-child {
+  position: absolute;
+  right: 10%;   /* must be equal to parent's right padding */
+}
+
 .infooter{
-  display:flex;
-  flex-wrap:wrap;
-  align-items: center;
+  padding-left: 10%; 
+  padding-right: 10%;
 }
 
-.icons{
-  width: 3vw;
-  height: 3vw;
-  padding: 0.1vw;
-  margin: 0.1vw;
-}
-
-.followus{
- font-family: 'Hind Guntur', sans-serif;
- font-size: 1.5vw;
- text-align: left;
- color: #ffffff;
+.social{
+  width: 40px;
+  padding: 2px;
 }
 
 .foottext{
   font-family: 'Hind Guntur', sans-serif;
-  font-size: 1.5vw;
-  text-align: center;
+  font-size: 1.25vw;
   color: #ffffff;
-  font-weight: 300;
-  padding-left: 46.5vw;
 }
 
 html, body {
@@ -244,25 +236,26 @@ body {
   background-size: cover;
 }
 
-
 .infooter{
+  padding-top: 5vw;
+  padding-left: 5%; 
+  padding-right: 5%;
+}
+
+.infooter span:last-child {
+  position: absolute;
+  right: 5%;   /* must be equal to parent's right padding */
+}
+/*
+.socialbox{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 5vw; 
-  align-items:center;
+  align-items: center;
 }
+*/
 
-.followus{
- font-family: 'Hind Guntur', sans-serif;
- font-size: 15px;
- text-align: left;
- color: #ffffff;
-}
-
-.icons{
-  width: 40px;
-  height: 40px;
+.social{
+  width: 35px;
   padding: 1px;
   margin: 1px;
 }
@@ -270,10 +263,9 @@ body {
 .foottext{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 15px;
-  padding-left: 10px;
-  padding-right: 5vw;
-  color: #ffffff;
-  font-weight: 300;
+  color:#ffffff;
+  padding-left: 90%;
+  text-align: center;
 }
 
 html, body {

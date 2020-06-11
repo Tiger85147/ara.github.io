@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
 .titlebox{
-  padding-left: 13vw;
+  padding-left: 10%;
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
   background-size: cover;
 }
@@ -10,7 +10,7 @@
 @media screen and (max-width: 800px){
 
 .titlebox{
-  padding-left: 5vw;
+  padding-left: 5%;
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
   background-size: cover;
 }
