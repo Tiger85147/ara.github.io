@@ -177,13 +177,8 @@ font-size: 25px;
 
   if(isSafari)
   {
-            x.style.display = "block";
+            alert("This website is not compatible with the Safari browser. Use Google Chrome or Microsoft Edge for best results.");
   }
-
-   else 
-  {
-            x.style.display = "none" ;
-  } 
 
 }
 </script>
@@ -193,26 +188,11 @@ font-size: 25px;
 <body onload="BrowserDetection()">
 
 <!--
-<script type="text/javascript">
-    /*
-    // Detect Chrome 
-    let chromeAgent = userAgentString.indexOf("Chrome") > -1; 
-
-    // Detect Safari 
-    let safariAgent = userAgentString.indexOf("Safari") > -1; 
-      
-    // Discard Safari since it also matches Chrome 
-    if ((chromeAgent) && (safariAgent)) safariAgent = false; 
-    */
-
-</script>
--->
-
 <div class="alert" id="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <font class="alerttext">This website is <strong>not compatible with the Safari browser.</strong> Use Google Chrome for best results.</font>
 </div>
-
+-->
 
 
 <div id="nav-placeholder"></div>
