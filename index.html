@@ -70,6 +70,32 @@
                1px 1px 0 #000;
 }
 
+.alert {
+  padding: 20px;
+  background-color: #ed5f2f;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 40px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.alerttext{
+font-family: 'Hind Guntur', sans-serif;
+font-size: 25px;
+}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -140,6 +166,29 @@
 <!--https://Tiger85147.github.io/Stylesheets/navigationbar.css-->
 
 <body>
+
+<script type="text/javascript">
+    /*
+    // Detect Chrome 
+    let chromeAgent = userAgentString.indexOf("Chrome") > -1; 
+
+    // Detect Safari 
+    let safariAgent = userAgentString.indexOf("Safari") > -1; 
+      
+    // Discard Safari since it also matches Chrome 
+    if ((chromeAgent) && (safariAgent)) safariAgent = false; 
+    */
+if (user.browser.family === 'Safari') {
+  document.getElementById("alert").style.display = "block";
+  }
+
+</script>
+
+<div class="alert" id="alert" style="display: none;">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <font class="alerttext">This website is <strong>not compatible with the Safari browser.</strong> Use Google Chrome for best results.</font>
+</div>
+
 
 <div id="nav-placeholder"></div>
 
