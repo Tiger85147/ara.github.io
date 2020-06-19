@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+
+</head>
+<style>
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  indent-text: 40mm;
+  padding-right: 150px;
+}
+
+.titlebox{
+  padding-left: 13vw;
+  background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
+  background-size: cover;
+}
+
+.search-container{
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ed5f2f;
+  font-size: 17px;
+  border: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.content{
+  font-size: 20px;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+  padding-top: 20%;
+}
+
+}
+
+@media screen and (max-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 48px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+  indent-text: 40mm;
+  padding-right: 90px;
+}
+
+.titlebox{
+  padding-left: 5vw;
+  background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
+  background-size: cover;
+}
+
+.search-container{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+.content{
+  font-size: 15px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 1;
+}
+
+}
+</style>
+</head>
+
+<body>
+  
+<div id="nav-placeholder"></div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+
+<div class="titlebox">
+<br><br><br><br>
+<div class="title">
+Search 
+</div>
+<br><br><br>
+</div>
+
+
+<div class="content"; style="font-family:'Libre Franklin', serif; text-align: left; color:#ffffff; background-color:#ed5f2f;">
+
+<script async src="https://cse.google.com/cse.js?cx=006354839476571057511:axqnng8fiob"></script>
+<div class="gcse-search"></div>
+
+</div>
+
+<div id="nav-footer"></div>
+
+<script>
+$(function(){
+  $("#nav-footer").load("footer.html");
+});
+</script>
+
+
+</body>
+</html>
+
