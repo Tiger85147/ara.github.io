@@ -20,6 +20,7 @@
   <meta name="msapplication-navbutton-color" content="#ed5f2f">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+  <script src="C:\Users\dehad\Desktop\Ara website\HTML\Stylesheets\is.js"></script>
 
 <style type="text/css">
 
@@ -161,12 +162,35 @@ font-size: 25px;
 
 </style>
 
+<script>
+  function BrowserDetection() {
+
+  var x = document.getElementById("alert");
+
+
+  var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+                 navigator.userAgent &&
+                 navigator.userAgent.indexOf('CriOS') == -1 &&
+                 navigator.userAgent.indexOf('FxiOS') == -1;
+
+  if(isSafari)
+  {
+            x.style.display = "block";
+  }
+
+   else 
+  {
+            x.style.display = "none" ;
+  } 
+
+}
+</script>
+
 </head>
 
-<!--https://Tiger85147.github.io/Stylesheets/navigationbar.css-->
+<body onload="BrowserDetection()">
 
-<body>
-
+<!--
 <script type="text/javascript">
     /*
     // Detect Chrome 
@@ -178,24 +202,25 @@ font-size: 25px;
     // Discard Safari since it also matches Chrome 
     if ((chromeAgent) && (safariAgent)) safariAgent = false; 
     */
-if (user.browser.family === 'Safari') {
-  document.getElementById("alert").style.display = "block";
-  }
 
 </script>
+-->
 
-<div class="alert" id="alert" style="display: none;">
+<div class="alert" id="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <font class="alerttext">This website is <strong>not compatible with the Safari browser.</strong> Use Google Chrome for best results.</font>
 </div>
 
 
+
 <div id="nav-placeholder"></div>
 
 <script>
+
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
+
 </script>
 
 <br><br><br><br><br><br><br>
