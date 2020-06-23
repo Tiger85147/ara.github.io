@@ -65,7 +65,6 @@ body {
   position: fixed; /* Set the navbar to fixed position */
 }
 
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -92,49 +91,9 @@ body {
   width: 1.7vw;
 }
 
-.footer{
-  background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.infooter span:last-child {
-  position: absolute;
-  right: 10%;   /* must be equal to parent's right padding */
-}
-
-.infooter{
-  padding-left: 10%; 
-  padding-right: 10%;
-}
-
-.social{
-  width: 40px;
-  padding: 2px;
-}
-
-.foottext{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 1vw;
-  color: #ffffff;
-}
-
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-body > * {
-  flex-shrink: 0;
-}
-
-.footer {
-  flex-grow: 1;
+.fa{
+  font-size: 1.5vw;
+  margin: 5px;
 }
 
 }
@@ -231,60 +190,173 @@ body {
   width: 3.5vw;
 }
 
-.footer{
+.fa{
+  font-size: 25px;
+  margin: 5px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  /*background-image: linear-gradient(to bottom right, #070617, #191654);*/
   background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
   background-size: cover;
 }
 
-.infooter{
-  padding-top: 5vw;
-  padding-left: 5%; 
-  padding-right: 5%;
-}
-
-.infooter span:last-child {
-  position: absolute;
-  right: 5%;   /* must be equal to parent's right padding */
-}
-/*
-.socialbox{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-*/
-
-.socialbox{
-  position: absolute;
-  z-index: 9999;
-}
-
-.social{
-  width: 35px;
-  padding: 1px;
-  margin: 1px;
-}
-
-.foottext{
+.footer .footer-bottom{
+  background-image: inherit;
   font-family: 'Hind Guntur', sans-serif;
-  font-size: 15px;
-  color:#ffffff;
-  padding-left: 90%;
+  line-height: 30px;
+  color: white;
+  height: 30px;
   text-align: center;
+  border-top: 1px solid white;
+  vertical-align: center;
 }
 
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.col{
+  padding-left: 0px;
 }
 
-body > * {
-  flex-shrink: 0;
+.footer .col {
+  width: 210px;
+  text-align: left;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
 }
 
-.footer {
-  flex-grow: 1;
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color:  #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
 }
 
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col ul li {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: normal;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ed5f2f;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.footer .col h1:hover {
+  color: #ed5f2f;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
 }
