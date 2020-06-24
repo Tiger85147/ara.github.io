@@ -99,6 +99,19 @@ font-family: 'Hind Guntur', sans-serif;
 font-size: 25px;
 }
 
+.footer .fa{
+  font-size: 2.25vw;
+  margin: 7.5px;
+  color: #2a9df4;
+}
+
+.footer .fa:hover{
+  color: #ed5f2f;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -122,6 +135,35 @@ font-size: 25px;
   font-weight: 300;
 }
 
+.alert {
+  padding: 20px;
+  background-color: #ed5f2f;
+  color: white;
+  position: absolute;
+  z-index: -1
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 40px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.alerttext{
+font-family: 'Hind Guntur', sans-serif;
+font-size: 25px;
+}
+
+
 .footer{
   background-image: none;
   display: flex;
@@ -135,6 +177,7 @@ font-size: 25px;
   right: 5%;   /* must be equal to parent's right padding */
 }
 
+/*
 .socialbox{
   position: absolute;
   z-index: 9999;
@@ -145,6 +188,7 @@ font-size: 25px;
   padding: 1px;
   margin: 1px;
 }
+*/
 
 .foottext{
   font-family: 'Hind Guntur', sans-serif;
@@ -158,6 +202,20 @@ font-size: 25px;
                1px 1px 0 #000;
 
 }
+
+.footer .fa{
+  font-size: 35px;
+  margin: 7.5px;
+  color: #2a9df4;
+}
+
+.footer .fa:hover{
+  color: #ed5f2f;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
 
 
 }
@@ -194,11 +252,9 @@ font-size: 25px;
 </div>
 -->
 
-
 <div id="nav-placeholder"></div>
 
 <script>
-
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
@@ -221,12 +277,9 @@ Giving an Edge to the Jewel of your Family
 <div class="footer">
 
     <span class="socialbox">
-    <a href="https://www.facebook.com/Ara-Consulting-100181021706038">
-      <img class="social" src="https://Tiger85147.github.io/Misc/facebook.png"></a>
-    <a href="https://www.instagram.com/AraConsulting2020/">
-      <img class="social" src="https://Tiger85147.github.io/Misc/instagram.png"></a>
-    <a href="https://www.linkedin.com/company/araconsulting">
-      <img class="social" src="https://Tiger85147.github.io/Misc/linkedin.png"></a>
+         <a href="https://www.facebook.com/Ara-Consulting-100181021706038" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+         <a href="https://www.linkedin.com/company/53506321/admin/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+         <a href="https://www.instagram.com/AraConsulting2020/" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"></i></a>
     </span>
 
     <span class="foottext">
