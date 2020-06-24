@@ -23,6 +23,7 @@
 </head>
 
 <style>
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -37,14 +38,6 @@
   padding-right: 150px;
 }
 
-/*
-.titlebox{
-  padding-left: 13vw;
-  background-image: url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
-  background-size: cover;
-}
-*/
-
 .content{
   font-size: 20px;
   padding-left: 10%;
@@ -53,7 +46,15 @@
   padding-bottom: 1.5vw;
 }
 
+
+
 /*
+.titlebox{
+  padding-left: 13vw;
+  background-image: url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
+  background-size: cover;
+}
+
 html, body {
   height: 100%;
   display: flex;
@@ -67,11 +68,12 @@ body > * {
 .footer {
   flex-grow: 1;
 }
-*/
 
 .infooter{
   padding-top: 5%;
 }
+*/
+
 }
 
 @media screen and (max-width: 800px){
@@ -155,33 +157,13 @@ Ara believes that every student is uniquely gifted and requires customized solut
 
 </div>
 
-<div class="footer">
-<div class="infooter">
+<div id="nav-footer"></div>
 
-    <span class="socialbox">
-
-        <a href="https://www.facebook.com/Ara-Consulting-100181021706038" style="text-decoration: none;">
-          <img class="social" src="https://Tiger85147.github.io/Misc/facebook.png">
-        </a>
-
-        <a href="https://www.instagram.com/AraConsulting2020/" style="text-decoration: none;">
-          <img class="social" src="https://Tiger85147.github.io/Misc/instagram.png">
-        </a>
-
-        <a href="https://www.linkedin.com/company/araconsulting" style="text-decoration: none;">
-          <img class="social" src="https://Tiger85147.github.io/Misc/linkedin.png">
-        </a>
-
-    </span>
-
-    <span class="foottext">
-           ©2020 araconsulting
-           <br>&nbspAll Rights Reserved
-    </span>
-
-</div>
-<br>
-</div>
+<script>
+$(function(){
+  $("#nav-footer").load("footer.html");
+});
+</script>
 
 </body>
 </html>
