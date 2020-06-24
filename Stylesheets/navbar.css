@@ -105,12 +105,56 @@ body {
 
 .footer a{
    text-decoration: none;
+}
+
+/* add a empty string after the elment with class .slide-left-right */
+.footer a:after {
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.footer a:hover:after 
+{
+width: 100%;
+background: #ed5f2f;
+}
+
+
+/*
+.footer a:after{
+  content: '';
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #ed5f2f;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+ 
+.footer a:hover:after{
+  width: 210px;
+  left: 0;
+  background: #ed5f2f;
+}
+*/
+
+/*
+.footer a{
+   text-decoration: none;
  }
 
 .footer a:hover{
-   text-decoration: underline #2a9df4;
+   text-decoration: underline #ed5f2f;
  }
-
+*/
 
 .footer {
   width: 100%;
@@ -366,7 +410,7 @@ body {
  }
 
 .footer a:hover{
-   text-decoration: underline #2a9df4;
+   text-decoration: underline #ed5f2f;
  }
 
 .footer .col ul li {
