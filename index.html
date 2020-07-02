@@ -21,7 +21,7 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
   <script src="C:\Users\dehad\Desktop\Ara website\HTML\Stylesheets\is.js"></script>
-
+<script type="text/javascript" src="C:\Users\dehad\Desktop\Ara website\HTML\Stylesheets\ticker.js"></script>
 <style type="text/css">
 
 @media screen and (max-width: 1920px) and (min-width: 800px) {
@@ -34,41 +34,38 @@
   font-family: 'Hind Guntur', sans-serif;
   font-size: 50px;
   text-align: center;
+  line-height: 65px;
+  height: 75px;
   color: #ffffff;
   background-color: #ed5f2f;
-  padding: 20px;
+  padding: 10px;
+  border-bottom: 3px solid white;
 }
 
-.footer{
-  background-image: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
+.marquee{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.footer span:last-child {
-  position: absolute;
-  right: 10%;   /* must be equal to parent's right padding */
+.box{
+  padding: 0px 10px;
 }
 
-.social{
-  width: 40px;
-  padding: 1px;
-  margin: 1px;
+.country{
+  padding-left: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  /*border-left: 2px solid #ffffff;*/
 }
 
-.foottext{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 1vw;
-  color:#ffffff;
-  font-weight: 500;
-  text-shadow:
-              -1px -1px 0 #000,
-               1px -1px 0 #000,
-              -1px 1px 0 #000,
-               1px 1px 0 #000;
+.item{
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .alert {
@@ -98,24 +95,6 @@
 font-family: 'Hind Guntur', sans-serif;
 font-size: 25px;
 }
-
-.footer .fa{
-  font-size: 2.25vw;
-  margin: 7.5px;
-  color: #2a9df4;
-}
-
-.footer .fa:hover{
-  color: #ed5f2f;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-}
-
-.footer a:after{
-display: inline;
-}
-
 }
 
 @media screen and (max-width: 800px) {
@@ -137,6 +116,26 @@ display: inline;
   background-color: #ed5f2f;
   padding: 10px;
   font-weight: 300;
+  border-bottom: 3px solid white;
+}
+
+.box{
+  padding: 0px 10px;
+}
+
+.country{
+  padding-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+.item{
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .alert {
@@ -166,61 +165,6 @@ display: inline;
 font-family: 'Hind Guntur', sans-serif;
 font-size: 25px;
 }
-
-
-.footer{
-  background-image: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.footer span:last-child {
-  position: absolute;
-  right: 5%;   /* must be equal to parent's right padding */
-}
-
-/*
-.socialbox{
-  position: absolute;
-  z-index: 9999;
-}
-
-.social{
-  width: 35px;
-  padding: 1px;
-  margin: 1px;
-}
-*/
-
-.foottext{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 15px;
-  color:#ffffff;
-  font-weight: 500;
-  text-shadow:
-              -1px -1px 0 #000,
-               1px -1px 0 #000,
-              -1px 1px 0 #000,
-               1px 1px 0 #000;
-
-}
-
-.footer .fa{
-  font-size: 35px;
-  margin: 7.5px;
-  color: #2a9df4;
-}
-
-.footer .fa:hover{
-  color: #ed5f2f;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-}
-
-
 
 }
 
@@ -276,22 +220,158 @@ $(function(){
 <div class="banner">
 Giving an Edge to the Jewel of your Family
 </div>
+<!--
+<a href="https://Tiger85147.github.io/Our%20Admissions.html">
+<span class="box">
+    <img class="country" src="https://Tiger85147.github.io/Country logos/US logo crop.png" height=70px>
+</span>
 
-<br>
-<div class="footer">
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png">
+</span>
 
-    <span class="socialbox">
-         <a href="https://www.facebook.com/Ara-Consulting-100181021706038" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-         <a href="https://www.linkedin.com/company/53506321/admin/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-         <a href="https://www.instagram.com/AraConsulting2020/" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"></i></a>
-    </span>
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png">
+</span>
 
-    <span class="foottext">
-       ©2020 araconsulting
-       <br>&nbspAll Rights Reserved
-    </span>
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" style="height: 30px; padding-bottom: 7px;">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png">
+</span>
+
+<span class="box">
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png" height=80px>
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png">
+</span>
+
+<span class="box">
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png" height=70px>
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo1.png">
+</span>
+
+<span class="box">
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png" height=70px>
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku.png">
+</span>
+
+<span class="box">
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png" height=70px>
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/christ.jpg">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/krea.png">
+</span>
+
+<span class="box">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/jindal.png">
+</span>
+</a>
+-->
+<a href="https://araconsulting.co.in/Our%20Admissions.html">
+<div class="marquee" id="mycrawler2">
+
+
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png" height=70px>
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo2.png" style="margin-top: 35px; margin-bottom: 25px;">
+
+  <img class="country" src="https://Tiger85147.github.io/Country logos/US logo crop.png" height=60px style="margin-top: 20px; margin-bottom: 20px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png">
+
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png" height=70px>
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="height: 60px; margin-top: 20px; margin-bottom: 20px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" style="height: 60px; margin-top: 23px; margin-bottom: 17px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png">
+
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png" height=70px>
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png">
+
+  <img class="country" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png" height=70px>
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/christ%20crop.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/krea.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/jindal%20long.png">
 
 </div>
+</a>
+
+<script type="text/javascript">
+marqueeInit({
+  uniqueid: 'mycrawler2',
+  style: {
+    'padding': '2px',
+    'width': '100%',
+    'height': '100px',
+    'width': '100%',
+    'background-color': '#ed5f2f',
+  },
+  inc: 3, //speed - pixel increment for each iteration of this marquee's movement
+  mouse: 'pause', //mouseover behavior ('pause' 'cursor driven' or false)
+  moveatleast: 2,
+  neutral: 150,
+  savedirection: true,
+  random: false
+});
+</script>
+
+<div id="nav-footer"></div>
+
+<script>
+$(function(){
+  $("#nav-footer").load("footer.html");
+});
+</script>
+
 
 </body>
 </html>
