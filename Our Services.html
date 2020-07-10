@@ -21,6 +21,66 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
 <style>
+
+#button {
+  display: inline-block;
+  background-color: #ed5f2f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: 2px solid black;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.block {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -35,74 +95,63 @@
   padding-right: 150px;
 }
 
-ul#main-nav li {
-  float: left;
-  position: relative;
-  display: inline;
+
+.table{
+  display: flex;
+  flex-direction: column;
 }
 
-ul#main-nav li a {
-  position: relative;
-  width: 110px;
-  height: 29px;
-  display: block;
-  background-image: url('../images/tabs.png');
-  background-position: center center;
-  color: #44403b;
-  text-decoration: none;
-  font-size: 14px;
-  padding-top: 12px;
-  text-align: left;
-  padding-left: 30px;
-  font-weight: bold;
+.row{
+  display: flex;
+  flex-direction: row;
 }
-ul#main-nav li.home a {
-  background-image: url('../images/tab-home.png');
+
+.block{
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 10px;
+  width: 390px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  line-height: 10px;
 }
-ul#main-nav li.current a {
-  background-position: top;
-  color: #ffffff;
-}
-ul#main-nav li a:hover {
-  background-position: bottom;
-  color: #ffffff;
-}
-ul#main-nav li.current a:hover {
-  background-position: top; /*To Prevent the Current tab from changing colour on hover*/
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  width: 390px;
+  border-radius: 10px;
   color: #ffffff;
 }
 
-ul#main-nav li.current {
-  z-index: 100;
-}
-ul#main-nav li.home {
-  z-index: 100;
-}
-ul#main-nav li.portfolio {
-  z-index: 99;
-}
-ul#main-nav li.services {
-  z-index: 98;
-}
-ul#main-nav li.about {
-  z-index: 97;
-}
-ul#main-nav li.contact {
-  z-index: 96;
+
+#container:hover > #head > #text {
+  color: #ffffff;
+  transition: color 0.5s;
 }
 
-ul#main-nav {
-  margin-left: 20px;
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 25px;
 }
-ul#main-nav li {
-  float: left;
-  position: relative;
-  margin-left: -20px;
-  display: inline;
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+
+.icon{
+  width: 40px;
+  color: white;
+  margin-top: 0;
+  vertical-align: middle;
 }
 
 .content{
-  font-family:'Libre Franklin', serif;
+  font-family: 'Hind Guntur', sans-serif;
   font-size: 20px;
   text-align: left;
   color:#000000;
@@ -126,6 +175,7 @@ ul#main-nav li {
   border-bottom: 1vw solid #ed5f2f;
   padding-bottom: 0.1vw;
   indent-text: 40mm;
+  padding-right: 65px;
 }
 
 .titlebox{
@@ -139,9 +189,64 @@ ul#main-nav li {
   color:#000000;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 3vw;
-  padding-bottom: 15vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.block{
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 5px;
+  margin-left: 0px;
+  border-radius: 10px;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.top{
+  margin-top: 0px;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.icon{
+  width: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 }
@@ -161,8 +266,50 @@ $(function(){
 <div class="titlebox">
 <br><br><br>
 <div class="title">
-Ara's Services</div>
-<br><br><br><br>
+Ara's Services
+</div>
+
+<div class="table">
+<div class="row">
+ <a href="https://Tiger85147.github.io/Counseling.html" style="text-decoration: none;">
+ <div class="block" style="margin-left: 0;" id="container">
+   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font id="text" class="blockheading">Counseling and Mentoring</font></span>
+ </div>
+ </a>
+  <a href="https://Tiger85147.github.io/Profile%20Development.html" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/profile.png">&nbsp &nbsp<font id="text" class="blockheading">Profile Development</font></span>
+ </div>
+</a>
+  <a href="https://Tiger85147.github.io/Shortlisting.html" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png"> &nbsp <font id="text" class="blockheading">Shortlisting</font></span>
+ </div>
+ </a>
+</div>
+
+<div class="row">
+  <a href="https://Tiger85147.github.io/Applications.html" style="text-decoration: none;">
+ <div class="block top" id="container" style="margin-left: 0;">
+   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/resume.png">&nbsp &nbsp<font id="text" class="blockheading">Applications
+   </font></span>
+ </div>
+</a>
+  <a href="https://Tiger85147.github.io/Periodic%20Reviews.html" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png"> &nbsp <font id="text" class="blockheading">Periodic Reviews</font></span>
+
+ </div>
+ </a>
+  <a href="https://Tiger85147.github.io/Visa%20Assistance.html" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png"> &nbsp <font id="text" class="blockheading">Travel Assistance</font></span>
+ </div>
+ </a>
+</div>
+</div>
+
+<br>
 
 </div>
 
@@ -187,6 +334,26 @@ Ara helps its students to become the 'Person' that all Universities look for.  A
 Ara is an investment in creating well-rounded Citizens of our world.<br><br>  
  
 </div>
+
+<a id="button"></a>
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
 
 <!-- FOOTER START -->
 <div id="nav-footer"></div>

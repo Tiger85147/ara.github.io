@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/titlebox.css">
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ed5f2f">
@@ -19,8 +19,50 @@
   <meta name="msapplication-navbutton-color" content="#ed5f2f">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
-
 <style>
+
+html{
+  scroll-behavior: smooth;
+}
+
+#button {
+  display: inline-block;
+  background-color: #ed5f2f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: 2px solid black;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -32,113 +74,244 @@
   border-bottom: 15px solid #ed5f2f;
   padding-bottom: 2px;
   indent-text: 40mm;
-  padding-right: 150px;
+  padding-right: 330px;
 }
 
-.main
-{
-  background-color: #ffffff;
-  padding-bottom: 5vw;
-  padding-top: 2vw;
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.row2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 185px;
+}
+
+.block {
+    float:right;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 15px;
+  width: 390px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  width: 390px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#container:hover > #text {
+  color: white;
+  transition: color 0.5s;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.contentheadingtext{
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+
+.icon{
+  width: 40px;
+  color: white;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.service{
+  display: flex;
+  direction: horizontal;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.collapsible {
-  background-color: #ed5f2f;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.contentheading{
+  padding-right: 50px;
+  text-align: center;
 }
 
-.active, .collapsible:hover {
-  background-color: #CC5500;
-}
-
-.heading{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 35px;
-  text-align: left;
-  color: #ffffff;
+.right-title{
+  padding-right: 0;
+  margin-left: 40px;
 }
 
 .content {
   font-family: 'Hind Guntur', sans-serif;
-  padding: 0 18px;
-  max-height: 0;
-  width: 100%;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
   font-size: 20px;
   text-align: left;
+  color: black;
 }
 
+
 }
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+
 
 @media screen and (max-width: 800px){
 
 .title{
   font-family:'Bitter', serif;
-  font-size: 48px;
+  font-size:35px;
   text-align: left;
   color: #ffffff;
   display:inline-block;
   border-bottom: 1vw solid #ed5f2f;
   padding-bottom: 0.1vw;
   indent-text: 40mm;
-  padding-right: 50px;
+  padding-right: 140px;
 }
 
-.main
-{
-  background-color: #ffffff;
-  padding-bottom: 5vw;
-  padding-top: 2vw;
+.titlebox{
+  padding-left: 3vw;
+  padding-right: 5vw;
+}
+
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+    float:right;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#container:hover > #text {
+  color: white;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.icon{
+  width: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-
-.collapsible {
-  background-color: #ed5f2f;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  text-align: left;
-  outline: none;
+.contentheading{
+  text-align: center;
+  border-bottom: 
 }
 
-.active, .collapsible:hover {
-  background-color: #CC5500;
-}
-
-.heading{
+.contentheadingtext{
   font-family: 'Hind Guntur', sans-serif;
-  font-size: 22px;
-  text-align: left;
-  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.service .right-title{
+  float: top;
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.right-content{
+  padding-top: 80px;
 }
 
 .content {
-  padding: 0 15px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
   font-family: 'Hind Guntur', sans-serif;
   font-size: 18px;
   text-align: left;
+  color: black;
 }
+
 }
 
 </style>
@@ -159,53 +332,100 @@ $(function(){
 <div class="title">
 Shortlisting
 </div>
-
-<br><br><br><br>
+<div class="table">
+<div class="row">
+ <a href="#counsel" style="text-decoration: none;">
+ <div class="block" style="@media screen and (max-width: 1920px) and (min-width: 800px){
+margin-left: 0;}" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/test.png"> &nbsp <font class="blockheading">Standardised Tests</font></span><br><br>
+   <font class="blockcontent" id="text">
+Completing specific and relevant Standardized tests...   </font>
+ </div>
+ </a>
+  <a href="#plan" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/course.png">&nbsp <font class="blockheading">Major and/or Minor Courses</font></span><br><br>
+   <font class="blockcontent" id="text">
+Admissions process for top Global Universities is...   </font>
+ </div>
+</a>
+  <a href="#mentor" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/scholarship.png"> &nbsp <font class="blockheading" style="font-size: 23px;">Financial Aid and Scholarships</font></span><br><br>
+   <font class="blockcontent" id="text">
+  Some students may require Financial Aid or some...
+   </font>
+ </div>
+ </a>
 </div>
 
-<div class="main">
+<div class="row2">
+  <a href="#unis" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png">&nbsp <font class="blockheading">Countries and Universities</font></span><br><br>
+   <font class="blockcontent" id="text">
+Admissions process for top Global Universities is...   </font>
+ </div>
+</a>
+  <a href="#visit" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/visit.png"> &nbsp <font class="blockheading" style="font-size: 23px;">Visit Campus</font></span><br><br>
+   <font class="blockcontent" id="text">
+  Some students may require Financial Aid or some...
+   </font>
+ </div>
+ </a>
+</div>
+</div>
 
-<button class="collapsible"><div class="heading">Standardised Tests<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
+<br>
+</div>
 
+
+<a id="anchor" name="counsel">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/test.png" style="padding-bottom: 10px;"> <br> <font class="contentheadingtext" style="color: #ed5f2f">Standardised Tests</font></div>
 <div class="content">
-
- <p>
 Completing specific and relevant Standardized tests (such as SAT, ACT, TOEFL, IELTS, APs, Subject Tests) is a necessary (but not sufficient!) part of each Application in certain geographies/countries.  <br><br>
 
-We help our students to identify relevant Standardized tests and plan/manage schedule/timelines for each.  
- </p>
-
+We help our students to identify relevant Standardized tests and plan/manage schedule/timelines for each. 
 </div>
+</div>
+</a>
 
-<br>
+<a id="anchor" name="plan">
 
-<button class="collapsible"><div class="heading">Major and/or Minor Courses<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
-<div class="content">
-  <p>
-This is potentially the most important element when shortlisting a college/university – as it has a direct relation with the student’s profile and interests along with career aspirations.  This selection has potentially the highest impact on the future of a student.<br><br>
+<div class="service" style="background-color: #ed5f2f;">
+<div class="content right-content">
+Admissions process for top Global Universities is complex, arduous and time consuming. There are several activities involved, many running in This is potentially the most important element when shortlisting a college/university – as it has a direct relation with the student’s profile and interests along with career aspirations.  This selection has potentially the highest impact on the future of a student.<br><br>
 
 We correlate interests and profile of a student with aspirations to help shortlist a combination of Major and/or Minor courses. This shortlist has direct impact on selection of College/Universities and we help to streamline and ease the process of such multiple shortlisting.  
-
-
-</p>
 </div>
+   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/course.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Major and Minor Courses</font></div><br><br>
+</div>
+</a>
 
-<br>
 
-<button class="collapsible"><div class="heading">Financial Aid and Scholarships<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
+<a id="anchor" name="mentor">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/scholarship.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Financial Aid and Scholarships</font></div>
 <div class="content">
-  <p>
   Some students may require Financial Aid or some students may have a profile and background which can win them Scholarships at specific Universities.<br><br> 
 
 We help to plan and apply for such requirements.  
-</p>
 </div>
+</div>
+</a>
 
 
-<br>
-<button class="collapsible"><div class="heading">Countries and Universities<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
-<div class="content">
-  <p>
+<a id="anchor" name="unis">
+
+<div class="service" style="background-color: #ed5f2f;">
+<div class="content right-content">
 Every family and student comes with a unique background and aspirations.  These include Academic interests, personal and professional aspirations, desired list of geographies/countries and/or budget.  Also, each student will have unique set of scores in Academics and Standardized tests.
 <br><br>
 
@@ -215,47 +435,47 @@ Given every unique combination of aspirations and constraints (if any), we suppo
 The next step is to identify specific Universities and Colleges based on all aforementioned requirements.  We help the entire process to list Aspirational/Dream Universities along with ‘Reach’ and ‘Safety’ Universities to apply to.  This is done through a review of a combination of factors such as distance, budget, University/College rank, Course rank, Majors and Minors available, availability and ease of financial aid/Scholarships (if required), weather at the location where the relevant University is based and more!
 <br><br>
 
-All our students have received multiple Admission offers from top global universities!  We have helped them to choose the right university based on their profile, background, personality and aspirations (plus, other unique and/or relevant requirements and/or constraints our students may have).  
-
-</p>
+All our students have received multiple Admission offers from top global universities!  We have helped them to choose the right university based on their profile, background, personality and aspirations (plus, other unique and/or relevant requirements and/or constraints our students may have).
 </div>
+   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Countries and Universities</font></div><br><br>
+</div>
+</a>
 
-<br>
 
-<button class="collapsible"><div class="heading">Visit Campus<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
+<a id="anchor" name="visit">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/visit.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Visit Campus</font></div>
 <div class="content">
-  <p>
-  Often, more than one geographies/countries and Universities get shortlisted based on various criteria and background of a student.  In such cases, a visit to relevant campuses and meeting Admissions Counsellors and students there, help select the right ‘academic destination’.
+ Often, more than one geographies/countries and Universities get shortlisted based on various criteria and background of a student.  In such cases, a visit to relevant campuses and meeting Admissions Counsellors and students there, help select the right ‘academic destination’.
   <br><br>
 
 We help plan and manage end-to-end Campus visits along with relevant meetings with University Officials.  
-
-
-</p>
-
 </div>
-
 </div>
+</a>
 
+<a id="button"></a>
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+<script type="text/javascript">
+  var btn = $('#button');
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 </script>
 
-
+<!-- FOOTER START -->
 <div id="nav-footer"></div>
 
 <script>
@@ -263,6 +483,8 @@ $(function(){
   $("#nav-footer").load("footer.html");
 });
 </script>
+<!-- END OF FOOTER -->
+
 
 
 </body>

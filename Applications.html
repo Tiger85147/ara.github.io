@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/titlebox.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
   <!-- Chrome, Firefox OS and Opera -->
@@ -19,8 +19,51 @@
   <meta name="msapplication-navbutton-color" content="#ed5f2f">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
-
 <style>
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+#button {
+  display: inline-block;
+  background-color: #ed5f2f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: 2px solid black;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -32,122 +75,230 @@
   border-bottom: 15px solid #ed5f2f;
   padding-bottom: 2px;
   indent-text: 40mm;
-  padding-right: 150px;
+  padding-right: 330px;
 }
 
-.main
-{
-  background-color: #ffffff;
-  padding-bottom: 5vw;
-  padding-top: 2vw;
+.table{
+  display: flex;
+}
+
+.block {
+    float:right;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 15px;
+  width: 390px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  width: 390px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#container:hover > #text {
+  color: white;
+  transition: color 0.5s;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.contentheadingtext{
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+
+.icon{
+  width: 40px;
+  color: white;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.service{
+  display: flex;
+  direction: horizontal;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-
-.collapsible {
-  background-color: #ed5f2f;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.contentheading{
+  padding-right: 50px;
+  text-align: center;
 }
 
-.active, .collapsible:hover {
-  background-color: #CC5500;
-}
-
-
-.heading{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 35px;
-  text-align: left;
-  color: #ffffff;
+.right-title{
+  padding-right: 0;
+  margin-left: 40px;
 }
 
 .content {
   font-family: 'Hind Guntur', sans-serif;
-  padding: 0 18px;
-  max-height: 0;
-  width: 100%;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
   font-size: 20px;
   text-align: left;
+  color: black;
 }
 
-.infooter{
-  padding-top: 5%;
-}
 
 }
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+
 
 @media screen and (max-width: 800px){
 
 .title{
   font-family:'Bitter', serif;
-  font-size: 48px;
+  font-size:35px;
   text-align: left;
   color: #ffffff;
   display:inline-block;
   border-bottom: 1vw solid #ed5f2f;
   padding-bottom: 0.1vw;
   indent-text: 40mm;
-  padding-right: 50px;
+  padding-right: 125px;
 }
 
-.main
-{
-  background-color: #ffffff;
-  padding-bottom: 5vw;
-  padding-top: 2vw;
+.titlebox{
+  padding-left: 3vw;
+  padding-right: 5vw;
+}
+
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+    float:right;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#container:hover > #text {
+  color: white;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.icon{
+  width: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-
-.collapsible {
-  background-color: #ed5f2f;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  text-align: left;
-  outline: none;
+.contentheading{
+  text-align: center;
+  border-bottom: 
 }
 
-.active, .collapsible:hover {
-  background-color: #CC5500;
-}
-
-.heading{
+.contentheadingtext{
   font-family: 'Hind Guntur', sans-serif;
-  font-size: 22px;
-  text-align: left;
-  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.right-title{
+  float: top;
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.right-content{
+  padding-top: 80px;
 }
 
 .content {
   font-family: 'Hind Guntur', sans-serif;
-  padding: 0 15px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
   font-size: 18px;
   text-align: left;
-}
-
-.space{
-  padding-bottom: 15px
+  color: black;
 }
 
 }
@@ -156,6 +307,7 @@
 </head>
 
 <body scroll="no" style="overflow: visible">
+
 <div id="nav-placeholder"></div>
 
 <script>
@@ -169,62 +321,96 @@ $(function(){
 <div class="title">
 Applications
 </div>
-<br><br><br><br>
-</div>
+<div class="table">
+ <a href="#counsel" style="text-decoration: none;">
+ <div class="block" style="@media screen and (max-width: 1920px) and (min-width: 800px){margin-left: 0;}" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/fill.png"> &nbsp <font class="blockheading">Fill Applications</font></span><br><br>
+   <font class="blockcontent" id="text">
+   We provide end-to-end support for filling online applications of all selected Universities.  This includes presenting the student in a holistic way...
+   </font>
+ </div>
+ </a>
+  <a href="#plan" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/interview.png">&nbsp <font class="blockheading">Prepare for Interviews</font></span><br><br>
+   <font class="blockcontent" id="text">
+   Many universities want to meet/speak with students before admitting them.  This is one more way in which they seek to know students better...
+   </font>
+ </div>
+</a>
+  <a href="#mentor" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png"> &nbsp <font class="blockheading">Review Essays </font></span><br><br>
+   <font class="blockcontent" id="text">
+   Each top global University wants to know a student better and his/her life’s journey along with learnings therefrom; before admitting him/her...
+   </font>
+ </div>
+ </a>
 
-<div class="main">
-
-<button class="collapsible"><div class="heading">Fill Applications<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
-<div class="content">
-  <div class="space">
-<p>
-We provide end-to-end support for filling online applications of all selected Universities.  This includes presenting the student in a holistic way, prioritizing presentation of specific attributes, personality traits and achievements of the student; articulating such achievements along with extra curricular activities effectively; and coaching support to write essays.
-</p>
-</div>
 </div>
 
 <br>
+</div>
 
-<button class="collapsible"><div class="heading">Prepare for Interviews<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
+
+<a name="counsel">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/fill.png" style="padding-bottom: 10px; padding-left: 7px;"> <br> <font class="contentheadingtext" style="color: #ed5f2f">Fill Applications</font></div>
 <div class="content">
-  <p>
+We provide end-to-end support for filling online applications of all selected Universities.  This includes presenting the student in a holistic way, prioritizing presentation of specific attributes, personality traits and achievements of the student; articulating such achievements along with extra curricular activities effectively; and coaching support to write essays.
+</div>
+</div>
+</a>
+
+<a name="plan">
+
+<div class="service" style="background-color: #ed5f2f;">
+<div class="content right-content">
 Many universities want to meet/speak with students before admitting them.  This is one more way in which they seek to know students better.<br><br>
 
 We help our students to prepare for such interviews through multiple mentoring sessions and mock interviews.  
-</p>
 </div>
+   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/interview.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Prepare for Interviews</font></div><br><br>
+</div>
+</a>
 
-<br>
 
-<button class="collapsible"><div class="heading">Review Essays<img src="https://drive.google.com/thumbnail?id=1GyXitRCyuBfTYpVyQwrbg3k3OGCbN767" width=40 align=right></div></button>
+<a name="mentor">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Review Essays</font></div>
 <div class="content">
-  <p>
 Each top global University wants to know a student better and his/her life’s journey along with learnings therefrom; before admitting him/her.<br><br>
 
 The essays that these universities want students to write as part of their application have proven to be an effective method to know what motivates a student and/or what has inspired a student and/or what has made the student what he/she is.  That is, such essays are a window for the universities to peep into a student’s life, personality and character.  Its their way to hear a student’s story – to know the student as well as possible. These essays very often become the final decision point for most universities to accept or reject an application.<br><br>
 
 We help our students to brain storm and ideate on what they can present in their essays.  Our focus is to enable our students to articulate their thoughts; that is, tell their story better and more effectively.  
-</p>
 </div>
-
 </div>
+</a>
 
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+<a id="button"></a>
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 </script>
 
 <!-- FOOTER START -->
@@ -236,6 +422,8 @@ $(function(){
 });
 </script>
 <!-- END OF FOOTER -->
+
+
 
 </body>
 </html>
