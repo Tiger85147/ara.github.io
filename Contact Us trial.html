@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<title>Contact Ara</title>
+<head>
+  <meta name="Description" content="Contact Ara for best-in-class Admissions Counseling services">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/titlebox.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ed5f2f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ed5f2f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+
+<style>
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  indent-text: 40mm;
+  padding-right: 150px;
+}
+
+.logo{
+  width: 200px;
+  padding-left: 10px; 
+}
+
+.main{
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 500px;
+  font-family: 'Hind Guntur'
+}
+
+.contact-title{
+  color: #ed5f2f;
+  transition: all 4s ease-in-out;
+}
+
+.contact-title h1{
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2{
+  font-size: 16px;
+}
+
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #ed5f2f;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.input{
+  height: 45px;
+}
+
+form .submit{
+  background-color: #ed5f2f;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  line-height: 10px;
+}
+
+form .submit:hover{
+  background-color:  #ba3f16;
+}
+
+@media screen and (max-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 40px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+  indent-text: 40mm;
+  padding-right: 30px;
+}
+
+.logo{
+  width: 150px;
+  padding-left: 6px; 
+}
+
+.main{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 500px;
+  font-family: 'Hind Guntur'
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+
+<div class="titlebox">
+<br><br><br>
+<div class="title">
+Contact 
+<img class="logo" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png"> 
+</div>
+<br><br><br><br>
+</div>
+
+<div class="main">
+
+ <div class="contact-title">
+  <h1>Hello</h1>
+  <h2>We are always ready to serve you!</h2>
+
+ </div> 
+
+ <div class="contact-form">
+
+  <form id="contact-form" method="post" action="contact-form-handler.php">
+  
+  <input name="name" type="text" class="form-control" placeholder="Name of Student" required>
+  <br>
+
+  <input name="email" type="text" class="form-control" placeholder="Email" required>
+  <br>
+
+  <textarea name="message" class="form-control" placeholder="Your Message" rows="4"></textarea><br>
+
+  <input type="submit" class="form-control submit" value="Submit">
+
+  </form>
+ </div>
+
+</div>
+
+
+
+<div id="nav-footer"></div>
+
+<script>
+$(function(){
+  $("#nav-footer").load("footer.html");
+});
+</script>
+
+</body>
+</html>
+
