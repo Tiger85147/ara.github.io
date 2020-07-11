@@ -241,6 +241,26 @@ By viewing and/or interacting with our Online Platforms, you consent, and we res
 </div>
 
 
+<a id="button"></a>
+
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
 <!-- FOOTER START -->
 <div id="nav-footer"></div>
 
