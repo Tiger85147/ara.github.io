@@ -23,6 +23,21 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
 
 <style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+      background-color: #ed5f2f;
+   }
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -48,7 +63,7 @@
   padding-right: 10%;
   padding-top: 50px;
   padding-bottom: 50px;
-  height: 500px;
+  height: 700px;
   font-family: 'Hind Guntur'
 }
 
@@ -72,7 +87,7 @@ form{
 }
 
 .form-control{
-  width: 600px;
+  width: 30%;
   background: transparent;
   border: none;
   outline: none;
@@ -80,6 +95,15 @@ form{
   color: #ed5f2f;
   font-size: 20px;
   margin-bottom: 15px;
+}
+
+.area{
+  width: 91%;
+}
+
+.text{
+  font-size: 15px;
+  color: #000000;
 }
 
 .input{
@@ -157,22 +181,26 @@ Contact
 <div class="main">
 
  <div class="contact-title">
-  <h1>Hello</h1>
-  <h2>We are always ready to serve you!</h2>
-
+  <h1>We'll get back to you!</h1>
  </div> 
 
  <div class="contact-form">
 
   <form id="contact-form" method="POST" action="https://formspree.io/ameyadehade@gmail.com">
-  
   <input name="name" type="text" class="form-control" placeholder="Name of Student" required>
-  <br>
+  
+  <input name="phone" type="number" class="form-control" placeholder="Phone Number" required>
 
   <input name="email" type="text" class="form-control" placeholder="Email" required>
-  <br>
+  <br><br>
 
-  <textarea name="message" class="form-control" placeholder="Your Message" rows="4"></textarea><br>
+  <textarea name="Comments" class="form-control area" placeholder="Comments or Questions" rows="4"></textarea><br>
+
+  <font class="text"> I would like Ara to contact me based on the information provided above.</font> &nbsp <input name="permission" type="checkbox" class="check" required>
+  <br>
+  <hr>
+  <font class="text">Ara commits that your information shall not be used for anything except for the purpose stated in the Comments section above.</font>
+  <hr>
 
   <input type="submit" class="form-control submit" value="Submit">
 
