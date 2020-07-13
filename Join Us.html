@@ -55,6 +55,11 @@ input[type="file"] {
 
 }
 
+#file-upload-filename{
+  display: inline;
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -273,7 +278,7 @@ Join
 <div class="main"> 
 
  <div class="contact-form">
-  <form id="contact-form" method="POST" action="https://formspree.io/rupali@araconsulting.co.in">
+  <form id="contact-form" method="POST" action="https://usebasin.com/f/43238f8d7bfc">
   <input name="name" type="text" class="form-control" placeholder="Name" required>
   
   <input name="phone" type="number" class="form-control" placeholder="Phone Number" required>
@@ -285,10 +290,10 @@ Join
   <div class="cv">
   <font class="resume">Upload Resume</font>
 
-  <label class="custom-file-upload">
       <input id="file" type="file" name="upload" accept=".doc,.docx,application/pdf" required>
-      Choose File
-  </label>
+      <label for="file" class="custom-file-upload">Choose File</label>
+      <div id="file-upload-filename"></div>
+
   </div>
 <br>
   <input name="permission" type="checkbox" class="check" required> &nbsp <font class="text"> I would like Ara to contact me based on the information provided above.</font>
@@ -324,6 +329,23 @@ uploadField.onchange = function() {
        this.value = "";
     };
 };
+
+var input = document.getElementById( 'file' );
+var infoArea = document.getElementById( 'file-upload-filename' );
+
+input.addEventListener( 'change', showFileName );
+
+function showFileName( event ) {
+  
+  // the change event gives us the input it occurred in 
+  var input = event.srcElement;
+  
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName = input.files[0].name;
+  
+  // use fileName however fits your app best, i.e. add it into a div
+  infoArea.textContent = 'File name: ' + fileName;
+}
 </script>
 
 </body>
