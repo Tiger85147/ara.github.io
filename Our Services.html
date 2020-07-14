@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="C:\Users\dehad\Desktop\Ara website\HTML\Stylesheets\navbar.css">
     <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/titlebox.css">
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
@@ -45,13 +45,13 @@
 
 #button {
   display: inline-block;
-  background-color: #ed5f2f;
+  background-color: inherit;
   width: 65px;
   height: 65px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 10px;
+  bottom: -20px;
   right: 30px;
   transition: background-color .3s, 
   opacity .5s, visibility .5s;
@@ -68,20 +68,8 @@
   font-style: normal;
   font-size: 2em;
   line-height: 60px;
-  color: #fff;
+  color: #000000;
 }
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
 
 #cookieConsent {
     display: inline-block;
@@ -439,6 +427,13 @@ $(document).ready(function(){
         $("#cookieConsent").fadeIn(0);
      }, 0);
 }); 
+</script>
+
+<script>
+  if(){
+    document.getElementById('button').style.color = '#ed5f2f';
+  }
+  else
 </script>
 
 
