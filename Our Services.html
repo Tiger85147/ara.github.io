@@ -22,42 +22,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
 <style>
 
-#button {
-  display: inline-block;
-  background-color: #ed5f2f;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  border: 2px solid black;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
+.content a{
+  text-decoration: none;
 }
 
 .block {
@@ -74,14 +40,80 @@
     }
 }
 
-@media (min-width: 500px) {
-  #button {
-    margin: 30px;
-  }
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+#button {
+  display: inline-block;
+  background-color: #ed5f2f;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: none;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 60px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 
-@media screen and (max-width: 1920px) and (min-width: 800px){
+#cookieConsent {
+    display: inline-block;
+    background-color: rgba(237, 95, 47);
+    font-size: 25px;
+    height: 65px;
+    color: #000;
+    line-height: 26px;
+    padding: 22px 15px 15px 30px;
+    font-family: 'Hind Guntur', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    display: none;
+    z-index: 9999;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+}
+
+#cookieConsent:hover {
+    color: #ffffff;
+    transition: 0.5s;
+    padding: 20px 370px 15px 430px;
+}
+
+.icon{
+  padding-right: 10px;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -158,13 +190,58 @@
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 1.5vw;
-  padding-top: 1.5vw;
   background-color: #ffffff;
+  height: auto;
+}
+
+.footer{
+  height: 400px;
+}
+
+.social{
+  top: 75px;
+  position: absolute;
 }
 
 }
 
 @media screen and (max-width: 800px){
+
+#button {
+  display: none;
+}
+
+#cookieConsent {
+    display: inline-block;
+    background-color: rgba(237, 95, 47);
+    font-size: 20px;
+    height: 65px;
+    color: #000;
+    line-height: 26px;
+    padding: 10px 15px 15px 30px;
+    font-family: 'Hind Guntur', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    display: none;
+    z-index: 9999;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+}
+
+#cookieConsent:hover {
+    background-color: #ba3f16;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.icon{
+  padding-right: 10px;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -239,14 +316,8 @@
   margin-top: 0;
 }
 
-.service{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 5%;
-  padding-right: 5%;
+.footer{
+  height: 700px;
 }
 
 }
@@ -297,7 +368,7 @@ Ara's Services
 </a>
   <a href="https://Tiger85147.github.io/Periodic%20Reviews.html" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png"> &nbsp <font id="text" class="blockheading">Periodic Reviews</font></span>
+   <span class="blockheadingbox" id="head"> <img class="icon" src="https://Tiger85147.github.io/Misc/clock.png"> &nbsp <font id="text" class="blockheading">Periodic Reviews</font></span>
 
  </div>
  </a>
@@ -314,6 +385,16 @@ Ara's Services
 </div>
 
 <div class="content">
+
+<a href="https://Tiger85147.github.io/Applications.html#mentor">
+<div id="cookieConsent">
+
+    <img class="icon" src="https://Tiger85147.github.io/Misc/essay.png">
+
+    Exclusive Essay Review Services
+
+</div>
+</a>
 
 Top Global Universities don't admit Students!<br><br>
 
@@ -332,7 +413,7 @@ And hence, Ara doesn't build Student profiles only to help them get admissions t
 Ara helps its students to become the 'Person' that all Universities look for.  Ara coaches and mentors its students to make a difference to society, to make a positive impact on lives; and to deliver outcomes that will transform the world we live in.  Ara doesn't throw information at students but seeks to work with them so that they develop their own Point of view, their unique perspective to everything.<br><br>  
 
 Ara is an investment in creating well-rounded Citizens of our world.<br><br>  
- 
+
 </div>
 
 <a id="button"></a>
@@ -352,8 +433,79 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+$(document).ready(function(){   
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(0);
+     }, 0);
+}); 
 </script>
 
+
+<div class="footer">
+  <br>
+  <div class="contain">
+
+  <div class="col">
+    <a href="https://araconsulting.co.in/" class="footlink"><h1>Home</h1></a>
+  </div>
+
+  <div class="col">
+    <h1>About Us</h1>
+    <ul>
+      <a href="https://araconsulting.co.in/Overview.html" class="footlink"><li>Overview</li></a>
+      <a href="https://araconsulting.co.in/Mission%20and%20Values.html" class="footlink"><li>Mission and Values</li></a>
+      <a href="https://araconsulting.co.in/Leadership.html" class="footlink"><li>Leadership</li></a>
+      <a href="https://araconsulting.co.in/Join%20Us.html" class="footlink"><li>Join Us</li></a>
+    </ul>
+  </div>
+
+  <div class="col">
+    <a href="https://araconsulting.co.in/Our%20Admissions.html" class="footlink"><h1>Our Admissions</h1></a>
+    <ul>
+      <a href="https://araconsulting.co.in/Our%20Admissions.html#US" class="footlink"><li>US</li></a>
+      <a href="https://araconsulting.co.in/Our%20Admissions.html#UK" class="footlink"><li>UK</li></a>
+      <a href="https://araconsulting.co.in/Our%20Admissions.html#CA" class="footlink"><li>Canada</li></a>
+      <a href="https://araconsulting.co.in/Our%20Admissions.html#HK" class="footlink"><li>Hong Kong</li></a>
+      <a href="https://araconsulting.co.in/Our%20Admissions.html#IN" class="footlink"><li>India</li></a>
+    </ul>
+  </div>
+
+  <div class="col">
+    <a href="https://Tiger85147.github.io/Our%20Services.html"><h1>Our Services</h1></a>
+    <ul>
+      <a href="https://araconsulting.co.in/Counseling.html" class="footlink"><li>Counseling</li></a>
+      <a href="https://araconsulting.co.in/Profile%20Development.html" class="footlink"><li>Profile Development</li></a>
+      <a href="https://araconsulting.co.in/Shortlisting.html" class="footlink"><li>Shortlisting</li></a>
+      <a href="https://araconsulting.co.in/Applications.html" class="footlink"><li>Applications</li></a>
+      <a href="https://araconsulting.co.in/Periodic%20Reviews.html" class="footlink"><li>Periodic Reviews</li></a>
+      <a href="https://araconsulting.co.in/Visa%20Assistance.html" class="footlink"><li>Travel Assistance</li></a>
+    </ul>
+  </div>
+
+  <div class="col">
+    <a href="https://araconsulting.co.in/Testimonials.html" class="footlink"><h1>Testimonials</h1></a>
+  </div>
+
+  <div class="col">
+    <a href="https://araconsulting.co.in/Contact%20Us.html" class="footlink"><h1>Contact Us</h1></a>
+  </div>
+
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+             <li><a href="https://www.facebook.com/Ara-Consulting-100181021706038" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="https://www.linkedin.com/company/53506321/admin/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <li><a href="https://www.instagram.com/AraConsulting2020/" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+<div class="footer-bottom">
+  &copy2020 araconsulting | All Rights Reserved
+</div>
+</div>
+
+</div>
 
 <!-- FOOTER START -->
 <div id="nav-footer"></div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Join Ara</title>
+<title>Review Services</title>
 <head>
   <meta name="Description" content="Contact Ara for best-in-class Admissions Counseling services">
   <meta charset="UTF-8">
@@ -109,9 +109,18 @@ form{
   margin-bottom: 10px;
 }
 
+.prompt{
+  width: 80%;
+  margin-top: 10px;
+}
+
+.limit{
+  width: 19.25%;
+}
+
 .area{
   width: 99%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .resume{
@@ -266,14 +275,13 @@ $(function(){
 <div class="titlebox">
 <br><br>
 <div class="title">
-Join 
-<img class="logo" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png"> 
+Essay Review Services
 </div>
-  <div class="subtitle">
-    Do your life's most noble and fulfilling work.
-  </div>
+<br><br><br><br>
 
-<br>
+
+
+
 </div>
 
 <div class="main"> 
@@ -286,23 +294,13 @@ Join
   
   <input name="phone" type="number" class="form-control" placeholder="Phone Number" required>
 
-  <input name="email" type="text" class="form-control" placeholder="Email" required>
-  <br>
+  <input name="email" type="text" class="form-control" placeholder="Email" required><br>
 
-  <textarea name="Comments" class="form-control area" placeholder="Your Brief Introduction" rows="4"></textarea><br>
+  <input name="prompt" type="text" class="form-control prompt" placeholder="Your Essay Prompt" required>
 
-<!-- <div class="cv">
+  <input name="prompt" type="text" class="form-control limit" placeholder="Word Limit" required><br>
 
-          <font class="resume">Upload Resume</font>
-
-          <input id="file" type="file" name="resume" accept=".doc,.docx,application/pdf" required>
-          <label for="file" class="custom-file-upload">Choose File</label>
-          <div id="file-upload-filename"></div>
-
-      </div>
--->
-
-<br>
+  <textarea name="Comments" class="form-control area" placeholder="Your Essay" rows="4"></textarea><br>
 
   <input name="permission" type="checkbox" class="check" required> &nbsp <font class="text"> I would like Ara to contact me based on the information provided above.</font>
   <br>
