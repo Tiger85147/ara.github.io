@@ -21,9 +21,61 @@
   <meta name="msapplication-navbutton-color" content="#ed5f2f">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+    <script src="../package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+
+
 
 <style>
+/* Track */
+.scrollmenu::-webkit-scrollbar-track {
+  border-radius: 10px;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  height: 10px;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+div.scrollmenu {
+  background-color: inherit;
+  overflow: auto;
+  white-space: nowrap;
+  transition: 0.5s;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+div.scrollmenu.scrollbar {
+    width: 5px;
+}
+
+div.scrollmenu:hover{
+  border-radius: 10px;
+  box-shadow: -8px 8px 5px 0px rgba(186,63,22,1);
+
+
+  /*box-shadow:  -1px 1px #ba3f16,
+         -2px 2px #ba3f16,
+         -3px 3px #ba3f16,
+         -4px 4px #ba3f16,
+         -5px 5px #ba3f16;
+         */
+}
+
+div.scrollmenu a {
+  padding: 10px 20px;
+  padding-bottom: 0px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
 
 .title{
   font-family: 'Bitter', serif;
@@ -71,6 +123,10 @@
   height: 11vw;
 }
 
+.scrollmenu{
+  width: 100%;
+}
+
 .icon{
   width: 160px;
 }
@@ -105,6 +161,46 @@ body > * {
 }
 
 @media screen and (max-width: 800px){
+
+
+div.scrollmenu {
+  background-color: inherit;
+  overflow: auto;
+  white-space: nowrap;
+  transition: 0.5s;
+  scrollbar-width: none;
+}
+
+div.scrollmenu.scrollbar {
+    width: 5px;
+}
+
+div.scrollmenu:hover{
+  border-radius: 10px;
+  box-shadow: -8px 8px 5px 0px rgba(186,63,22,1);
+
+
+  /*box-shadow:  -1px 1px #ba3f16,
+         -2px 2px #ba3f16,
+         -3px 3px #ba3f16,
+         -4px 4px #ba3f16,
+         -5px 5px #ba3f16;
+         */
+}
+
+div.scrollmenu a {
+  padding-bottom: 0px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+div.scrollmenu{
+  width: 90%;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -146,7 +242,6 @@ body > * {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .icon{
@@ -163,6 +258,10 @@ body > * {
   padding-right: 3vw;
   padding-top: 1.5vw;
   padding-bottom: 1.5vw
+}
+
+.small{
+  height: 50px;
 }
 
 .india{
@@ -187,7 +286,7 @@ body > * {
 </style>
 </head>
 
-<body>
+<body onload="scroll()">
   
 
 <div id="nav-placeholder"></div>
@@ -231,40 +330,49 @@ Average number of admissions per student - 4:1
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
 
 
-<a href="https://www.nyu.edu/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png" height= 50vw></a>
+<div class="scrollmenu">
 
-<a href="https://www.jhu.edu/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png" height= 50vw>
-</a>
+        <a href="https://www.nyu.edu/" style="text-decoration:none; padding-left: 0px;">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png" style="padding-left: 0px;" height= 50vw>
+        </a>
 
+        <a href="https://www.jhu.edu/" style="text-decoration:none;">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png" height= 50vw>
+        </a>      
 
-<a href="https://ucsd.edu/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png" height= 50vw>
-</a>
+        <a href="https://ucsd.edu/" style="text-decoration:none;">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png" height= 50vw>
+        </a>  
 
+        <a href="https://illinois.edu/" style="text-decoration:none;">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" height= 50vw>
+        </a>
 
-<a href="https://illinois.edu/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" height= 50vw>
-</a>
+        <a href="https://www.umass.edu/" style="text-decoration:none;">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png" height= 50vw>
+        </a>
 
-<a href="https://www.umass.edu/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png" height= 50vw>
-</a>
+        <a href="https://illinois.edu/" style="text-decoration:none;">
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/graingercrop.png" height=60vw>
+        </a>
 
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/grainger%20uiuc.png" height=60vw>
+        <a href="https://www.jhu.edu/" style="text-decoration:none;">
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png" height=80vw>
+        </a>
+              
+        <a href="https://www.nyu.edu/" style="text-decoration:none;">
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png" height=60vw>
+        </a>
 
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/whiting.png" height=60vw>
+        <a href="https://www.umass.edu/" style="text-decoration:none;">
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/umassengineering.png" height=60vw>
+        </a>
+                
+        <a href="https://ucsd.edu/" style="text-decoration:none;">
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png" height=60vw>
+        </a>
 
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png" height=60vw>
-
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/umassengineering.png" height=60vw>
-
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png" height=60vw>
-
-
-
-
+</div>
 </div>
 </a>
 
@@ -292,23 +400,29 @@ Average number of admissions per student - 2:1
 
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
 
-<a href="https://www.ed.ac.uk/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" height=100vw>
-</a>
+  <div class="scrollmenu">
 
-<a href="https://www.manchester.ac.uk/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg" height=80vw>
-</a>
+    <a href="https://www.ed.ac.uk/" style="text-decoration:none; padding-left: 0px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="padding-left: 0px;" height=100vw>
+    </a>
 
+    <a href="https://www.manchester.ac.uk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg" height=80vw>
+    </a>
 
-<a href="https://warwick.ac.uk/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" height=100vw>
-</a>
+    <a href="https://warwick.ac.uk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" height=80vw>
+    </a>
 
-<a href="https://www.st-andrews.ac.uk/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png" height=60vw>
-</a>
+    <a href="https://www.st-andrews.ac.uk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png" height=60vw>
+    </a>
 
+    <a href="https://www.ed.ac.uk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/edinburgh.png" height=60vw>
+    </a>
+
+  </div>
 </div>
 </a>
 <!-- UNTED KINGDOM ENDS-->
@@ -336,14 +450,25 @@ Average number of admissions per student - 2:1
 
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
 
-<a href="https://www.utoronto.ca/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" height=80vw>
-</a>
+<div class="scrollmenu">
 
-<a href="https://uwaterloo.ca/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo1.png" height=100vw>
-</a>
+    <a href="https://www.utoronto.ca/" style="text-decoration:none; padding-left: 0px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" style="padding-left: 0px;" height=80vw>
+    </a>
 
+    <a href="https://uwaterloo.ca/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo2.png" height=80vw style="padding-top: 10px;">
+    </a>
+
+    <a href="https://www.utoronto.ca/" style="text-decoration:none;">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" height=80vw>
+    </a>
+
+    <a href="https://uwaterloo.ca/" style="text-decoration:none;">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/waterloo.png" height=80vw>
+    </a>
+
+</div>
 </div>
 </a>
 <!-- CANADA ENDS-->
@@ -370,13 +495,26 @@ Average number of admissions per student - 3:1
 </div>
 
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
-  <a href="https://www.ust.hk/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png" height=80vw>
-</a>
 
-<a href="https://www.hku.hk/" style="text-decoration:none;">
-<img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku.png" height=140vw>
-</a>
+<div class="scrollmenu">
+
+    <a href="https://www.ust.hk/" style="text-decoration:none; padding-left: 0px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png"  style="padding-left: 0px;"height=80vw>
+    </a>
+
+    <a href="https://www.hku.hk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png" height=80vw>
+    </a>
+    
+    <a href="https://www.ust.hk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png" height=70vw style="margin-bottom: 10px;">
+    </a>
+
+    <a href="https://www.hku.hk/" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png" height=60vw style="margin-bottom: 10px;">
+    </a>
+
+</div>
 </div>
 </a>
 
@@ -405,6 +543,8 @@ Average number of admissions per student - 3:1
 
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
 
+<div class="scrollmenu"> 
+
 <a href="https://www.ashoka.edu.in/" style="text-decoration:none;">
 <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png" height=100vw>
 </a>
@@ -423,9 +563,16 @@ Average number of admissions per student - 3:1
 </a>
 
 </div>
+</div>
 
 </a>
 
+
+<script>
+function scroll(){
+      $("scrollmenu").scrollLeft(500);
+}
+</script>
 <!-- INDIA ENDS-->
 
 <div id="nav-footer"></div>
