@@ -121,18 +121,13 @@
   padding-left: 2.5vw
 }
 
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.hk{
+  border-bottom: 3px solid rgba(255,255,255, 0.5);
+  padding-bottom: 20px;
 }
 
-body > * {
-  flex-shrink: 0;
-}
-
-.footer {
-  flex-grow: 1;
+.hk .item{
+  padding-left: 20px;
 }
 
 }
@@ -176,12 +171,17 @@ body > * {
 
 .sec{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
   flex-wrap: wrap;
+}
+
+.hk{
+  display: flex;
+  flex-direction: column;
 }
 
 .ussec{
@@ -370,7 +370,7 @@ Average number of admissions per student - 2:1
 
 </div>
 
-<div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
+<div class="sec hk" style="background-color:#ed5f2f; padding-top: 2vw">
 
     <a href="https://www.ed.ac.uk/" style="text-decoration:none;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" height=100vw>
@@ -417,7 +417,6 @@ Average number of admissions per student - 2:1
 </div>
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
 
-
     <a href="https://www.utoronto.ca/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" height=80vw>
     </a>
@@ -460,7 +459,8 @@ Average number of admissions per student - 3:1
 </div>
 
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
-
+        
+  <div class="hk">
     <a href="https://www.ust.hk/" style="text-decoration:none; padding-left: 0px;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png"  style="padding-left: 0px;"height=75vw>
     </a>
@@ -476,7 +476,12 @@ Average number of admissions per student - 3:1
     <a href="https://engg.hku.hk/" style="text-decoration:none;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png" height=55vw style="margin-top: 10px;">
     </a>
+  </div>
 
+    <a href="https://www.fbe.hku.hk/" style="text-decoration:none;">
+    <img class="item" src="https://araconsulting.co.in/Uni%20logos/school/hkubba.png" height=75vw style="margin-top: 10px;">
+
+    </a>
 </div>
 </a>
 
