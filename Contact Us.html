@@ -59,11 +59,16 @@ input[type=number] {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 50px;
-  font-family: 'Hind Guntur'
+  font-family: 'Hind Guntur';
 }
 
 form{
   transition: all 4s ease-in-out;
+}
+
+.contact-form{
+  padding-bottom: 5px;
+  border-bottom: 4px solid gray;
 }
 
 .form-control{
@@ -82,6 +87,25 @@ form{
   margin-top: 20px;
 }
 
+.or{
+  display: flex;
+  flex-direction: row;
+  font-size: 35px;
+  color: gray;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.or:before, 
+.or:after { 
+    content:"";
+    flex: 1; 
+    border-bottom: 2px solid gray; 
+    margin: 10px; 
+} 
+
 .text{
   font-size: 15px;
   color: #000000;
@@ -99,7 +123,7 @@ form .submit{
   font-weight: 600;
   letter-spacing: 2px;
   height: 50px;
-  line-height: 10px;
+  line-height: 55px;
   margin-right: 40px;
 }
 
@@ -113,6 +137,31 @@ form .submit{
 form .submit:hover{
   background-color:  #ba3f16;
   cursor: pointer;
+}
+
+.appt{
+  margin: 20px 0px;
+  display: inline-block;
+  font-family: 'Hind Guntur';
+  background-color: #ed5f2f;
+  color: #ffffff;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 2px;
+  line-height: 55px;
+  width: 100%;
+  /*background: linear-gradient(to right, #ba3f16 50%, #ed5f2f 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  */
+}
+
+.appt:hover{
+  /*background-position: left bottom;*/
+  background-color: #ba3f16;
 }
 }
 
@@ -142,7 +191,7 @@ form .submit:hover{
   padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 10px;
-  font-family: 'Hind Guntur'
+  font-family: 'Hind Guntur';
 }
 
 .form-control{
@@ -213,7 +262,9 @@ $(function(){
 <div class="title">
 Contact 
 <img class="logo" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png"> 
+
 </div>
+
 <br><br><br>
 </div>
 
@@ -240,11 +291,14 @@ Contact
 <div class="end">We'll get back to you!</div>
 
   </form>
+
  </div>
 
+<script src="https://www.appointletcdn.com/loader/loader.min.js" async="" defer=""></script>
+<a data-appointlet-organization="ara"><div class="appt">Set a time to speak with Ara</div></a>
+
+
 </div>
-
-
 
 <div id="nav-footer"></div>
 
