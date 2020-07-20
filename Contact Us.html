@@ -58,8 +58,8 @@ input[type=number] {
   background-color: white;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 50px;
   font-family: 'Hind Guntur';
+  padding-top: 20px;
 }
 
 form{
@@ -67,7 +67,7 @@ form{
 }
 
 .contact-form{
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   border-bottom: 4px solid gray;
 }
 
@@ -79,7 +79,7 @@ form{
   border-bottom: 1px solid gray;
   color: #ed5f2f;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .area{
@@ -140,7 +140,7 @@ form .submit:hover{
 }
 
 .appt{
-  margin: 20px 0px;
+  margin: 15px 0px;
   display: inline-block;
   font-family: 'Hind Guntur';
   background-color: #ed5f2f;
@@ -194,6 +194,11 @@ form .submit:hover{
   font-family: 'Hind Guntur';
 }
 
+.contact-form{
+  padding-bottom: 3px;
+  border-bottom: 4px solid gray;
+}
+
 .form-control{
   width: 100%;
   background: transparent;
@@ -226,8 +231,8 @@ form .submit{
   font-weight: 600;
   letter-spacing: 2px;
   height: 50px;
-  line-height: 10px;
-  margin-right: 20px;
+  line-height: 52px;
+  width: 100%;
 }
 
 .end{
@@ -243,11 +248,73 @@ form .submit:hover{
 
 }
 
+
+.appt{
+  margin: 15px 0px;
+  display: inline-block;
+  font-family: 'Hind Guntur';
+  background-color: #ed5f2f;
+  color: #ffffff;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 2px;
+  line-height: 57px;
+  width: 100%;
+  /*background: linear-gradient(to right, #ba3f16 50%, #ed5f2f 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  */
+}
+
+.appt:hover{
+  /*background-position: left bottom;*/
+  background-color: #ba3f16;
+}
+
 }
 </style>
 </head>
 
 <body>
+
+<div class="topnav" id="myTopnav">
+<img class="thumbnail" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png">
+  <a href="https://Tiger85147.github.io">Home</a>
+ <div class="dropdown">
+        <button class="dropbtn">About Us 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://Tiger85147.github.io/Overview.html">Overview</a>
+          <a href="https://Tiger85147.github.io/Mission%20and%20Values.html">Mission and Values</a>
+          <a href="https://Tiger85147.github.io/Leadership.html">Leadership</a>
+          <a href="https://Tiger85147.github.io/Join%20Us.html">Join Us</a>
+        </div>
+  </div>
+  
+  <a href="https://Tiger85147.github.io/Our%20Admissions.html">Our Admissions</a>
+
+  <a href="https://Tiger85147.github.io/Our%20Services.html">Our Services</a>
+
+  <a href="https://Tiger85147.github.io/Testimonials.html">Testimonials</a>
+
+  <a href="https://Tiger85147.github.io/Contact%20Us.html">Contact Us</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 <div id="nav-placeholder"></div>
 
@@ -279,7 +346,7 @@ Contact
   <input name="email" type="text" class="form-control" placeholder="Email" required>
   <br>
 
-  <textarea name="Comments" class="form-control area" placeholder="Comments or Questions" rows="4"></textarea><br>
+  <textarea name="Comments" class="form-control area" placeholder="Comments or Questions" rows="3"></textarea><br>
 
   <input name="permission" type="checkbox" class="check" required> &nbsp <font class="text"> I would like Ara to contact me based on the information provided above.</font>
   <br>
