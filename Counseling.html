@@ -26,44 +26,6 @@ html{
 }
 
 
-#button {
-  display: inline-block;
-  background-color: #ed5f2f;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  border: 2px solid black;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -106,6 +68,10 @@ html{
   transition: background-color 0.5s;
 }
 
+.first{
+  margin-left: 0;
+}
+
 .block:hover{
   background-color: #ba3f16;
   padding: 20px;
@@ -124,12 +90,19 @@ html{
   font-family: 'Hind Guntur', sans-serif;
   color: white;
   font-size: 25px;
+  display: inline;
 }
 
 .contentheadingtext{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.line{
+    white-space: nowrap;
 }
 
 .blockcontent{
@@ -159,6 +132,7 @@ html{
 .contentheading{
   padding-right: 50px;
   text-align: center;
+  flex: 1;
 }
 
 .right-title{
@@ -171,6 +145,8 @@ html{
   font-size: 20px;
   text-align: left;
   color: black;
+  flex: 5;
+
 }
 
 
@@ -208,7 +184,6 @@ html{
 }
 
 .block {
-    float:right;
     animation-duration: 0.5s;
     animation-name: slidein;
 }
@@ -281,6 +256,7 @@ html{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   text-align: center;
+  font-weight: 600;
 }
 
 .right-title{
@@ -322,27 +298,18 @@ Counseling and Mentoring
 </div>
 <div class="table">
  <a href="#counsel" style="text-decoration: none;">
- <div class="block" style="margin-left: 0;" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font class="blockheading">Counsel</font></span><br><br>
-   <font class="blockcontent" id="text">
-   Each student is unique and has unique personality, interests and strengths. Top global Universities make Admission decisions after knowing the ‘real’ student...
-   </font>
+ <div class="block" id="container">
+   <span class="blockheadingbox first"><img class="icon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font class="blockheading">Counsel</font></span>
  </div>
  </a>
   <a href="#plan" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png">&nbsp <font class="blockheading">Plan and Manage Deadlines</font></span><br><br>
-   <font class="blockcontent" id="text">
-   Admissions process for top Global Universities is complex, arduous and time consuming. There are several activities involved, many running in parallel...
-   </font>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png">&nbsp <font class="blockheading">Plan and Manage Deadlines</font></span>
  </div>
 </a>
   <a href="#mentor" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/presentation.png"> &nbsp <font class="blockheading">Mentor and Coach </font></span><br><br>
-   <font class="blockcontent" id="text">
-   Having known a student better, understanding his/her interests, personality and passions along with strengths; we help them to start working on specific...
-   </font>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/presentation.png"> &nbsp <font class="blockheading">Mentor and Coach </font></span>
  </div>
  </a>
 
@@ -370,14 +337,15 @@ Knowing our students better helps us to Mentor and Coach them to build a relevan
 <a name="plan">
 
 <div class="service" style="background-color: #ed5f2f;">
-<div class="content right-content">
+     <div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext line" color=#ffffff>Plan and Manage </font> <font class="contentheadingtext" color=#ffffff>Deadlines</font></div>
+<div class="content">
 Admissions process for top Global Universities is complex, arduous and time consuming. There are several activities involved, many running in parallel. This is a process that requires zero-error effort and focus.<br><br>
 
 Hence, each activity such as Counseling, Mentoring, Reviews, Identifying relevant courses and Universities/Colleges, sticking to their respective deadlines for relevant activities, submission of relevant information and details on time, ensuring to take relevant Standardized tests well in advance and multiple such “to do”s – require extensive planning and intense focus.<br><br>
 
 We manage this end-to-end roadmap and plan specific activities for you.
 </div>
-   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Plan and Manage Deadlines</font></div><br><br>
+
 </div>
 </a>
 

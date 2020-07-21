@@ -20,19 +20,6 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
 <style>
-@media screen and (max-width: 1920px) and (min-width: 800px){
-
-.title{
-  font-family:'Bitter', serif;
-  font-size: 70px;
-  text-align: left;
-  color: #ffffff;
-  display:inline-block;
-  border-bottom: 15px solid #ed5f2f;
-  padding-bottom: 2px;
-  indent-text: 40mm;
-  padding-right: 150px;
-}
 
 .head{
   text-align: center;
@@ -45,6 +32,20 @@
 
 .sub2{
   font-style: italic;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  indent-text: 40mm;
+  padding-right: 150px;
 }
 
 .content{
@@ -239,6 +240,26 @@ By viewing and/or interacting with our Online Platforms, you consent, and we res
   
 </div>
 
+
+<a id="button"></a>
+
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
 
 <!-- FOOTER START -->
 <div id="nav-footer"></div>

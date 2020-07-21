@@ -25,46 +25,39 @@ html{
   scroll-behavior: smooth;
 }
 
-
-#button {
-  display: inline-block;
-  background-color: #ed5f2f;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  border: 2px solid black;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
+.essaypoints{
+  font-weight: 600;
+  color: #ed5f2f
 }
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+#flag {
+    width: 170px;
+    height: 56px;
+     font-family: 'Hind Guntur', sans-serif;
+    box-sizing: content-box;
+    margin-top: 5px;
+    margin-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    background: #ed5f2f;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s;   
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#flag:hover{
+    font-size: 17px;
+    background-color: #ba3f16;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -135,6 +128,9 @@ html{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+
 }
 
 .blockcontent{
@@ -164,11 +160,7 @@ html{
 .contentheading{
   padding-right: 50px;
   text-align: center;
-}
-
-.right-title{
-  padding-right: 0;
-  margin-left: 40px;
+  flex: 1;
 }
 
 .content {
@@ -176,6 +168,12 @@ html{
   font-size: 20px;
   text-align: left;
   color: black;
+  flex: 5;
+}
+
+ .line{
+  width: 100%;
+  border-bottom: 5px double #ed5f2f;
 }
 
 
@@ -189,6 +187,33 @@ html{
 
 
 @media screen and (max-width: 800px){
+
+#flag {
+    width: 170px;
+    height: 56px;
+    font-family: 'Hind Guntur', sans-serif;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+    margin-left: -2px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    background: #ed5f2f;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s;   
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#flag:hover{
+    font-size: 17px;
+    background-color: #ba3f16;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -214,7 +239,6 @@ html{
 }
 
 .block {
-    float:right;
     animation-duration: 0.5s;
     animation-name: slidein;
 }
@@ -287,6 +311,8 @@ html{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   text-align: center;
+    font-weight: 600;
+
 }
 
 .right-title{
@@ -329,26 +355,18 @@ Applications
 <div class="table">
  <a href="#counsel" style="text-decoration: none;">
  <div class="block first" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/fill.png"> &nbsp <font class="blockheading">Fill Applications</font></span><br><br>
-   <font class="blockcontent" id="text">
-   We provide end-to-end support for filling online applications of all selected Universities.  This includes presenting the student in a holistic way...
-   </font>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/fill.png"> &nbsp <font class="blockheading">Fill Applications</font></span>
+
  </div>
  </a>
   <a href="#plan" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/interview.png">&nbsp <font class="blockheading">Prepare for Interviews</font></span><br><br>
-   <font class="blockcontent" id="text">
-   Many universities want to meet/speak with students before admitting them.  This is one more way in which they seek to know students better...
-   </font>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/interview.png">&nbsp <font class="blockheading">Prepare for Interviews</font></span>
  </div>
 </a>
   <a href="#mentor" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png"> &nbsp <font class="blockheading">Review Essays </font></span><br><br>
-   <font class="blockcontent" id="text">
-   Each top global University wants to know a student better and his/her life’s journey along with learnings therefrom; before admitting him/her...
-   </font>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png"> &nbsp <font class="blockheading">Review Essays </font></span>
  </div>
  </a>
 
@@ -362,7 +380,7 @@ Applications
 
 <div class="service" style="background-color: #ffffff;">
 
-<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/fill.png" style="padding-bottom: 10px; padding-left: 7px;"> <br> <font class="contentheadingtext" style="color: #ed5f2f">Fill Applications</font></div>
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/fill.png" style="padding-bottom: 15px; padding-left: 7px;"> <br> <font class="contentheadingtext" style="color: #ed5f2f">Fill Applications</font></div>
 <div class="content">
 We provide end-to-end support for filling online applications of all selected Universities.  This includes presenting the student in a holistic way, prioritizing presentation of specific attributes, personality traits and achievements of the student; articulating such achievements along with extra curricular activities effectively; and coaching support to write essays.
 </div>
@@ -372,12 +390,13 @@ We provide end-to-end support for filling online applications of all selected Un
 <a name="plan">
 
 <div class="service" style="background-color: #ed5f2f;">
-<div class="content right-content">
+     <div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/interview.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Prepare for Interviews</font></div>
+<div class="content">
 Many universities want to meet/speak with students before admitting them.  This is one more way in which they seek to know students better.<br><br>
 
 We help our students to prepare for such interviews through multiple mentoring sessions and mock interviews.  
 </div>
-   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/interview.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Prepare for Interviews</font></div><br><br>
+
 </div>
 </a>
 
@@ -386,13 +405,35 @@ We help our students to prepare for such interviews through multiple mentoring s
 
 <div class="service" style="background-color: #ffffff;">
 
-<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/essay.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Review Essays</font></div>
+<div class="contentheading">
+  <img class="icon" src="https://Tiger85147.github.io/Misc/essay.png" style="padding-bottom: 15px;">
+  <br>
+  <font class="contentheadingtext" style="color: #ed5f2f">Review Essays</font>
+  <a href="https://Tiger85147.github.io/Review Service.html" style="text-decoration: none;">
+  <div id="flag">
+  Contact Ara for Essay Review Service
+  </div>
+  </a>
+</div>
+
 <div class="content">
 Each top global University wants to know a student better and his/her life’s journey along with learnings therefrom; before admitting him/her.<br><br>
 
-The essays that these universities want students to write as part of their application have proven to be an effective method to know what motivates a student and/or what has inspired a student and/or what has made the student what he/she is.  That is, such essays are a window for the universities to peep into a student’s life, personality and character.  Its their way to hear a student’s story – to know the student as well as possible. These essays very often become the final decision point for most universities to accept or reject an application.<br><br>
+The essays that these universities want students to write as part of their application have proven to be an effective method to know what motivates a student and/or what has inspired a student and/or what has made the student that he/she is.  That is, such essays are a window for the universities to peep into a student’s life, personality and character.  Its their way to hear a student’s story – to know the student as well as possible. These essays very often become the final decision point for most universities to accept or reject an application.<br><br>
 
-We help our students to brain storm and ideate on what they can present in their essays.  Our focus is to enable our students to articulate their thoughts; that is, tell their story better and more effectively.  
+
+We help our students to brain storm and ideate on what they can present in their essays.  Our focus is to enable our students to articulate their thoughts; that is, tell their story better and more effectively. <br><br>
+
+<div class="line"></div><br>
+
+It is always better to get an "outsider's" perspective to your application and/or essays.  We help you do that with our exclusive <b>Application Review Service</b> and <b>Essay Review Service</b>.<br><br>
+
+<font class="essaypoints">Feedback:</font> You may submit your draft essays and we will provide feedback on how you can improve your articulation and/or further develop your thoughts and ideas.<br><br>
+
+<font class="essaypoints">Distinctiveness:</font> Ara's experts use their experience to identify what is unique about you vis-a-vis other qualified Students.  We will provide guidance so that you can articulate your story in your own distinctive way.<br><br>
+
+<font class="essaypoints">Language:</font> In seconds, University Admissions Officers accept or reject an application based on how the Essay is articulated.  Ara's experts help you by providing per/in-line feedback to improve the overall presentation of your essay.  
+
 </div>
 </div>
 </a>

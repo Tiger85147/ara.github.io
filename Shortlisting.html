@@ -25,44 +25,6 @@ html{
   scroll-behavior: smooth;
 }
 
-#button {
-  display: inline-block;
-  background-color: #ed5f2f;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  border: 2px solid black;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -90,8 +52,9 @@ html{
 .row2{
   display: flex;
   flex-direction: row;
-  margin-left: 185px;
 }
+
+
 
 .block {
     float:right;
@@ -129,6 +92,10 @@ html{
   margin-left: 0px;
 }
 
+.zero{
+  margin-top: 0;
+}
+
 
 #container:hover > #text {
   color: white;
@@ -142,10 +109,16 @@ html{
   font-size: 25px;
 }
 
+.small{
+  font-size: 23px;
+}
+
 .contentheadingtext{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   text-align: center;
+  line-height: 25px;
+  font-weight: 600;
 }
 
 .blockcontent{
@@ -175,6 +148,7 @@ html{
 .contentheading{
   padding-right: 50px;
   text-align: center;
+  flex: 1;
 }
 
 .right-title{
@@ -187,6 +161,7 @@ html{
   font-size: 20px;
   text-align: left;
   color: black;
+  flex: 5;
 }
 
 
@@ -225,7 +200,6 @@ html{
 }
 
 .block {
-    float:right;
     animation-duration: 0.5s;
     animation-name: slidein;
 }
@@ -251,7 +225,6 @@ html{
 .block:hover{
   background-color: #ba3f16;
   padding: 20px;
-  margin: 5px;
   border-radius: 10px;
   color: #ffffff;
 }
@@ -260,11 +233,20 @@ html{
   color: white;
 }
 
+.blockheadingbox{
+  display: flex;
+}
+
+.one{
+  flex: 1;
+}
 
 .blockheading{
   font-family: 'Hind Guntur', sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  flex: 9;
+  margin-left: 10px;
 }
 
 .blockcontent{
@@ -279,6 +261,10 @@ html{
   margin-top: 0;
 }
 
+.rowfirst{
+  margin-top: 0px;
+}
+
 .service{
   display: flex;
   flex-direction: column;
@@ -291,13 +277,13 @@ html{
 
 .contentheading{
   text-align: center;
-  border-bottom: 
 }
 
 .contentheadingtext{
   font-family: 'Hind Guntur', sans-serif;
   font-size: 25px;
   text-align: center;
+  font-weight: 600;
 }
 
 .service .right-title{
@@ -341,42 +327,34 @@ Shortlisting
 <div class="row">
  <a href="#counsel" style="text-decoration: none;">
  <div class="block first" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/test.png"> &nbsp <font class="blockheading">Standardised Tests</font></span><br><br>
-   <font class="blockcontent" id="text">
-Completing specific and relevant Standardized tests...   </font>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/test.png"> &nbsp <font class="blockheading">Standardised Tests</font></span>
+
  </div>
  </a>
   <a href="#plan" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/course.png">&nbsp <font class="blockheading">Major and/or Minor Courses</font></span><br><br>
-   <font class="blockcontent" id="text">
-Admissions process for top Global Universities is...   </font>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/course.png">&nbsp <font class="blockheading">Major and/or Minor Courses</font></span>
+
  </div>
 </a>
   <a href="#mentor" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/scholarship.png"> &nbsp <font class="blockheading" style="font-size: 23px;">Financial Aid and Scholarships</font></span><br><br>
-   <font class="blockcontent" id="text">
-  Some students may require Financial Aid or some...
-   </font>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/scholarship.png"> &nbsp <font class="blockheading small">Financial Aid and Scholarships</font></span>
+
  </div>
  </a>
 </div>
 
 <div class="row2">
   <a href="#unis" style="text-decoration: none;">
- <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png">&nbsp <font class="blockheading">Countries and Universities</font></span><br><br>
-   <font class="blockcontent" id="text">
-Admissions process for top Global Universities is...   </font>
+ <div class="block first rowfirst zero" id="container one">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png">&nbsp  <font class="blockheading">Countries and Universities</font></span>
+
  </div>
 </a>
   <a href="#visit" style="text-decoration: none;">
- <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/visit.png"> &nbsp <font class="blockheading" style="font-size: 23px;">Visit Campus</font></span><br><br>
-   <font class="blockcontent" id="text">
-  Some students may require Financial Aid or some...
-   </font>
+ <div class="block zero" id="container">
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/visit.png"> &nbsp <font class="blockheading">Visit Campus</font></span>
  </div>
  </a>
 </div>
@@ -402,12 +380,13 @@ We help our students to identify relevant Standardized tests and plan/manage sch
 <a id="anchor" name="plan">
 
 <div class="service" style="background-color: #ed5f2f;">
-<div class="content right-content">
+     <div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/course.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Major and Minor Courses</font></div>
+<div class="content">
 Admissions process for top Global Universities is complex, arduous and time consuming. There are several activities involved, many running in This is potentially the most important element when shortlisting a college/university – as it has a direct relation with the student’s profile and interests along with career aspirations.  This selection has potentially the highest impact on the future of a student.<br><br>
 
 We correlate interests and profile of a student with aspirations to help shortlist a combination of Major and/or Minor courses. This shortlist has direct impact on selection of College/Universities and we help to streamline and ease the process of such multiple shortlisting.  
 </div>
-   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/course.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Major and Minor Courses</font></div><br><br>
+
 </div>
 </a>
 
@@ -429,7 +408,8 @@ We help to plan and apply for such requirements.
 <a id="anchor" name="unis">
 
 <div class="service" style="background-color: #ed5f2f;">
-<div class="content right-content">
+     <div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Countries and Universities</font></div>
+<div class="content">
 Every family and student comes with a unique background and aspirations.  These include Academic interests, personal and professional aspirations, desired list of geographies/countries and/or budget.  Also, each student will have unique set of scores in Academics and Standardized tests.
 <br><br>
 
@@ -441,7 +421,7 @@ The next step is to identify specific Universities and Colleges based on all afo
 
 All our students have received multiple Admission offers from top global universities!  We have helped them to choose the right university based on their profile, background, personality and aspirations (plus, other unique and/or relevant requirements and/or constraints our students may have).
 </div>
-   <div class="contentheading right-title"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Countries and Universities</font></div><br><br>
+
 </div>
 </a>
 

@@ -24,6 +24,53 @@
 <script type="text/javascript" src="https://Tiger85147.github.io/Scripts/ticker.js"></script>
 <style type="text/css">
 
+#cookieConsent {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: 'Hind Guntur', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    font-family: 'Hind Guntur', sans-serif;
+    background-color: #ed5f2f;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    padding-top: 3px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #d5562a;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px) {
 
 .logobox{
@@ -32,11 +79,11 @@
 
 .banner{
   font-family: 'Hind Guntur', sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
-  line-height: 65px;
+  line-height: 35px;
   font-weight: 600;
-  height: 75px;
+  height: 50px;
   color: #ffffff;
   background-color: #ed5f2f;
   padding: 10px;
@@ -49,13 +96,18 @@
   vertical-align: middle;
 }
 
+.two{
+  border-bottom: none;
+  border-top: 3px solid white;
+}
+
 .box{
   padding: 0px 10px;
 }
 
 .country{
   padding-left: 100px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
   padding-right: 10px;
   /*border-left: 2px solid #ffffff;*/
@@ -111,7 +163,8 @@ font-size: 25px;
 
 .banner{
   font-family: 'Hind Guntur', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
   background-color: #ed5f2f;
@@ -120,13 +173,20 @@ font-size: 25px;
   border-bottom: 3px solid white;
 }
 
+
+.two{
+  border-bottom: none;
+  border-top: 3px solid white;
+}
+
+
 .box{
   padding: 0px 10px;
 }
 
 .country{
   padding-left: 80px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
   padding-right: 10px;
 }
@@ -194,12 +254,10 @@ font-size: 25px;
 
 <body onload="BrowserDetection()">
 
-<!--
-<div class="alert" id="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <font class="alerttext">This website is <strong>not compatible with the Safari browser.</strong> Use Google Chrome for best results.</font>
+<div id="cookieConsent">
+    <div id="closeCookieConsent">x</div>
+Welcome to Ara! In order to provide a more relevant experience for you, we use cookies to enable some website functionality. <a href="https://Tiger85147.github.io/Privacy Policy.html">Privacy Policy</a>. <a class="cookieConsentOK">I understand</a>
 </div>
--->
 
 <div id="nav-placeholder"></div>
 
@@ -208,6 +266,14 @@ $(function(){
   $("#nav-placeholder").load("nav.html");
 });
 
+$(document).ready(function(){   
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    }); 
+}); 
 </script>
 
 <br><br><br><br><br><br><br>
@@ -315,36 +381,55 @@ Giving an Edge to the Jewel of your Family
 <a href="https://araconsulting.co.in/Our%20Admissions.html">
 <div class="marquee" id="mycrawler2">
 
-
   <img class="country" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png" height=70px>
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo2.png" style="margin-top: 35px; margin-bottom: 25px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" style="height: 65px; margin-top: 30px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo2.png" style="height: 65px; margin-top: 34px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" style="height: 75px; margin-top: 25px; padding-left: 0px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/torontolsa.png" style="height: 52px; margin-top: 35px; padding-left: 0px; padding-right: 30px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/waterloo.png" style="height: 65px; margin-top: 30px; padding-left: 0px;">
 
-  <img class="country" src="https://Tiger85147.github.io/Country logos/US logo crop.png" height=60px style="margin-top: 20px; margin-bottom: 20px;">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png">
+
+  <img class="country" src="https://Tiger85147.github.io/Country logos/US logo crop.png" height=60px>
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png" style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png" style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png" style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png" style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png" height=60vw style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png" height=60vw style="margin-top: 45px;">
+  <img class="item whiting" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png" style="margin-top: 20px; margin-bottom: 10px;  height: 80px">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/graingercrop.png" height=60vw style="margin-top: 45px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/umassengineering.png" height=60vw style="margin-top: 45px;">
 
   <img class="country" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png" height=70px>
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="height: 60px; margin-top: 20px; margin-bottom: 20px;">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" style="height: 60px; margin-top: 23px; margin-bottom: 17px;">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="height: 80px; margin-top: 20px; margin-bottom: 20px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg" style="height: 70px; margin-top: 24px; margin-bottom: 20px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" style="height: 80px; margin-top: 23px; margin-bottom: 17px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png" style="height: 60px; margin-top: 35px; margin-bottom: 17px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/edinburgh.png" style="height: 60px; margin-top: 30px; margin-bottom: 17px; padding-left: 0px;">
 
   <img class="country" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png" height=70px>
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png" style="height: 50px; margin-top: 40px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png" style="height: 65px; margin-top: 35px">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png" style="height: 60px; margin-top: 30px; margin-bottom: 35px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png" style="height: 48px; margin-top: 43px">
+  <img class="item" src="https://araconsulting.co.in/Uni%20logos/school/hkubba.png" style="height: 52px; margin-top: 43px;">
 
   <img class="country" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png" height=70px>
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/christ%20crop.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/krea.png">
-  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/jindal%20long.png">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png" style="height: 70px; margin-top: 25px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/christ%20crop.png" style="height: 60px; margin-top: 30px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/krea.png" style="height: 70px; margin-top: 25px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/symbiosis.png" style="height: 65px; margin-top: 30px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/jindal%20long.png" style="height: 65px; margin-top: 30px;">
+  <img class="item" src="https://Tiger85147.github.io/Uni%20logos/symbiosisla.png" style="height: 65px; margin-top: 30px;">
+
+
 
 </div>
 </a>
+
+<div class="banner two">
+India's fastest growing College Admissions Counseling company </div>
 
 <script type="text/javascript">
 marqueeInit({
