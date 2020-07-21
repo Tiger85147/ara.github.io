@@ -28,6 +28,9 @@
 
 <style>
 
+.ca a{
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
@@ -126,6 +129,11 @@
   padding-bottom: 20px;
 }
 
+.ca{
+  border-bottom: 3px solid rgba(255,255,255, 0.5);
+  padding-bottom: 10px;
+}
+
 .hk .item{
   padding-left: 20px;
 }
@@ -172,7 +180,6 @@
 .sec{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -182,6 +189,12 @@
 .hk{
   display: flex;
   flex-direction: column;
+}
+
+.ca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ussec{
@@ -224,21 +237,7 @@
 }
 
 .india{
-  padding-left: 5vw
-}
-
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-body > * {
-  flex-shrink: 0;
-}
-
-.footer {
-  flex-grow: 1;
+  padding-left: 5vw;
 }
 
 }
@@ -370,7 +369,7 @@ Average number of admissions per student - 2:1
 
 </div>
 
-<div class="sec hk" style="background-color:#ed5f2f; padding-top: 2vw">
+<div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
 
     <a href="https://www.ed.ac.uk/" style="text-decoration:none;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" height=100vw>
@@ -416,6 +415,7 @@ Average number of admissions per student - 2:1
 
 </div>
 <div class="sec" style="background-color:#ed5f2f; padding-top: 2vw">
+    <div class="ca">
 
     <a href="https://www.utoronto.ca/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" height=80vw>
@@ -426,8 +426,14 @@ Average number of admissions per student - 2:1
     </a>
 
     <a href="https://www.engineering.utoronto.ca/" style="text-decoration:none;">
-      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" height=80vw>
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" height=85vw>
     </a>
+
+    <a href="https://www.artsci.utoronto.ca/" style="text-decoration:none;">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/torontolsa.png" height=60vw style="margin-bottom: 10px;">
+    </a>
+
+    </div>
 
     <a href="https://uwaterloo.ca/engineering/" style="text-decoration:none;">
       <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/waterloo.png" height=80vw>
