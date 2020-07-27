@@ -181,14 +181,6 @@ body {
   width: 1.7vw;
 }
 
-.footer {
-  position: relative;
-  height: auto;
-  background-image: url("https://Tiger85147.github.io/Misc/header.png");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .footer .fa{
   font-size: 1.5vw;
   margin: 5px;
@@ -427,13 +419,6 @@ background: #ed5f2f;
 
 .thumbnail{
   display: none;
-}
-
-.footer {
-  position: relative;
-  height: auto;
-  background-image: url("https://Tiger85147.github.io/Misc/headervertical.png");
-  background-attachment: fixed;
 }
 
 .footer .fa{
