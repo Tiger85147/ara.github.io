@@ -432,8 +432,7 @@ background: #ed5f2f;
 .footer {
   position: relative;
   height: auto;
-  background-image: url("https://Tiger85147.github.io/Misc/header.png");
-  background-size: cover;
+  background-image: url("https://Tiger85147.github.io/Misc/headervertical.png");
   background-attachment: fixed;
 }
 

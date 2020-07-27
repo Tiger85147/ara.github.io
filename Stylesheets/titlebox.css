@@ -1,20 +1,21 @@
 
 .titlebox{
-  background-image: url("https://Tiger85147.github.io/Misc/header.png");
-  background-size: cover;
-  background-position: 50% 50%;
   background-attachment: fixed;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
 .titlebox{
+  background-image: url("https://Tiger85147.github.io/Misc/header.png");
   padding-left: 10%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 }
 
 @media screen and (max-width: 800px){
 
 .titlebox{
+  background-image: url("https://Tiger85147.github.io/Misc/headervertical.png");
   padding-left: 5%;
 }
 }
