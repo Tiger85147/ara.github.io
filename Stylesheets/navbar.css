@@ -8,12 +8,6 @@
   background: #000000;
 }
 
-body {
-  background-image: url("https://Tiger85147.github.io/Misc/header.png");
-  background-size: cover;
-  height: auto;
-}
-
 #button {
   display: inline-block;
   background-color: #ed5f2f;
