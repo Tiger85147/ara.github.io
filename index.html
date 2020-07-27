@@ -24,23 +24,24 @@
 <script type="text/javascript" src="https://Tiger85147.github.io/Scripts/ticker.js"></script>
 <style type="text/css">
 
+.footer{
+  background-attachment: scroll;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px) {
+
 body{
   background-image: url("https://Tiger85147.github.io/Misc/ara constellation.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.footer{
-  background-attachment: scroll;
-}
-
-#cookieConsent {
+ #cookieConsent {
     background-color: rgba(20,20,20,0.8);
-    min-height: 26px;
     font-size: 14px;
     color: #ccc;
-    line-height: 26px;
-    padding: 8px 0 8px 30px;
+    line-height: 20px;
+    padding: 10px 0 5px 30px;
     font-family: 'Hind Guntur', sans-serif;
     position: fixed;
     bottom: 0;
@@ -49,25 +50,29 @@ body{
     display: none;
     z-index: 9999;
 }
+
 #cookieConsent a {
     color: #4B8EE7;
     text-decoration: none;
 }
+
 #closeCookieConsent {
     float: right;
     display: inline-block;
     cursor: pointer;
     height: 20px;
     width: 20px;
-    margin: 5px 0 0 0;
+    margin: 0px 0 0 0;
     font-weight: bold;
 }
+
 #closeCookieConsent:hover {
     color: #FFF;
 }
+
 #cookieConsent a.cookieConsentOK {
     font-family: 'Hind Guntur', sans-serif;
-    background-color: #ed5f2f;
+    background-color: #ba3f16;
     color: #000;
     display: inline-block;
     border-radius: 5px;
@@ -75,13 +80,12 @@ body{
     padding-top: 3px;
     cursor: pointer;
     float: right;
-    margin: 0 60px 0 10px;
-}
-#cookieConsent a.cookieConsentOK:hover {
-    background-color: #d5562a;
+    margin: -2px 40px 0 10px;
 }
 
-@media screen and (max-width: 1920px) and (min-width: 800px) {
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #ed5f2f;
+}
 
 .logobox{
   text-align: center;
@@ -169,6 +173,68 @@ font-size: 25px;
 }
 
 @media screen and (max-width: 800px) {
+
+
+
+.main{
+  background-image: url("https://Tiger85147.github.io/Misc/ara constellation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: 20% 20%;
+}
+
+
+ #cookieConsent {
+    background-color: rgba(20,20,20,0.8);
+    font-size: 14px;
+    color: #ccc;
+    line-height: 20px;
+    padding: 10px 0 5px 30px;
+    font-family: 'Hind Guntur', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0px 0 0 0;
+    font-weight: bold;
+}
+
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+
+#cookieConsent a.cookieConsentOK {
+    font-family: 'Hind Guntur', sans-serif;
+    background-color: #ba3f16;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    padding-top: 3px;
+    cursor: pointer;
+    float: right;
+    margin: -2px 30px 0 5px;
+}
+
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #ed5f2f;
+}
 
 .logo{
   width: 75vw;
@@ -295,13 +361,14 @@ $(function(){
 $(document).ready(function(){   
     setTimeout(function () {
         $("#cookieConsent").fadeIn(200);
-     }, 4000);
+     }, 0);
     $("#closeCookieConsent, .cookieConsentOK").click(function() {
         $("#cookieConsent").fadeOut(200);
     }); 
 }); 
 </script>
 
+<div class="main">
 <br><br><br><br><br><br><br>
 
 <div class="logobox" width=auto>
@@ -312,6 +379,7 @@ $(document).ready(function(){
 
 <div class="info">
   Astronomical photograph of southern constellation Ara
+</div>
 </div>
 
 <div class="banner">
@@ -397,6 +465,7 @@ $(function(){
   $("#nav-footer").load("footer.html");
 });
 </script>
+
 
 
 </body>
