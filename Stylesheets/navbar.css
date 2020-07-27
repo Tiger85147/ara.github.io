@@ -8,6 +8,20 @@
   background: #000000;
 }
 
+body {
+  background-image: url("https://Tiger85147.github.io/Misc/header.png");
+  background-size: cover;
+  height: auto;
+}
+
+.footer {
+  position: relative;
+  height: auto;
+  background-image: url("https://Tiger85147.github.io/Misc/header.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #button {
   display: inline-block;
   background-color: #ed5f2f;
@@ -45,7 +59,13 @@
   visibility: visible;
 }
 
-
+.footer {
+  position: relative;
+  height: auto;
+  background-image: url("C:/Users/dehad/Desktop/Ara website/Background/gem3.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -77,12 +97,6 @@
 
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
-
-body {
-  background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
-  background-size: cover;
-  height: auto;
-  }
 
 .topnav {
   overflow: hidden;
@@ -237,15 +251,6 @@ background: #ed5f2f;
  }
 */
 
-.footer {
-  width: 100%;
-  position: relative;
-  height: auto;
-  /*background-image: linear-gradient(to bottom right, #070617, #191654);*/
-  background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
-  background-size: cover;
-}
-
 .footer .footer-bottom{
   font-family: 'Hind Guntur', sans-serif;
   line-height: 30px;
@@ -335,12 +340,6 @@ background: #ed5f2f;
 
 
 @media screen and (max-width: 800px){
-
-body {
-  background-image:url('https://Tiger85147.github.io/Misc/diamonds.jpg');
-  background-size: cover;
-  height: auto;
-  }
 
 .topnav {
   overflow: hidden;
@@ -438,15 +437,6 @@ body {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
-}
-
-.footer {
-  width: 100%;
-  position: relative;
-  height: auto;
-  /*background-image: linear-gradient(to bottom right, #070617, #191654);*/
-  background-image:url('https://Tiger85147.github.io/Misc/diamonds%20crop.jpg');
-  background-size: cover;
 }
 
 .footer .footer-bottom{
