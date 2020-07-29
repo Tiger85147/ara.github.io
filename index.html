@@ -30,6 +30,33 @@
 
 @media screen and (max-width: 1920px) and (min-width: 800px) {
 
+
+.topnav {
+  background-color: transparent;
+}
+
+.topnav a {
+  color: #ffffff;
+}
+
+.dropdown .dropbtn {
+  color: #ffffff;
+}
+
+.dropdown-content a {
+  color: black;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+  color: #ed5f2f;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 body{
   background-image: url("https://Tiger85147.github.io/Misc/ara constellation.jpg");
   background-size: cover;
@@ -96,8 +123,9 @@ body{
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
-  padding-left: 5px;
-  padding-top: 5px;
+  text-align: right;
+  padding-right: 10px;
+
 }
 
 .banner{
@@ -361,6 +389,17 @@ font-size: 25px;
 Welcome to Ara! In order to provide a more relevant experience for you, we use cookies to enable some website functionality. <a href="https://Tiger85147.github.io/Privacy Policy.html">Privacy Policy</a>. <a class="cookieConsentOK">I understand</a>
 </div>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 <div id="nav-placeholder"></div>
 
 <script>
@@ -379,9 +418,7 @@ $(document).ready(function(){
 </script>
 
 <div class="main">
-<div class="info">
-  Astronomical photograph of southern constellation Ara
-</div>
+
 <br><br><br><br><br><br><br>
 
 <div class="logobox" width=auto>
@@ -390,6 +427,9 @@ $(document).ready(function(){
 
 <br><br><br><br><br>
 
+<div class="info">
+  Astronomical photograph of southern constellation Ara
+</div>
 
 </div>
 
