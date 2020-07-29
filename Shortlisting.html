@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/ara.css">
+
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ed5f2f">
   <!-- Windows Phone -->
@@ -26,6 +28,20 @@ html{
 }
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+.hat:before {
+  content: "\e900";
+  font-size: 60px;
+  color: transparent; 
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  transition: 0.5s;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -54,8 +70,6 @@ html{
   flex-direction: row;
 }
 
-
-
 .block {
     float:right;
     animation-duration: 0.5s;
@@ -72,6 +86,7 @@ html{
 }
 
 .block{
+  position: relative;
   background-color: #ed5f2f;
   padding: 20px;
   margin: 15px;
@@ -176,6 +191,20 @@ html{
 
 @media screen and (max-width: 800px){
 
+.hat:before {
+  content: "\e900";
+  font-size: 45px;
+  color: transparent; 
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  transition: 0.5s;
+}
+
 .title{
   font-family:'Bitter', serif;
   font-size: 48px;
@@ -213,19 +242,16 @@ html{
 }
 
 .block{
+  position: relative;
   background-color: #ed5f2f;
-  padding: 20px;
+  padding: 15px 20px;
   margin: 5px;
   border-radius: 10px;
-  transition: color 0.5s;
-  transition: background-color 0.5s;
+  transition: 0.5s;
 }
 
 .block:hover{
   background-color: #ba3f16;
-  padding: 20px;
-  border-radius: 10px;
-  color: #ffffff;
 }
 
 #container:hover > #text {
@@ -326,19 +352,19 @@ Shortlisting
 <div class="row">
  <a href="#counsel" style="text-decoration: none;">
  <div class="block first" id="container">
-   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/test.png"> &nbsp <font class="blockheading">Standardised Tests</font></span>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/test.png"> &nbsp <font class="blockheading">Standardised Tests</font></span><i class="hat" id="hat"></i>
 
  </div>
  </a>
   <a href="#plan" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/course.png">&nbsp <font class="blockheading">Major and/or Minor Courses</font></span>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/course.png">&nbsp <font class="blockheading">Major and/or Minor Courses</font></span><i class="hat" id="hat"></i>
 
  </div>
 </a>
   <a href="#mentor" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/scholarship.png"> &nbsp <font class="blockheading small">Financial Aid and Scholarships</font></span>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/scholarship.png"> &nbsp <font class="blockheading small">Financial Aid and Scholarships</font></span><i class="hat" id="hat"></i>
 
  </div>
  </a>
@@ -346,14 +372,14 @@ Shortlisting
 
 <div class="row2">
   <a href="#unis" style="text-decoration: none;">
- <div class="block first rowfirst zero" id="container one">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png">&nbsp  <font class="blockheading">Countries and Universities</font></span>
+ <div class="block first rowfirst zero" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png">&nbsp  <font class="blockheading">Countries and Universities</font></span><i class="hat" id="hat"></i>
 
  </div>
 </a>
   <a href="#visit" style="text-decoration: none;">
  <div class="block zero" id="container">
-   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/visit.png"> &nbsp <font class="blockheading">Visit Campus</font></span>
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/visit.png"> &nbsp <font class="blockheading">Visit Campus</font></span><i class="hat" id="hat"></i>
  </div>
  </a>
 </div>

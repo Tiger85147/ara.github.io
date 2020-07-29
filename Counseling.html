@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/ara.css">
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ed5f2f">
   <!-- Windows Phone -->
@@ -27,6 +28,20 @@ html{
 
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+.hat:before {
+  content: "\e900";
+  font-size: 60px;
+  color: transparent; 
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  transition: 0.5s;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -60,6 +75,7 @@ html{
 }
 
 .block{
+  position: relative;
   background-color: #ed5f2f;
   padding: 20px;
   margin: 15px;
@@ -79,12 +95,6 @@ html{
   border-radius: 10px;
   color: #ffffff;
 }
-
-#container:hover > #text {
-  color: white;
-  transition: color 0.5s;
-}
-
 
 .blockheading{
   font-family: 'Hind Guntur', sans-serif;
@@ -161,6 +171,21 @@ html{
 
 @media screen and (max-width: 800px){
 
+.hat:before {
+  content: "\e900";
+  font-size: 45px;
+  color: transparent; 
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  transition: 0.5s;
+}
+
+
 .title{
   font-family:'Bitter', serif;
   font-size: 35px;
@@ -198,8 +223,9 @@ html{
 }
 
 .block{
+  position: relative;
   background-color: #ed5f2f;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 5px;
   border-radius: 10px;
   transition: color 0.5s;
@@ -208,10 +234,6 @@ html{
 
 .block:hover{
   background-color: #ba3f16;
-  padding: 20px;
-  margin: 5px;
-  border-radius: 10px;
-  color: #ffffff;
 }
 
 #container:hover > #text {
@@ -299,17 +321,17 @@ Counseling and Mentoring
 <div class="table">
  <a href="#counsel" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox first"><img class="icon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font class="blockheading">Counsel</font></span>
+   <span class="blockheadingbox first"><img class="icon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font class="blockheading">Counsel</font></span><i class="hat" id="hat"></i>
  </div>
  </a>
   <a href="#plan" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png">&nbsp <font class="blockheading">Plan and Manage Deadlines</font></span>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png">&nbsp <font class="blockheading">Plan and Manage Deadlines</font></span><i class="hat" id="hat"></i>
  </div>
 </a>
   <a href="#mentor" style="text-decoration: none;">
  <div class="block" id="container">
-   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/presentation.png"> &nbsp <font class="blockheading">Mentor and Coach </font></span>
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/presentation.png"> &nbsp <font class="blockheading">Mentor and Coach </font></span><i class="hat" id="hat"></i>
  </div>
  </a>
 
