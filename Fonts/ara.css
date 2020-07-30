@@ -12,7 +12,7 @@
 
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'ara' !important;
+  font-family: 'ara';
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -28,3 +28,4 @@ i {
 .hatimage2vector-1:before {
   content: "\e900";
 }
+
