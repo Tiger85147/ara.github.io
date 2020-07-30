@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ara';
-  src:  url('fonts/ara.eot?qbns8');
-  src:  url('fonts/ara.eot?qbns8#iefix') format('embedded-opentype'),
-    url('fonts/ara.ttf?qbns8') format('truetype'),
-    url('fonts/ara.woff?qbns8') format('woff'),
-    url('fonts/ara.svg?qbns8#ara') format('svg');
+  src:  url('https://araconsulting.co.in/Fonts/fonts/ara.eot?qbns8');
+  src:  url('https://araconsulting.co.in/Fonts/fonts/ara.eot?qbns8#iefix') format('embedded-opentype'),
+    url('https://araconsulting.co.in/Fonts/fonts/ara.ttf?qbns8') format('truetype'),
+    url('https://araconsulting.co.in/Fonts/fonts/ara.woff?qbns8') format('woff'),
+    url('https://araconsulting.co.in/Fonts/fonts/ara.svg?qbns8#ara') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
