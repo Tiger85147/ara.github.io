@@ -170,8 +170,6 @@
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
-  border-bottom: 2px solid #ed5f2f;
-  margin-bottom: -2px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -427,8 +425,6 @@ background: #ed5f2f;
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
-  border-bottom: 2px solid #ed5f2f;
-  margin-bottom: -2px;
 }
 
 .dropdown:hover .dropdown-content {
