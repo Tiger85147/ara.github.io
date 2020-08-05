@@ -85,9 +85,8 @@
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -113,6 +112,10 @@
   padding: 20px;
 }
 
+.ussec .uni{
+  display: table-cell;
+}
+
 .uni{
   padding: 0px 30px;
 }
@@ -127,6 +130,10 @@
 
 .india{
   padding-left: 2.5vw
+}
+
+.whiting{
+  height: 6vw;
 }
 
 .hk{
@@ -219,9 +226,12 @@
   flex-wrap: wrap;
 }
 
-.hk{
+.hk, .hk2, .uk{
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: center; 
+  flex-wrap: wrap;
 }
 
 .ca{
@@ -238,6 +248,12 @@
   height: auto;
   flex-wrap: wrap;
 }
+
+.ussec .uni{
+  padding: 5px;
+}
+
+
 
 .row{
   display: flex;
@@ -274,8 +290,16 @@
   height: 50px;
 }
 
+.whiting{
+  height: 85px;
+}
+
 .india{
   padding-left: 5vw;
+}
+
+.illinois{
+  margin-right: 65px;
 }
 
 }
@@ -327,7 +351,7 @@ Average number of admissions per student - 4:1
 
         <div class="row mobilerow2">
 
-        <div class="uni">
+        <div class="uni illinois">
         <a href="https://illinois.edu/" style="text-decoration:none;">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" height= 50vw>
         </a>
@@ -362,8 +386,8 @@ Average number of admissions per student - 4:1
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png" height= 50vw>
         </a>  
         </div>
-
         </div>
+
         <div class="row mobilerow" style="border-bottom: none;">
         <div class="uni">
         <a href="https://grainger.illinois.edu/" style="text-decoration:none;">
@@ -373,13 +397,13 @@ Average number of admissions per student - 4:1
 
         <div class="uni">
         <a href="https://engineering.jhu.edu/" style="text-decoration:none;">
-        <img class="item small whiting" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png" height=100vw>
+        <img class="item small whiting" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png">
         </a>
         </div>
 
         <div class="uni">
         <a href="https://www.college.upenn.edu/" style="text-decoration:none;">
-        <img class="item small whiting" src="https://Tiger85147.github.io/Uni%20logos/school/upennlsa.png" height=60vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/upennlsa.png" height=60vw>
         </a>
         </div>
 
@@ -486,7 +510,7 @@ Average number of admissions per student - 2:1
     </a>
     </div>
     
-    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; padding-top: 10px;">
+    <div class="hk2" style="padding-top: 10px;">
     <a href="https://www.engineering.utoronto.ca/" style="text-decoration:none;">
       <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" style="height: 85px;">
     </a>
@@ -526,7 +550,7 @@ Average number of admissions per student - 3:1
 </p>
 
 </div>
-<div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw">
+<div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw;">
 <div class="hongkong">        
   <div class="hk">
     <a href="https://www.ust.hk/" style="text-decoration:none; padding-left: 0px;">
@@ -542,7 +566,7 @@ Average number of admissions per student - 3:1
     </a>
   </div>
     
-    <div>
+    <div class="hk2">
     <a href="https://www.seng.ust.hk/" style="text-decoration:none;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png" height=65vw style="margin-top: -10px; margin-bottom: 20px;">
     </a>
@@ -584,7 +608,7 @@ Average number of admissions per student - 3:1
 </div>
 
 <div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw">
-<div class="hongkong">        
+<div class="hongkong" style="display: flex; align-items: center;flex-direction: column; justify-content: center;">        
   <div class="hk">
     <a href="https://www.ashoka.edu.in/" style="text-decoration:none;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png" height=90vw>
