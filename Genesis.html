@@ -7,11 +7,9 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/titlebox.css">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
     <!-- Chrome, Firefox OS and Opera -->
@@ -24,17 +22,30 @@
 
 <style>
 
-@media screen and (max-width: 1920px) and (min-width: 800px){
-
 .title{
   font-family:'Bitter', serif;
-  font-size: 70px;
   text-align: left;
   color: #ffffff;
   display: inline-block;
+}
+
+.content{
+  font-family: 'Hind Guntur', sans-serif;
+  text-align: left;
+  color:#000000; 
+  background-color:#ffffff;
+}
+
+.Counselor{
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  font-size: 70px;
   border-bottom: 15px solid #ed5f2f;
   padding-bottom: 2px;
-  indent-text: 40mm;
   padding-right: 150px;
 }
 
@@ -46,23 +57,14 @@
   padding-bottom: 1.5vw;
 }
 
-.Counselor{
-  font-weight: 600;
-}
-
 }
 
 @media screen and (max-width: 800px){
 
 .title{
-  font-family:'Bitter', serif;
   font-size: 48px;
-  text-align: left;
-  color: #ffffff;
-  display:inline-block;
   border-bottom: 1vw solid #ed5f2f;
   padding-bottom: 0.1vw;
-  indent-text: 40mm;
 }
 
 .content{
@@ -73,23 +75,23 @@
   padding-bottom: 3vw;
 }
 
-.Counselor{
-  font-weight: 600;
-}
-
 }
 </style>
 </head>
 
 <body>
-  
-<div id="nav-placeholder"></div>
 
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
+
+$(function(){
+  $("#nav-footer").load("footer.html");
+});
 </script>
+  
+<div id="nav-placeholder"></div>
 
 <div class="titlebox">
 <br><br><br>
@@ -99,7 +101,7 @@ Ara's Genesis</div>
 </div>
 
 
-<div class="content"; style="font-family: 'Hind Guntur', sans-serif; text-align: left; color:#000000; background-color:#ffffff;">
+<div class="content">
 
 About three years back, after our son scored well in SAT, we started our exploratory journey to seek support for him.  We knew that we didn’t have enough relevant knowledge to provide guidance to him.  <br><br>
 
@@ -129,12 +131,6 @@ And yes, your experience with Ara will be like ‘none of the above’!  Guarant
 </div>
 
 <div id="nav-footer"></div>
-
-<script>
-$(function(){
-  $("#nav-footer").load("footer.html");
-});
-</script>
 
 </body>
 </html>
