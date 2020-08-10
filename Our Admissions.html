@@ -28,8 +28,8 @@
 
 <style>
 
-.ca a{
-  text-decoration: none;
+.sec a{
+  text-decoration:none;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
@@ -47,12 +47,17 @@
 }
 
 .heading{
+  background-color:#ffffff;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
   align-items: center;
+}
+
+.dual{
+  padding-left: 1%;
 }
 
 .face1{
@@ -70,10 +75,12 @@
 }
 
 .sec{
+  background-color:#ed5f2f; 
+  padding-top: 2vw;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   flex-wrap: wrap;
   align-items: center;
@@ -81,103 +88,70 @@
   padding-bottom: 20px;
 }
 
-.ussec{
-  padding-left: 10%;
-  padding-right: 10%;
+.list{
   display: flex;
-  flex-direction: column;
-  height: auto;
   align-items: center;
-  justify-content: space-around;
-}
-
-.canada{
-  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
-.row{
-  display: flex;
-  flex-direction: row;
+.unis{
   border-bottom: 3px solid rgba(255,255,255, 0.5);
-  padding-bottom: 10px; 
-  margin-top: 10px; 
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
-.mobilerow2{
-  padding-bottom: 40px;
+.schools{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 15px
 }
 
-.mobilerow{
-  padding: 20px;
+.list .item{
+  padding: 0px 25px;
+  margin: 7px 0px;
 }
 
-.ussec .uni{
-  display: table-cell;
+.oceania .item{
+  padding: 0px 60px;
 }
 
-.uni{
-  padding: 0px 10px;
+.oceania .unitec{
+  margin-left: 30px;
+  padding-right: 150px;
 }
 
 .icon{
-  width: 160px;
+  height: 140px;
+  margin-right: 10px;
 }
 
 .icon2{
   width: 130px;
+  height: auto;
+  margin-right: 2.5vw;
 }
 
-.india{
-  padding-left: 2.5vw
+.two{
+  height: 100px;
+}
+
+.eulogo{
+  margin-right: 65px;
+}
+
+.auslogo{
+  margin-left: 85px;
 }
 
 .whiting{
   height: 6vw;
-}
-
-.hk{
-  border-bottom: 3px solid rgba(255,255,255, 0.5);
-  padding-bottom: 20px;
-  width: 100%;
-}
-
-.ca{
-  border-bottom: 3px solid rgba(255,255,255, 0.5);
-  padding-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    width: 100%;
-}
-
-.uk{
-  border-bottom: 3px solid rgba(255,255,255, 0.5);
-  padding-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.uk .item{
-  padding: 0px 50px;
-}
-
-.hk{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hongkong{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hongkong .item{
-  padding: 0px 30px;
 }
 
 }
@@ -195,12 +169,18 @@
 }
 
 .heading{
+  background-color:#ffffff;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 3vw;
   padding-bottom: 3vw;
   display: flex;
   align-items: center;
+}
+
+.icon{
+  width: 100px;
+  padding-right: 2vw;
 }
 
 .face1{
@@ -218,88 +198,34 @@
 }
 
 .sec{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  flex-wrap: wrap;
-}
-
-.hk, .hk2, .uk{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; 
-  flex-wrap: wrap;
-}
-
-.ca{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ussec{
+  background-color:#ed5f2f; 
+  padding-top: 2vw;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
-  flex-direction: row;
-  height: auto;
-  flex-wrap: wrap;
-}
-
-.ussec .uni{
-  padding: 5px;
-}
-
-
-
-.row{
-  display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 0px;
 }
 
-.mobilerow2{
-  padding-bottom: 0px;
+.schools, .unis{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.icon{
-  width: 100px;
-  padding-right: 2vw;
-}
-
-.aus{
-  position: relative;
-  right: 0px;
-}
-
-.icon2{
-  width: 100px;
+.schools{
+  margin-bottom: 15px;
 }
 
 .item{
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
-}
-
-.small{
-  height: 50px;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 .whiting{
   height: 85px;
-}
-
-.india{
-  padding-left: 5vw;
-}
-
-.illinois{
-  margin-right: 65px;
 }
 
 }
@@ -329,7 +255,7 @@ Ara's Admissions
 
 <a name="US">
 
-<div class="heading" style="background-color:#ffffff;">
+<div class="heading">
 
 <img class="icon" src="https://Tiger85147.github.io/Country%20logos/US%20logo.png">
 
@@ -347,93 +273,91 @@ Average number of admissions per student - 4:1
 
 </div>
 
-<div class="ussec" style="background-color:#ed5f2f; padding-top: 2vw">
+<div class="sec">
+<div class="list US">
 
-        <div class="row mobilerow2">
+    <div class="unis">
 
-        <div class="uni illinois">
-        <a href="https://illinois.edu/" style="text-decoration:none;">
+        <a href="https://illinois.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" height= 50vw>
         </a>
-        </div>
 
-        <div class="uni">
         <a href="https://www.nyu.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png" height= 50vw>
         </a>
-        </div>
 
-        <div class="uni">
-        <a href="https://www.jhu.edu/" style="text-decoration:none;">
+        <a href="https://www.jhu.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png" height= 50vw>
         </a>      
-        </div>
 
-        <div class="uni">
-        <a href="https://www.upenn.edu/" style="text-decoration:none;">
+        <a href="https://www.upenn.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/upenn.png" height= 50vw>
         </a>  
-        </div>
 
-        <div class="uni">
-        <a href="https://www.umass.edu/" style="text-decoration:none;">
+        <a href="https://www.umass.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png" height= 50vw>
         </a>
-        </div>
-
-        <div class="uni">
-        <a href="https://ucsd.edu/" style="text-decoration:none;">
+        <a href="https://ucsd.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png" height= 50vw>
-        </a>  
-        </div>
-        </div>
-
-        <div class="row mobilerow" style="border-bottom: none;">
-        <div class="uni">
-        <a href="https://grainger.illinois.edu/" style="text-decoration:none;">
-        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/graingercrop.png" height=50vw style="margin-top: 6px">
         </a>
-        </div>
 
-        <div class="uni">
-        <a href="https://engineering.jhu.edu/" style="text-decoration:none;">
-        <img class="item small whiting" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png">
+        <a href="https://www.ucdenver.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/colorado.png" height= 80vw>
         </a>
-        </div>
 
-        <div class="uni">
-        <a href="https://www.college.upenn.edu/" style="text-decoration:none;">
-        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/upennlsa.png" height=60vw>
+        <a href="https://www.asu.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/ASU.png" height= 90vw>
         </a>
-        </div>
 
-        <div class="uni">             
-        <a href="https://engineering.nyu.edu/" style="text-decoration:none;">
-        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png" height=40vw style="margin-top: 10px">
+    </div>
+
+    <div class="schools">
+      
+        <a href="https://grainger.illinois.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/graingercrop.png" height=50vw>
         </a>
-        </div>
 
-        <div class="uni">              
-        <a href="http://jacobsschool.ucsd.edu/" style="text-decoration:none;">
-        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png" height=40vw style="margin-top: 10px">
+        <a href="https://engineering.jhu.edu/">
+        <img class="item whiting" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png">
         </a>
-        </div>
 
-        <div class="uni">
-        <a href="https://www.wellesley.edu/" style="text-decoration:none;">
+        <a href="https://www.college.upenn.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/upennlsa.png" height=60vw>
+        </a>
+
+        <a href="https://engineering.nyu.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png" height=40vw>
+        </a>
+
+        <a href="http://jacobsschool.ucsd.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png" height=40vw>
+        </a>
+
+        <a href="https://www.wellesley.edu/">
         <img class="item" src="https://Tiger85147.github.io/Uni%20logos/wellesley.png" height= 50vw>
         </a>  
-        </div>
-        </div>
 
+        <a href="https://www.asu.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/ASU design.png" height=80vw>
+        </a>
+
+        <a href="https://www.ucdenver.edu/">
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/colorado arch.png" height= 100vw>
+        </a>
+
+    </div>
+
+</div>
 </div>
 </a>
 
-<!-- UNTED STATES ENDS HERE -->
+<!-- UNTED STATES ENDS-->
+
 
 <!-- UNTED KINGDOM -->
+
 <a name="UK">
-<div class="heading" style="background-color:#ffffff;">
+<div class="heading">
 
 <img class="icon" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png">
 
@@ -450,41 +374,66 @@ Average number of admissions per student - 2:1
 </p>
 
 </div>
-
-<div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw">
-
-    <div class="uk">
-    <a href="https://www.ed.ac.uk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="margin-top: 20px; height: 110px;">
-    </a>
-
-    <a href="https://www.manchester.ac.uk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg" style="margin-top: 20px; height: 80px;">
-    </a>
-
-    <a href="https://warwick.ac.uk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" style="margin-top: 20px; height: 80px;">
-    </a>
-
-    <a href="https://www.st-andrews.ac.uk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png" style="margin-top: 20px; height: 70px;">
-    </a>
-    </div>
+<div class="sec">
+<div class="list UK">
     
-    <a href="https://www.eng.ed.ac.uk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/edinburgh.png" style="margin-top: 20px; height: 80px;">
+  <div class="unis">
+
+    <a href="https://www.manchester.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg" style="height: 70px;">
     </a>
+
+     <a href="https://www.ed.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="height: 100px;">
+    </a>
+
+    <a href="https://www.ucl.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCL.png" style="height: 60px;">
+    </a>
+
+    <a href="https://warwick.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" style="height: 70px;">
+    </a>
+
+    <a href="https://www.st-andrews.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png" style="height: 60px;">
+    </a>
+
+    <a href="https://www.nottingham.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nottingham.png" style="height: 70px;">
+    </a>
+
+    <a href="https://www.ncad.ie/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/dublin.png" style="height: 80px;">
+    </a>
+
+  </div>
+
+  <div class="schools">
+
+    <a href="https://www.eng.ed.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/edinburgh.png" style="height: 80px;">
+    </a>
+
+    <a href="https://www.ucl.ac.uk/bartlett/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/UCL arch.png" style="height: 80px;">
+    </a>
+
+  </div>
 
 </div>
+</div>
 </a>
+
 <!-- UNTED KINGDOM ENDS-->
+
 
 <!-- CANADA-->
 
 <a name="CA">
-<div class="heading" style="background-color:#ffffff;">
+<div class="heading">
 
-<img class="icon" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png" style="width: 145px; margin-right: 10px;">
+<img class="icon" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png">
 <p>
 
 <font class="face1">
@@ -498,49 +447,136 @@ Average number of admissions per student - 2:1
 </p>
 
 </div>
-<div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw;">
-<div class="hongkong">
-    <div class="ca">
+<div class="sec">
+<div class="list canada">
+    <div class="unis">
+
+    <a href="https://www.mcgill.ca/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/McGill.png" style="height: 40px;">
+    </a>
+
     <a href="https://www.utoronto.ca/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" style="height: 80px;">
     </a>
 
-    <a href="https://uwaterloo.ca/" style="text-decoration:none;">
+    <a href="https://uwaterloo.ca/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo.png" style="margin-top: 20px; height: 60px;">
     </a>
+
+    <a href="http://umanitoba.ca/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manitoba.png" style="height: 80px;">
+    </a>
+
+    <a href="https://www.ucalgary.ca/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/calgary.png" style="height: 100px;">
+    </a>
+
     </div>
-    
-    <div class="hk2" style="padding-top: 10px;">
-    <a href="https://www.engineering.utoronto.ca/" style="text-decoration:none;">
+
+    <div class="schools">
+
+    <a href="https://www.engineering.utoronto.ca/">
       <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" style="height: 85px;">
     </a>
 
-    <a href="https://www.artsci.utoronto.ca/" style="text-decoration:none;">
+    <a href="https://www.artsci.utoronto.ca/">
       <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/torontolsa.png" style="height: 60px; margin-bottom: 10px">
     </a>
 
-    <a href="https://uwaterloo.ca/engineering/" style="text-decoration:none;">
+    <a href="https://uwaterloo.ca/engineering/">
       <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/waterloo.png" style="height: 75px; margin-bottom: 5px;">
+
+    <a href="https://www.mcgill.ca/urbanplanning/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/McGill Arch1.png" style="height: 70px;">
     </a>
+
+    <a href="http://umanitoba.ca/architecture/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/manitoba arch.png" style="height: 60px; margin-bottom: 15px;">
+    </a>
+
+    <a href="https://sapl.ucalgary.ca/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/calgary arch.png" style="height: 80px;  margin-bottom: 10px;">
+    </a>
+
   </div>
 </div>
 </div>
 </a>
-<!-- CANADA ENDS-->
+<!--ENDS-->
 
-<!-- HONG KONG-->
-<a name="HK">
+<!-- Europe-->
 
-<div class="heading" style="background-color:#ffffff; padding-left: 1%;">
+<a name="EU">
+<div class="heading">
+
+<img class="icon eulogo" src="https://Tiger85147.github.io/Country%20logos/Europe%20logo.png">
+<p>
+
+<font class="face1">
+Europe<br> 
+</font>
+
+<font class="face2">
+Average number of admissions per student - 2:1
+</font>
+
+</p>
+
+</div>
+<div class="sec">
+<div class="list europe">
+  <div class="unis">
+
+    <a href="https://www.naba.it/en">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/naba.png" style="height: 85px;">
+    </a>
+
+    <a href="http://www.florencedesignacademy.com/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/aalto.png" style="height: 85px;">
+    </a>
+
+    <a href="https://www.aalto.fi/en">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/florence.png" style="height: 85px;">
+    </a>
+
+    <a href="https://www.domusacademy.com/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/domus.png" style="height: 85px;">
+    </a>
+
+  </div>
+
+  <div class="schools">
+
+    <a href="https://www.aalto.fi/en/school-of-arts-design-and-architecture">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/aalto design.png" style="height: 90px;">
+    </a>
+
+    <a href="https://www.domusacademy.com/programs/design">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/domus design.png" style="height: 90px;">
+    </a>
+
+  </div>
+
+</div>
+</div>
+</a>
+
+<!-- Ends -->
+
+
+<!-- HK & Singapore-->
+<a name="HKS">
+
+<div class="heading dual">
 
 <div class="icons">
-<img class="icon" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png" style="width: 140px">
-<img class="icon aus" src="https://Tiger85147.github.io/Country%20logos/australia.png" style="width: 160px;">
+<img class="icon two" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png">
+<img class="icon two" src="https://Tiger85147.github.io/Country%20logos/singapore logo.png">
  </div>
 <p>
 
 <font class="face1">
-Hong Kong & Australia<br>
+Hong Kong & Singapore<br>
 </font>
 
 <font class="face2">
@@ -550,32 +586,99 @@ Average number of admissions per student - 3:1
 </p>
 
 </div>
-<div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw;">
-<div class="hongkong">        
-  <div class="hk">
-    <a href="https://www.ust.hk/" style="text-decoration:none; padding-left: 0px;">
+<div class="sec">
+<div class="list hongkong">        
+  <div class="unis">
+    <a href="https://www.ust.hk/" style="padding-left: 0px;">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png"  style="padding-left: 0px;"height=75vw>
     </a>
 
-    <a href="https://www.hku.hk/" style="text-decoration:none;">
+    <a href="https://www.hku.hk/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png" height=75vw>
     </a>
 
-    <a href="https://www.unimelb.edu.au/" style="text-decoration:none;">
+    <a href="http://www.nus.edu.sg/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nus.png" height=65vw>
+    </a>
+
+  </div>
+    <div class="schools">
+    <a href="https://www.seng.ust.hk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png" height=65vw style="margin-top: 10px">
+    </a>
+
+    <a href="https://engg.hku.hk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png" height=50vw style="margin-top: 20px;">
+    </a>
+
+    <a href="https://www.arch.hku.hk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku arch.png" height=50vw style="margin-top: 25px;">
+    </a>
+
+    <a href="https://www.fbe.hku.hk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku business.png" height=70vw style="margin-top: 25px;">
+    </a>
+
+    <a href="https://www.sde.nus.edu.sg/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/nus design.png" height=55vw style="margin-top: 15px;">
+    </a>
+
+  </div>
+</div>
+</div>
+</a>
+
+<!--ENDS-->
+
+<!-- AUS & NZ-->
+
+<a name="AUS">
+
+<div class="heading dual">
+
+<div class="icons">
+<img class="icon two auslogo" src="https://Tiger85147.github.io/Country%20logos/australia.png">
+
+<img class="icon two" src="https://Tiger85147.github.io/Country%20logos/NZ logo.png">
+
+ </div>
+<p>
+
+<font class="face1">
+Australia & New Zealand<br>
+</font>
+
+<font class="face2">
+Average number of admissions per student - 3:1
+</font>
+
+</p>
+
+</div>
+<div class="sec">
+<div class="list oceania">        
+  <div class="unis">
+
+    <a href="https://www.rmit.edu.au/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/RMIT.png" height=100vw>
+    </a>
+
+    <a href="https://www.unimelb.edu.au/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/melbourne.png" height=100vw>
     </a>
+
+    <a href="https://www.unitec.ac.nz/">
+    <img class="item unitec" src="https://Tiger85147.github.io/Uni%20logos/unitec.png" height=130vw>
+    </a>
+
   </div>
-    
-    <div class="hk2">
-    <a href="https://www.seng.ust.hk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png" height=65vw style="margin-top: -10px; margin-bottom: 20px;">
+    <div class="schools">
+
+    <a href="https://www.rmit.edu.au/study-with-us/architecture/architecture" style="text-decoration:none;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/RMIT arch.png" height=100vw>
     </a>
 
-    <a href="https://engg.hku.hk/" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png" height=55vw style="margin-top: 10px; margin-bottom: 20px;">
-    </a>
-
-    <a href="https://fbe.unimelb.edu.au/" style="text-decoration:none;">
+    <a href="https://fbe.unimelb.edu.au/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/melbourneeco.png" height=110vw style="margin-top: 10px;">
     </a>
 
@@ -589,9 +692,9 @@ Average number of admissions per student - 3:1
 <!-- India -->
 <a name="IN">
 
-<div class="heading" style="background-color:#ffffff;">
+<div class="heading">
 
-<img class="icon2" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png">
+<img class="icon icon2" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png">
 
 <p class="india">
 
@@ -607,34 +710,37 @@ Average number of admissions per student - 3:1
 
 </div>
 
-<div class="sec canada" style="background-color:#ed5f2f; padding-top: 2vw">
-<div class="hongkong" style="display: flex; align-items: center;flex-direction: column; justify-content: center;">        
-  <div class="hk">
-    <a href="https://www.ashoka.edu.in/" style="text-decoration:none;">
+<div class="sec">
+<div class="list india">     
+
+  <div class="unis">
+    <a href="https://www.ashoka.edu.in/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Ashoka_University_logo_with_wordmark.png" height=90vw>
     </a>
 
-    <a href="https://www.christuniversity.in/" style="text-decoration:none;">
+    <a href="https://www.christuniversity.in/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/christ.jpg" height=90vw>
     </a>
 
-    <a href="https://krea.edu.in/" style="text-decoration:none;">
+    <a href="https://krea.edu.in/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/krea.png" height=90vw>
     </a>
 
-    <a href="https://www.siu.edu.in/" style="text-decoration:none;">
+    <a href="https://www.siu.edu.in/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/symbiosis.png" height=90vw>
     </a>
 
-    <a href="https://jgu.edu.in/" style="text-decoration:none;">
+    <a href="https://jgu.edu.in/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/jindal.png" height=90vw>
     </a>
 
   </div>
 
-    <a href="https://www.ssla.edu.in/" style="text-decoration:none; padding-top: 10px;">
+  <div class="schools">
+    <a href="https://www.ssla.edu.in/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/symbiosisla.png" height=90vw>
     </a>
+  </div>
 
 </div>
 </div>
