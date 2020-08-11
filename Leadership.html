@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<title>Ara's Leadership</title>
+<title>Leadership</title>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <meta name="Description" content="Find out what drives Ara ">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,16 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/titlebox.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
-  <!-- Chrome, Firefox OS and Opera -->
+    <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ed5f2f">
   <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#ed5f2f">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+</head>
+
 <style>
+
+.content a{
+    text-decoration: none;
+  }
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -27,76 +35,144 @@
   font-size: 70px;
   text-align: left;
   color: #ffffff;
-  display:inline-block;
+  display: inline-block;
   border-bottom: 15px solid #ed5f2f;
   padding-bottom: 2px;
   indent-text: 40mm;
-  padding-right: 280px;
-  color
-}
-
-.subtitle{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 25px;
-  text-align: left;
-  color: white;
-}
-
-.sec{
- padding-left: 10%;
- padding-right: 10%;
- padding-bottom: 2vw;
-}
-
-.img{
-  width: 220px;
-  float: left;
-  padding-right: 2vw;
-  padding-top: 2.5vw;
-}
-
-.emplinkedin{
-  content: url("https://Tiger85147.github.io/Misc/linkedin.png");
-  height: 25px;
-  transition: content 0.5s;
-}
-
-.emplinkedin:hover{
-  content: url("https://Tiger85147.github.io/Misc/linkedinblack.png"); 
-  height: 25px;
-}
-
-.pic{
-  width: 200px;
-}
-
-.heading{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 30px;
-  text-align: left;
-  color:000000;
-  padding-top: 2vw;
+  padding-right: 150px;
 }
 
 .content{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 20px;
-  text-align: left; 
-}
-
-html, body {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 480px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  font-family: 'Hind Guntur', sans-serif;
+  color: #000000; 
+  background-color: #ffffff;
 }
 
-body > * {
-  flex-shrink: 0;
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
 }
 
-.footer {
-  flex-grow: 1;
+.emp{
+  display: flex;
+  flex-direction: row;
+  outline: 2px solid gray;
+  height: 130px;
+  width: 400px;
+  transition: 0.5s;
+  margin-right: 30px;
 }
+
+.pic{
+  height: 130px;
+  z-index: 1;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .pic, .container:hover .info{
+  opacity: 0.3;
+}
+
+.container:hover{
+  background-color: #ed5f2f;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.info{
+  padding-top: 15px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.name{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.designation{
+  font-size: 16px;
+}
+
+/*
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+  font-size: 20px;
+  font-family: 'Hind Guntur', sans-serif;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+*/
 
 }
 
@@ -113,74 +189,97 @@ body > * {
   indent-text: 40mm;
 }
 
-.subtitle{
-  font-family: 'Hind Guntur', sans-serif;
-  font-size: 15px;
-  text-align: left;
-  color:white;
-}
-
-.sec{
+.content{
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 3vw;
   padding-bottom: 3vw;
-    padding-left: 5%;
-  padding-right: 5%;
+  font-family: 'Hind Guntur', sans-serif;
+  color: #000000; 
+  background-color: #ffffff;
 }
 
-.emplinkedin{
-  content: url("https://Tiger85147.github.io/Misc/linkedin.png");
-  height: 25px;
-  transition: content 0.5s;
-}
-
-.emplinkedin:hover{
-  content: url("https://Tiger85147.github.io/Misc/linkedinblack.png"); 
-  height: 25px;
-}
-
-.img{
+.row{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.emp{
+  display: flex;
+  flex-direction: row;
+  outline: 2px solid gray;
+  height: 130px;
+  width: 100%;
+  transition: 0.5s;
+  margin: 20px 0px;
 }
 
 .pic{
-  width: 200px;
-  margin: auto;
+  height: 130px;
+  z-index: 1;
+  transition: 0.5s;
+  margin-right: 20px;
 }
 
-.heading{
-  font-family: 'Hind Guntur', sans-serif; 
-  font-size: 25px;
+.container {
+  position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
-  color:000000;
-  margin-top: 5px;
 }
 
-.content{
-  font-family: 'Hind Guntur', sans-serif;
+.container:hover .pic, .container:hover .info{
+  opacity: 0.3;
+}
+
+.container:hover{
+  background-color: #ed5f2f;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.info{
+  padding-top: 15px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.name{
+  font-weight: 600;
   font-size: 18px;
-  text-align: justify; 
 }
 
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.designation{
+  font-size: 14px;
 }
-
-body > * {
-  flex-shrink: 0;
-}
-
-.footer {
-  flex-grow: 1;
-}
-
 }
 </style>
 </head>
+
 <body>
-   
+  
 <div id="nav-placeholder"></div>
 
 <script>
@@ -194,81 +293,83 @@ $(function(){
 <div class="title">
 Leadership 
 </div>
-<div class="subtitle">
-Meet the people who are guiding us on our mission.
-</div>
-<br>
+<br><br><br><br>
 </div>
 
-<div class="sec" style="background-color: #ed5f2f">
-<div class="img">
-<img class="pic" src="https://Tiger85147.github.io/Misc/Ara%20rupali%202.jpg">
-</div>  
-<div class="heading"><b>
-Rupali Deolalikar-Dehade
-</b>
-</div>
-<div class="content" style="color:#ffffff">
-Ara is manifestation of Founder and Managing Director Rupali Deolalikar-Dehade's passion.<br><br>
+<div class="content">
 
-It has been her deep desire to help students achieve their full potential, to build a strong foundation to be ideal citizens of our world and to lead them to Universities/Colleges which will help achieve both these objectives.  It is her leadership that has made Ara one of India's fastest growing Admissions Consulting and Solutions providers. Ara's domain expertise is an outcome of Rupali's extensive and detailed research.<br><br>
+<div class="row">
 
-Given her continuously deepening passion for adding value to our future generations, Rupali has been associated with Education for almost two decades. She has been teaching various subjects in Architecture at SNDT and KRVIA (both Juhu, Mumbai), INIFD (Andheri, Mumbai), Sushant School of Art & Architecture and Sushant School of Design (Gurgaon). She has a Bachelor's Degree in Architecture from M S University of Baroda and has completed Master's Degree in Urban Planning from Institute of Town Planners; India's premier Town Planning body.<br><br>
+<a href="https://araconsulting.co.in/Leadership/Rupali%20Deolalikar-Dehade">
+<div class="emp container" id="myBtn">
 
-Rupali has been a practicing Architect for over 25 years having worked on Commercial and non-Commercial projects across Gujarat, Maharashtra, Delhi-NCR and Rajasthan. &nbsp <a href="https://www.linkedin.com/in/rupali-deolalikar-dehade-b7533b14/"><img class="emplinkedin"></a>
+  <img class="pic" src="https://Tiger85147.github.io/Misc/Ara%20rupali%202.jpg">
+  <div class="middle">
+    <div class="text">Read Bio</div>
+  </div>
 
-</div>
-</div>
-
-
-<div class="sec" style="background-color: #ffffff">
-<div class="img">
-<img  class="pic" src="https://Tiger85147.github.io/Misc/AD%20Crop.jpg">
-</div>  
-<div  class="heading">
-<b>
-Ashish Dehade &nbsp
-</b>
-</div>
-<div class="content" style="color: #ed5f2f">
-
-A big believer in "...creating stories that we can tell our grand-children with pride...", that is, do more to transform our world, Ashish is continuously looking for new opportunities to positively impact lives. He thinks that largest impact on lives can happen through focus on better Healthcare and Education.
-
-<br><br>
-
-Ashish has been passionate about the 'how' along with the 'what'... that is, it is not just about 'what' we deliver; it is also about 'how' we do what we do - that is, with respect and without compromising Values, Principles, Culture and Ethics.
-
-<br><br>
-
-As a Co-Founder, Ashish focuses on the strategic direction and overall performance of Ara; along with its long term impact on Society.  He is involved in Mentoring and Coaching of students through the end-to-end Admissions process.
-
-<br><br>
-
-Previously, Ashish has led Global Strategic Planning, Growth and Operations across Americas, Europe and Asia Pacific; in various multi-billon dollar corporations; leading businesses with revenue of upto $500 million.  He was Global Business Head and Global Head of Strategic Transformation at UnitedHealth Group, world's largest Healthcare company; then Fortune 6.  Prior to that, he was Global Business Head for Life Sciences at Cognizant. He also led First Advantage, then world's largest Background Screening company, as its Group COO (APAC) and Managing Director (West Asia & ASEAN). Prior to FADV, Ashish was part of the early Leadership team at TransWorks (later Aditya Birla Minacs, now Concentrix), one of India's first business process outsourcing (BPO) firms. He has also held senior positions at Accenture and CEAT. &nbsp <a href="https://www.linkedin.com/in/ashish-dehade-4bab46/"><img class="emplinkedin"></a>
+  <span class="info">
+  <font class="name">Rupali Deolalikar-Dehade</font><br>
+  <font class="designation">Founder, Managing Director</font>
+  </span>
 
 </div>
-</div>
+</a>
 
+<a href="https://araconsulting.co.in/Leadership/Ashish%20Dehade">
+<div class="emp container" id="myBtn">
+  
+  <img  class="pic" src="https://Tiger85147.github.io/Misc/AD%20Crop.jpg">
+  <div class="middle">
+    <div class="text">Read Bio</div>
+  </div>
 
-<div class="sec" style="background-color: #ed5f2f">
-<div class="img">
-<img class="pic" src="https://Tiger85147.github.io/Misc/Aparna%20Sharma%203.png">
-</div>  
-<div class="heading"><b>
-Aparna Sharma</b>
-</div>
-<div class="content" style="color:#ffffff">
-Aparna, an ex-banker, has worked with HSBC, Bank of America, ABN Amro and HDFC. This was before she found her calling in Education!  More specifically, supporting and mentoring children who excel in Sports while they aspire to get admission in top ranked global Universities. <br><br>
-
-Since 2012, Aparna has been guiding high-school children to stretch their mental and academic horizons, helping such children in their language and creative writing skills. <br><br>  
-
-She has been a hands-on sports parent for her daughter, who continues to achieve significant success in Squash (at National and International level) and academics.  That experience has helped Aparna to understand and 'live' the impact of Sports on overall development of children.  This home-experience has made her a successful reader of such students' psyche, along with empathy for the sacrifices they and their parents make. <br><br>
-
-Aparna’s daughter is a student-athlete pursuing her undergraduate in an Ivy League university, while her son, a martial arts enthusiast, is pursuing his studies in a global business management school. <br><br>
-
-At Ara, Aparna leads the Sports vertical; with complete focus on students  seeking admissions to global Universities while exceling in Sports.
+  <span class="info">
+  <font class="name">Ashish Dehade</font><br>
+  <font class="designation">Co-Founder</font>
+  </span>
 
 </div>
+</a>
+
+</div>
+
+<div class="row">
+
+<a href="https://araconsulting.co.in/Leadership/Aparna%20Sharma">
+<div class="emp container" id="myBtn">
+  
+  <img class="pic" src="https://Tiger85147.github.io/Misc/Aparna%20Sharma%203.png">
+  <div class="middle">
+    <div class="text">Read Bio</div>
+  </div>
+
+  <span class="info">
+  <font class="name">Aparna Sharma</font><br>
+  <font class="designation">Partner, Student Athletes</font>
+  </span>
+
+</div>
+</a>
+
+<a href="https://araconsulting.co.in/Leadership/Priyanka%20Kaushik-Malik">
+<div class="emp container" id="myBtn">
+  
+  <img class="pic" src="https://Tiger85147.github.io/Misc/Priyanka Kaushik 2.png">
+  <div class="middle">
+    <div class="text">Read Bio</div>
+  </div>
+
+  <span class="info">
+  <font class="name">Priyanka Kaushik-Malik</font><br>
+  <font class="designation">Partner, Architecture & Design</font>
+  </span>
+
+</div>
+</a>
+
+</div>
+
 </div>
 
 
