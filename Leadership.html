@@ -24,9 +24,14 @@
 
 <style>
 
-.content a{
+.footer{
+  background-image: none;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.titlebox a{
     text-decoration: none;
-  }
+}
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
@@ -38,35 +43,30 @@
   display: inline-block;
   border-bottom: 15px solid #ed5f2f;
   padding-bottom: 2px;
-  indent-text: 40mm;
+  margin-bottom: 40px;
   padding-right: 150px;
+  margin-left: 10%;
 }
 
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  height: 480px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
-  font-family: 'Hind Guntur', sans-serif;
-  color: #000000; 
-  background-color: #ffffff;
+.titlebox{
+  padding: 0px;
 }
 
 .row{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 20px 0px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 
 .emp{
+  position: relative;
+  font-family: 'Hind Guntur', sans-serif;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.6);
   display: flex;
   flex-direction: row;
   outline: 2px solid gray;
@@ -76,6 +76,15 @@
   margin-right: 30px;
 }
 
+.emp:hover .name{
+  transition: 0.5s;
+  color: #ed5f2f;  
+}
+
+.emp:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
 .pic{
   height: 130px;
   z-index: 1;
@@ -83,45 +92,8 @@
   margin-right: 20px;
 }
 
-.container {
-  position: relative;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .pic, .container:hover .info{
-  opacity: 0.3;
-}
-
-.container:hover{
-  background-color: #ed5f2f;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #000000;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
 .info{
   padding-top: 15px;
-  padding-right: 30px;
   text-align: left;
 }
 
@@ -133,46 +105,6 @@
 .designation{
   font-size: 16px;
 }
-
-/*
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 3;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-
-
-.modal-content {
-  font-size: 20px;
-  font-family: 'Hind Guntur', sans-serif;
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-*/
 
 }
 
@@ -186,18 +118,11 @@
   display:inline-block;
   border-bottom: 1vw solid #ed5f2f;
   padding-bottom: 0.1vw;
-  indent-text: 40mm;
+  margin-left: 5%;
 }
 
-.content{
-  font-size: 18px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-  font-family: 'Hind Guntur', sans-serif;
-  color: #000000; 
-  background-color: #ffffff;
+.titlebox{
+  padding-left: 0px;
 }
 
 .row{
@@ -208,61 +133,37 @@
 }
 
 .emp{
+  position: relative;
   display: flex;
   flex-direction: row;
   outline: 2px solid gray;
+  font-family: 'Hind Guntur', sans-serif;
+  background-color: rgba(0,0,0,0.6);
+  color: #ffffff;
   height: 130px;
-  width: 100%;
+  width: 90%;
   transition: 0.5s;
-  margin: 20px 0px;
+  margin: 15px 5%;
+}
+
+.emp:hover .name{
+  transition: 0.5s;
+  color: #ed5f2f;  
+}
+
+.emp:hover{
+  background-color: rgba(0,0,0,0.8);
 }
 
 .pic{
   height: 130px;
   z-index: 1;
   transition: 0.5s;
-  margin-right: 20px;
-}
-
-.container {
-  position: relative;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .pic, .container:hover .info{
-  opacity: 0.3;
-}
-
-.container:hover{
-  background-color: #ed5f2f;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #000000;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 16px 32px;
+  margin-right: 10px;
 }
 
 .info{
   padding-top: 15px;
-  padding-right: 30px;
   text-align: left;
 }
 
@@ -293,20 +194,13 @@ $(function(){
 <div class="title">
 Leadership 
 </div>
-<br><br><br><br>
-</div>
-
-<div class="content">
 
 <div class="row">
 
 <a href="https://araconsulting.co.in/Leadership/Rupali%20Deolalikar-Dehade">
-<div class="emp container" id="myBtn">
+<div class="emp" id="myBtn">
 
   <img class="pic" src="https://Tiger85147.github.io/Misc/Ara%20rupali%202.jpg">
-  <div class="middle">
-    <div class="text">Read Bio</div>
-  </div>
 
   <span class="info">
   <font class="name">Rupali Deolalikar-Dehade</font><br>
@@ -317,18 +211,15 @@ Leadership
 </a>
 
 <a href="https://araconsulting.co.in/Leadership/Ashish%20Dehade">
-<div class="emp container" id="myBtn">
+<div class="emp" id="myBtn">
   
   <img  class="pic" src="https://Tiger85147.github.io/Misc/AD%20Crop.jpg">
-  <div class="middle">
-    <div class="text">Read Bio</div>
-  </div>
 
   <span class="info">
   <font class="name">Ashish Dehade</font><br>
   <font class="designation">Co-Founder</font>
   </span>
-
+  
 </div>
 </a>
 
@@ -337,12 +228,9 @@ Leadership
 <div class="row">
 
 <a href="https://araconsulting.co.in/Leadership/Aparna%20Sharma">
-<div class="emp container" id="myBtn">
+<div class="emp" id="myBtn">
   
   <img class="pic" src="https://Tiger85147.github.io/Misc/Aparna%20Sharma%203.png" style="border-right: 1.5px solid gray;">
-  <div class="middle">
-    <div class="text">Read Bio</div>
-  </div>
 
   <span class="info">
   <font class="name">Aparna Sharma</font><br>
@@ -353,12 +241,9 @@ Leadership
 </a>
 
 <a href="https://araconsulting.co.in/Leadership/Priyanka%20Kaushik-Malik">
-<div class="emp container" id="myBtn">
+<div class="emp" id="myBtn">
   
   <img class="pic" src="https://Tiger85147.github.io/Misc/Priyanka Kaushik 2.png">
-  <div class="middle">
-    <div class="text">Read Bio</div>
-  </div>
 
   <span class="info">
   <font class="name">Priyanka Kaushik-Malik</font><br>
@@ -370,10 +255,9 @@ Leadership
 
 </div>
 
-</div>
-
-
 <div id="nav-footer"></div>
+
+</div>
 
 <script>
 $(function(){
