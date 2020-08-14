@@ -1,3 +1,4 @@
+<!-- Start Navbar -->
 
 <div class="topnav" id="myTopnav">
 <img class="thumbnail" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png">
@@ -22,10 +23,49 @@
   <a href="https://Tiger85147.github.io/Testimonials">Testimonials</a>
 
   <a href="https://Tiger85147.github.io/Contact%20Us">Contact Us</a>
+
+  <div id="myBtn" class="LoginButton">Login</div>
+
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+<!-- End Navbar -->
+
+<!-- Start Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <form class="loginform">
+
+        <span class="close">&times;</span>
+
+        <div class="container">
+            <input class="input" type="text" placeholder="Username" name="userid">
+            <span class="border"></span>
+        </div>
+
+        <div class="container">
+            <input class="input" type="password" placeholder="Password" name="pass">
+            <span class="border"></span>
+        </div>
+
+        <div class="buttons">
+            <button class="button" onclick="check(this.form)">Login</button><br>
+            <button class="button" onclick="Close()">Cancel</button>
+        </div>
+
+    </form>
+  </div>
+</div>
+<!-- End Modal -->
 
 <script>
+
+function Close(){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -34,4 +74,48 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function check(form){
+
+  if (form.userid.value == "Soham" && form.pass.value == "Gopi"){
+    window.open('https://docs.google.com/spreadsheets/d/1or3qL6Dz_MP1Yy67DiFjIwqeFzKA7LC6ma7M9O_YeNc/edit?ouid=103179050002127565821&usp=sheets_home&ths=true')
+  }
+
+  else if (form.userid.value == "Aryan" && form.pass.value == ""){
+    window.open('')
+  }
+
+   else if (form.userid.value == "Arjun" && form.pass.value == ""){
+    window.open('')
+  }
+/*
+  else if (form.userid.value == "" && form.pass.value == ""){
+    window.open('')
+  }
+*/
+   else{
+   alert("Wrong Passsword or Username")/*displays error message*/
+  }
+}
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 </script>

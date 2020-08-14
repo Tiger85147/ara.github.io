@@ -8,6 +8,13 @@
   background: #000000;
 }
 
+
+.titlebox{
+  background-image: url("https://Tiger85147.github.io/Misc/ara constellation.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #button {
   display: inline-block;
   background-color: #ed5f2f;
@@ -88,6 +95,11 @@
 
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+.titlebox{
+  padding-left: 10%;
+  background-position: 50% 50%;
+}
 
 .topnav {
   overflow: hidden;
@@ -345,6 +357,11 @@ background: #ed5f2f;
 
 
 @media screen and (max-width: 800px){
+
+.titlebox{
+  padding-left: 5%;
+  background-position: 10% 10%;
+}
 
 .topnav {
   overflow: hidden;
