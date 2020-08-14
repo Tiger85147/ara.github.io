@@ -6,14 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ed5f2f">
@@ -53,7 +50,6 @@ input[type=number] {
   display:inline-block;
   border-bottom: 15px solid #ed5f2f;
   padding-bottom: 2px;
-  indent-text: 40mm;
   padding-right: 150px;
 }
 
@@ -95,25 +91,6 @@ form{
   width: 99%;
   margin-top: 20px;
 }
-
-.or{
-  display: flex;
-  flex-direction: row;
-  font-size: 35px;
-  color: gray;
-  text-align: center;
-  padding-top: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.or:before, 
-.or:after { 
-    content:"";
-    flex: 1; 
-    border-bottom: 2px solid gray; 
-    margin: 10px; 
-} 
 
 .text{
   font-size: 15px;
@@ -161,15 +138,9 @@ form .submit:hover{
   border-radius: 2px;
   line-height: 55px;
   width: 100%;
-  /*background: linear-gradient(to right, #ba3f16 50%, #ed5f2f 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
-  */
 }
 
 .appt:hover{
-  /*background-position: left bottom;*/
   background-color: #ba3f16;
 }
 }
@@ -256,7 +227,6 @@ form .submit:hover{
 
 }
 
-
 .appt{
   margin: 15px 0px;
   display: inline-block;
@@ -270,15 +240,9 @@ form .submit:hover{
   border-radius: 2px;
   line-height: 57px;
   width: 100%;
-  /*background: linear-gradient(to right, #ba3f16 50%, #ed5f2f 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
-  */
 }
 
 .appt:hover{
-  /*background-position: left bottom;*/
   background-color: #ba3f16;
 }
 
@@ -289,12 +253,6 @@ form .submit:hover{
 <body>
 
 <div id="nav-placeholder"></div>
-
-<script>
-$(function(){
-  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
-});
-</script>
 
 <div class="titlebox">
 <br><br><br>
@@ -325,7 +283,7 @@ Contact
   <input name="permission" type="checkbox" class="check" required> &nbsp <font class="text"> I would like Ara to contact me based on the information provided above.</font>
   <br>
   <hr>
-  <font class="text" style=" margin-bottom: 0px;">Ara commits that your information shall not be used for anything except for the purpose stated in the Comments section above.</font>
+  <font class="text">Ara commits that your information shall not be used for anything except for the purpose stated in the Comments section above.</font>
   <hr>
 
 <input type="submit" class="form-control submit" value="Submit">
@@ -346,6 +304,10 @@ Contact
 <script>
 $(function(){
   $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
 });
 </script>
 
