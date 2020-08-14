@@ -372,14 +372,6 @@ function showFileName( event ) {
   infoArea.textContent = 'File name: ' + fileName;
 }
 
-$(function(){
-  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
-});
-
-$(function(){
-  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
-});
-
 var uploadField = document.getElementById("file");
 
 uploadField.onchange = function() {
@@ -388,6 +380,14 @@ uploadField.onchange = function() {
        this.value = "";
     };
 };
+
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
+});
 
 </script>
 
