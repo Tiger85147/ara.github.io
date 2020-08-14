@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<title>Join Ara</title>
+<head>
+  <meta name="Description" content="Contact Ara for best-in-class Admissions Counseling services">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ed5f2f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ed5f2f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175478151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175478151-1');
+</script>
+
+<style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-file-upload:hover, .custom-file-upload:active{
+    background-color: #ffffff;
+
+}
+
+#file-upload-filename{
+  display: inline;
+  padding-left: 20px;
+}
+
+.head{
+  color: #ed5f2f;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  padding-right: 150px;
+}
+
+.subtitle{
+  font-family: 'Hind Guntur';
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.logo{
+  width: 150px;
+  padding-left: 5px; 
+  padding-bottom: 4px;
+}
+
+.main{
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  font-family: 'Hind Guntur';
+}
+
+.intro{
+  font-size: 20px;
+}
+
+form{
+  transition: all 4s ease-in-out;
+  border-top: 3px solid #ed5f2f;
+  padding-top: 30px;
+}
+
+.form-control{
+  width: 33%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #ed5f2f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.area{
+  width: 99%;
+  margin-top: 20px;
+}
+
+.resume{
+  font-size: 20px;
+  color: #ed5f2f;
+  padding-right: 20px;
+}
+
+.permissionbox{
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5px;
+}
+
+.disclaimer{
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5px;
+}
+
+.text{
+  font-size: 15px;
+  color: #000000;
+}
+
+.input{
+  height: 45px;
+}
+
+form .submit{
+  background-color: #ed5f2f;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 10px;
+}
+
+.end{
+  position: relative;
+  color: #ed5f2f;
+  font-size: 32px;
+  float: right;
+}
+
+form .submit:hover{
+  background-color:  #ba3f16;
+  cursor: pointer;
+}
+
+}
+
+@media screen and (max-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 48px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+}
+
+.subtitle{
+  font-family: 'Hind Guntur';
+  color: #ffffff;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.logo{
+  width: 90px;
+  padding-left: 3px;
+  padding-bottom: 4px; 
+}
+
+.main{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Hind Guntur'
+}
+
+.form-control{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #ed5f2f;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.area{
+  width: 100%;
+}
+
+.text{
+  font-size: 15px;
+  color: #000000;
+}
+
+.input{
+  height: 45px;
+}
+
+
+.intro{
+  font-size: 18px;
+}
+
+form{
+  transition: all 4s ease-in-out;
+  border-top: 3px solid #ed5f2f;
+  padding-top: 30px;
+}
+
+form .submit{
+  background-color: #ed5f2f;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 10px;
+  margin-right: 20px;
+}
+
+.end{
+  color: #ed5f2f;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+form .submit:hover{
+  background-color: #ba3f16;
+  cursor: pointer;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="titlebox">
+<br><br>
+<div class="title">
+Join 
+<img class="logo" src="https://Tiger85147.github.io/Misc/Ara%20Logo%20Final%20Extra%20Crop.png"> 
+</div>
+  <div class="subtitle">
+    Do your life's most noble and fulfilling work.
+  </div>
+
+<br>
+</div>
+
+<div class="main"> 
+
+
+<div class="intro">
+
+  There are many reasons for the best (you!) to join Ara.  Five top reasons are:<br><br>
+
+<font class="head">1. Improving Lives:</font> At Ara, we share a common goal, to greatly improve the lives of our students.  It is an ambitious goal that serves as both a challenge and an inspiration. Your contributions will help improve opportunities for our students to get high quality education.  You will be part of on-going efforts in communities to give back and make a difference. Ara serves needy students who have potential to excel and also works directly with charities supported by our students' parents and our team members.  <br><br>
+
+<font class="head">2. Career Growth and Development:</font> We are already among the fastest growing College Admissions Counselling and Consulting companies.  And we aspire to be more diversified, more expansive and global.  This aspiration and our growth enables our team members to develop their careers continuously.  Our growth translates into abundant career opportunities for our team members.  We want you to reach your highest level of potential just as you help us reach ours.  <br><br>
+
+<font class="head">3. Exceptional team members:</font> Smart. Hard-working.  Mission-driven.  That's us.  We earn and give trust to one another through truthfulness, integrity, active engagement and collaboration.  Join us and you will be part of a culture that works with uncompromising integrity.  <br><br>
+
+<font class="head">4. Intense Performance:</font> We want to outperform our competition.  And we do!  Even more important, we are constantly finding and responding to new opportunities in College Admissions arena that result from deep research and greater information.  You will be contributing, learning and growing in equal measure.  The one thing you won't be is - bored!  <br><br>
+
+<font class="head">5.  Recognition:</font> We are shaping an outcome-driven culture through hard work, while taking time to celebrate success.<br><br>
+
+If you think we are the kind of organization you want to work with, tell us something about yourself...
+
+
+</div>
+
+ <div class="contact-form">
+
+  <form id="contact-form" method="POST" action="https://formspree.io/rupali@araconsulting.co.in" enctype="multipart/form-data" target="_self">
+
+  <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+  
+  <input name="phone" type="number" class="form-control" placeholder="Phone Number" required>
+
+  <input name="email" type="text" class="form-control" placeholder="Email" required>
+  <br>
+
+  <textarea name="Comments" class="form-control area" placeholder="Tell us something about yourself" rows="4"></textarea><br>
+
+<br>
+
+  <input name="permission" type="checkbox" class="check" required> &nbsp <font class="text"> I would like Ara to contact me based on the information provided above.</font>
+  <br>
+  <hr>
+
+  <font class="text" style=" margin-bottom: 0px;">Ara commits that your information shall not be used for anything except for the purpose stated above.</font>
+  <br>
+  <hr>
+
+<button name="submit" type="submit" class="form-control submit">Submit</button>
+
+<div class="end">We'll get back to you!</div>
+
+  </form>
+ </div>
+
+</div>
+
+<div id="nav-footer"></div>
+
+<script>
+
+var input = document.getElementById( 'file' );
+var infoArea = document.getElementById( 'file-upload-filename' );
+
+input.addEventListener( 'change', showFileName );
+
+function showFileName( event ) {
+  
+  // the change event gives us the input it occurred in 
+  var input = event.srcElement;
+  
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName = input.files[0].name;
+  
+  // use fileName however fits your app best, i.e. add it into a div
+  infoArea.textContent = 'File name: ' + fileName;
+}
+
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
+});
+
+var uploadField = document.getElementById("file");
+
+uploadField.onchange = function() {
+    if(this.files[0].size > 2097152){
+       alert("File must be under 2 MB");
+       this.value = "";
+    };
+};
+
+</script>
+
+</body>
+</html>
+
