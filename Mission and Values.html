@@ -7,13 +7,11 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
   <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ed5f2f">
   <!-- Windows Phone -->
@@ -31,6 +29,27 @@
 </script>
 
 <style>
+
+.divcontent{
+  color: black;
+}
+
+.values{
+  color: #ed5f2f;
+}
+
+.divheading {
+  color: #ffffff;
+}
+
+.divpad:nth-of-type(odd){
+  background-color:#ed5f2f;
+}
+
+.divpad:nth-of-type(even){
+  background-color: #ffffff;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -177,12 +196,6 @@
 
 <div id="nav-placeholder"></div>
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
-});
-</script>
-
 <div class= "titlebox">
 <br><br><br>
 <div class="title">
@@ -201,13 +214,13 @@ Our mission is to help students achieve their aspirations of higher education in
 </div>
 
 <div class="div2" style="background-color: white;">
-<div class="values" style="color:#ed5f2f" >
+<div class="values">
 <b>
 Our Values
 </b>
 </div>
 
-<div class="list" style="color:#000000">
+<div class="list">
 <b>
 Integrity 
 
@@ -228,8 +241,8 @@ Excellence
 </div>
 
 </div>
-<div class="divpad" style=" background-color: #ed5f2f;">
-<div class="divheading" style="color:#ffffff;">
+<div class="divpad">
+<div class="divheading">
 <b>
 
 Integrity
@@ -237,7 +250,7 @@ Integrity
 </b>
 </div>
 
-<div class="divcontent" style="color:black">
+<div class="divcontent">
 
  Ara represents the highest level of personal integrity.  We honor our commitments.  We never compromise ethics.  We speak the truth.  We have the courage to acknowledge mistakes and do whatever it takes to correct them. 
 
@@ -245,8 +258,8 @@ Integrity
 
 </div>
 
-<div class="divpad" style=" background-color: #ffffff;">
-<div class="divheading" style="color:#ed5f2f;">
+<div class="divpad">
+<div class="divheading" style="color: #ed5f2f;">
 <b>
 
 Passion
@@ -254,7 +267,7 @@ Passion
 </b>
 </div>
 
-<div class="divcontent" style="color:black">
+<div class="divcontent">
 
 Ara is passionate about what it does.  In order to achieve success in our purpose to help students achieve their aspiration of higher education from top Global universities, we start by fully understanding their needs and realities.  We celebrate our role in making our students ideal citizens of this world through relevant higher Education.  We listen to fully understand our students' and their families' realities.  
 
@@ -262,8 +275,8 @@ Ara is passionate about what it does.  In order to achieve success in our purpos
 
 </div>
 
-<div class="divpad" style="background-color: #ed5f2f;">
-<div class="divheading" style="color:#ffffff;">
+<div class="divpad">
+<div class="divheading">
 <b>
 
 Relationships
@@ -271,7 +284,7 @@ Relationships
 </b>
 </div>
 
-<div class="divcontent" style="color:black">
+<div class="divcontent">
 
 We build trust through collaboration. We realize that trust is earned and preserved through truthfulness, integrity, active engagement and collaboration with our students and their parents. We approach everyone with respect, humility, confidence and energy. We confront issues, not people. When we have differences, we confront them directly. We actively engage with everyone to share information, ideas and resources to help everyone achieve their objectives.
 
@@ -279,8 +292,8 @@ We build trust through collaboration. We realize that trust is earned and preser
 
 </div>
 
-<div class="divpad" style="background-color: #ffffff;">
-<div class="divheading" style="color:#ed5f2f;">
+<div class="divpad">
+<div class="divheading" style="color: #ed5f2f;">
 <b>
 
 Excellence
@@ -288,7 +301,7 @@ Excellence
 </b>
 </div>
 
-<div class="divcontent" style="color:black">
+<div class="divcontent">
 
 We are committed to deliver and demonstrate excellence in everything we do. We hold ourselves accountable and responsible for consistently delivering high quality and superior results that make a difference to our students. We challenge ourselves to strive for consistently better and improving outcomes. 
 
@@ -301,6 +314,10 @@ We are committed to deliver and demonstrate excellence in everything we do. We h
 <script>
 $(function(){
   $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
 });
 </script>
 
