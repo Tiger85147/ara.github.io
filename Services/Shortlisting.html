@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<title>Shortlisting</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Fonts/ara.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Fonts/font-awesome.css">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ed5f2f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ed5f2f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175478151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175478151-1');
+</script>
+
+<style>
+
+html{
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+  
+.hat:before {
+  content: "\e900";
+  font-size: 60px;
+  color: transparent; 
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  transform: rotate(40deg);
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  right: -25px;
+  top: -25px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  indent-text: 40mm;
+  padding-right: 330px;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.row2{
+  display: flex;
+  flex-direction: row;
+}
+
+.block {
+    float:right;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  position: relative;
+  background-color: #ed5f2f;
+  padding: 20px;
+  margin: 15px;
+  width: 390px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  padding: 20px;
+  width: 390px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.first{
+  margin-left: 0px;
+}
+
+.zero{
+  margin-top: 0;
+}
+
+
+#container:hover > #text {
+  color: white;
+  transition: color 0.5s;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.small{
+  font-size: 23px;
+}
+
+.contentheadingtext{
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+
+.icon{
+  width: 40px;
+  color: white;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.service{
+  display: flex;
+  direction: horizontal;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contentheading{
+  padding-right: 50px;
+  text-align: center;
+  flex: 1;
+}
+
+.right-title{
+  padding-right: 0;
+  margin-left: 40px;
+}
+
+.content {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  flex: 5;
+}
+
+
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+
+.hat:before {
+  content: "\e900";
+  font-size: 45px;
+  color: transparent; 
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  transform: rotate(40deg);
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  right: -20px;
+  top: -20px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 48px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+  indent-text: 40mm;
+}
+
+.titlebox{
+  padding-left: 3vw;
+  padding-right: 5vw;
+}
+
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  position: relative;
+  background-color: #ed5f2f;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+}
+
+#container:hover > #text {
+  color: white;
+}
+
+.blockheadingbox{
+  display: flex;
+}
+
+.one{
+  flex: 1;
+}
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 18px;
+  flex: 9;
+  margin-left: 10px;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.icon{
+  width: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.rowfirst{
+  margin-top: 0px;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contentheading{
+  text-align: center;
+}
+
+.contentheadingtext{
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.service .right-title{
+  float: top;
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.right-content{
+  padding-top: 80px;
+}
+
+.content {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: black;
+}
+
+}
+
+</style>
+</head>
+
+<body scroll="no" style="overflow: visible">
+
+<div id="nav-placeholder"></div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
+});
+</script>
+
+<div class="titlebox">
+<br><br><br>
+<div class="title">
+Shortlisting
+</div>
+<div class="table">
+<div class="row">
+ <a href="#counsel" style="text-decoration: none;">
+ <div class="block first" id="container">
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/test.png"> &nbsp <font class="blockheading">Standardised Tests</font></span><i class="hat" id="hat"></i>
+
+ </div>
+ </a>
+  <a href="#plan" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/course.png">&nbsp <font class="blockheading">Major and/or Minor Courses</font></span><i class="hat" id="hat"></i>
+
+ </div>
+</a>
+  <a href="#mentor" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/scholarship.png"> &nbsp <font class="blockheading small">Financial Aid and Scholarships</font></span><i class="hat" id="hat"></i>
+
+ </div>
+ </a>
+</div>
+
+<div class="row2">
+  <a href="#unis" style="text-decoration: none;">
+ <div class="block first rowfirst zero" id="container">
+   <span class="blockheadingbox"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png">&nbsp  <font class="blockheading">Countries and Universities</font></span><i class="hat" id="hat"></i>
+
+ </div>
+</a>
+  <a href="#visit" style="text-decoration: none;">
+ <div class="block zero" id="container">
+   <span class="blockheadingbox"><img class="icon one" src="https://Tiger85147.github.io/Misc/visit.png"> &nbsp <font class="blockheading">Visit Campus</font></span><i class="hat" id="hat"></i>
+ </div>
+ </a>
+</div>
+</div>
+
+<br>
+</div>
+
+
+<a id="anchor" name="counsel">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/test.png" style="padding-bottom: 10px;"> <br> <font class="contentheadingtext" style="color: #ed5f2f">Standardised Tests</font></div>
+<div class="content">
+Completing specific and relevant Standardized tests (such as SAT, ACT, TOEFL, IELTS, APs, Subject Tests) is a necessary (but not sufficient!) part of each Application in certain geographies/countries.  <br><br>
+
+We help our students to identify relevant Standardized tests and plan/manage schedule/timelines for each. 
+</div>
+</div>
+</a>
+
+<a id="anchor" name="plan">
+
+<div class="service" style="background-color: #ed5f2f;">
+     <div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/course.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Major and Minor Courses</font></div>
+<div class="content">
+Admissions process for top Global Universities is complex, arduous and time consuming. There are several activities involved, many running in parallel. This is potentially the most important element when shortlisting a college/university – as it has a direct relation with the student’s profile and interests along with career aspirations.  This selection has potentially the highest impact on the future of a student.<br><br>
+
+We correlate interests and profile of a student with aspirations to help shortlist a combination of Major and/or Minor courses. This shortlist has direct impact on selection of College/Universities and we help to streamline and ease the process of such multiple shortlisting.  
+</div>
+
+</div>
+</a>
+
+
+<a id="anchor" name="mentor">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/scholarship.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Financial Aid and Scholarships</font></div>
+<div class="content">
+  Some students may require Financial Aid or some students may have a profile and background which can win them Scholarships at specific Universities.<br><br> 
+
+We help to plan and apply for such requirements.  
+</div>
+</div>
+</a>
+
+
+<a id="anchor" name="unis">
+
+<div class="service" style="background-color: #ed5f2f;">
+     <div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" color=#ffffff>Countries and Universities</font></div>
+<div class="content">
+Every family and student comes with a unique background and aspirations.  These include Academic interests, personal and professional aspirations, desired list of geographies/countries and/or budget.  Also, each student will have unique set of scores in Academics and Standardized tests.
+<br><br>
+
+Given every unique combination of aspirations and constraints (if any), we support each family and student to identify and shortlist relevant countries to apply.
+<br><br>
+
+The next step is to identify specific Universities and Colleges based on all aforementioned requirements.  We help the entire process to list Aspirational/Dream Universities along with ‘Reach’ and ‘Safety’ Universities to apply to.  This is done through a review of a combination of factors such as distance, budget, University/College rank, Course rank, Majors and Minors available, availability and ease of financial aid/Scholarships (if required), weather at the location where the relevant University is based and more!
+<br><br>
+
+All our students have received multiple Admission offers from top global universities!  We have helped them to choose the right university based on their profile, background, personality and aspirations (plus, other unique and/or relevant requirements and/or constraints our students may have).
+</div>
+
+</div>
+</a>
+
+
+<a id="anchor" name="visit">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="icon" src="https://Tiger85147.github.io/Misc/visit.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Visit Campus</font></div>
+<div class="content">
+ Often, more than one geographies/countries and Universities get shortlisted based on various criteria and background of a student.  In such cases, a visit to relevant campuses and meeting Admissions Counsellors and students there, help select the right ‘academic destination’.
+  <br><br>
+
+We help plan and manage end-to-end Campus visits along with relevant meetings with University Officials.  
+</div>
+</div>
+</a>
+
+<a id="button"></a>
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+<!-- FOOTER START -->
+<div id="nav-footer"></div>
+
+<script>
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+</script>
+<!-- END OF FOOTER -->
+
+
+
+</body>
+</html>
+
