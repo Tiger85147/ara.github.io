@@ -1,67 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>https://araconsulting.co.in/index.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Overview.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Mission%20and%20Values.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Leadership.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Our%20Admissions.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Counseling.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Profile%20Development.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Shortlisting.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-    <url>
-    <loc>https://araconsulting.co.in/Applications.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-      <url>
-    <loc>https://araconsulting.co.in/Periodic%20Reviews.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-      <url>
-    <loc>https://araconsulting.co.in/Visa%20Assistance.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>
-
-      <url>
-    <loc>https://araconsulting.co.in/Testimonials.html</loc>
-    <lastmod>2020-06-02</lastmod>
+    <loc>https://www.araconsulting.co.in/index.html</loc>
+    <lastmod>2020-08-17</lastmod>
   </url>
 
   <url>
-    <loc>https://araconsulting.co.in/Contact%20Us.html</loc>
-    <lastmod>2020-06-02</lastmod>
+    <loc>https://www.araconsulting.co.in/Genesis.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Join-Us.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Overview.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Mission-and-Values.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Leadership.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Our-Admissions.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Our-Services.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://araconsulting.co.in/Services/Review-Service</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Services/Counseling.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Services/Profile-Development.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Services/Shortlisting.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Services/Applications.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Services/Periodic-Reviews.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Services/Visa-Assistance.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Testimonials.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Contact-Us.html</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Leadership/Rupali-Deolalikar-Dehade</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Leadership/Ashish-Dehade</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Leadership/Aparna-Sharma</loc>
+    <lastmod>2020-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.araconsulting.co.in/Leadership/Priyanka-Kaushik-Malik</loc>
+    <lastmod>2020-08-17</lastmod>
   </url>
 </urlset>
