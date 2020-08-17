@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
   <meta name="Description" content="From Johns Hopkins, UPenn, NYU in the US to UCL, University of Manchester and Edinburgh in UK, Ara's students have consistently been at the top of their cohort">
-
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
@@ -18,8 +17,8 @@
   <meta name="msapplication-navbutton-color" content="#ed5f2f">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
-    <script src="../package/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+  <script src="../package/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="../package/swiper-bundle.min.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175478151-1"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -65,6 +64,33 @@
 
 .dual{
   padding-left: 1%;
+}
+
+.country{
+  height: 140px;
+  margin-right: 10px;
+}
+
+.country2{
+  width: 130px;
+  height: auto;
+  margin-right: 2.5vw;
+}
+
+.two{
+  height: 100px;
+}
+
+.uslogo{
+  height: 100px;
+}
+
+.eulogo{
+  margin-right: 65px;
+}
+
+.auslogo{
+  margin-left: 85px;
 }
 
 .face1{
@@ -120,9 +146,18 @@
   padding-top: 15px
 }
 
-.list .item{
+.item{
   padding: 0px 25px;
   margin: 7px 0px;
+  height: 4em;
+}
+
+.small{
+  height: 3.25em;
+}
+
+.vertical{
+  height: 5.5em;
 }
 
 .oceania .item{
@@ -132,33 +167,6 @@
 .oceania .unitec{
   margin-left: 30px;
   padding-right: 150px;
-}
-
-.icon{
-  height: 140px;
-  margin-right: 10px;
-}
-
-.icon2{
-  width: 130px;
-  height: auto;
-  margin-right: 2.5vw;
-}
-
-.two{
-  height: 100px;
-}
-
-.eulogo{
-  margin-right: 65px;
-}
-
-.auslogo{
-  margin-left: 85px;
-}
-
-.whiting{
-  height: 6vw;
 }
 
 }
@@ -185,8 +193,9 @@
   align-items: center;
 }
 
-.icon{
+.country{
   width: 100px;
+  height: auto;
   padding-right: 2vw;
 }
 
@@ -215,7 +224,16 @@
   flex-wrap: wrap;
 }
 
-.schools, .unis{
+.unis{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 3px solid rgba(255,255,255, 0.5);
+  margin-bottom: 10px;
+}
+
+.schools{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -227,19 +245,24 @@
 }
 
 .item{
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 4.75em;
 }
 
-.whiting{
-  height: 85px;
+.small{
+  height: 3.9em;
+}
+
+.vertical{
+  height: 6.0em;
 }
 
 }
 </style>
 </head>
 
-<body onload="scroll()">
+<body>
   
 
 <div id="nav-placeholder"></div>
@@ -258,7 +281,7 @@ Ara's Admissions
 
 <div class="heading">
 
-<img class="icon" src="https://Tiger85147.github.io/Country%20logos/US%20logo.png" style="height: 120px">
+<img class="country uslogo" src="https://Tiger85147.github.io/Country%20logos/US%20logo.png">
 
 <p>
 
@@ -280,38 +303,38 @@ Average number of admissions per student - 4:1
     <div class="unis">
 
         <a href="https://illinois.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png" height= 50vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/UIUC.png">
         </a>
 
         <a href="https://www.nyu.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png" height= 50vw>
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nyu.png">
         </a>
 
         <a href="https://www.upenn.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/upenn.png" height= 50vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/upenn.png">
         </a>  
 
         <a href="https://www.jhu.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png" height= 50vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/Hopkins.png">
         </a>      
 
         <a href="https://www.umass.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/umass.png" height= 50vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/umass.png">
         </a>
         <a href="https://ucsd.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png" height= 50vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/UCSD%20crop.png">
         </a>
 
         <a href="https://www.ucdenver.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/colorado.png" height= 80vw>
+        <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/colorado.png">
         </a>
 
         <a href="https://www.asu.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/ASU.png" height= 70vw>
+        <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/ASU.png">
         </a>
 
         <a href="https://www.bsu.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/ball.png" height= 80vw>
+        <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/ball.png">
         </a>
 
     </div>
@@ -319,35 +342,35 @@ Average number of admissions per student - 4:1
     <div class="schools">
       
         <a href="https://grainger.illinois.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/graingercrop.png" height=50vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/graingercrop.png">
         </a>
 
         <a href="https://engineering.jhu.edu/">
-        <img class="item whiting" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png">
+        <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/whiting%20crop.png">
         </a>
 
         <a href="https://www.college.upenn.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/upennlsa.png" height=60vw>
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/upennlsa.png">
         </a>
 
         <a href="https://engineering.nyu.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png" height=40vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/tandon.png">
         </a>
 
         <a href="http://jacobsschool.ucsd.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png" height=40vw>
+        <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/school/jacobs.png">
         </a>
 
         <a href="https://www.wellesley.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/wellesley.png" height= 50vw>
+        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/wellesley.png">
         </a>  
 
         <a href="https://www.asu.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/ASU design.png" height=80vw>
+        <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/ASU design.png">
         </a>
 
         <a href="https://www.ucdenver.edu/">
-        <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/colorado arch.png" height= 100vw>
+        <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/colorado arch.png">
         </a>
 
     </div>
@@ -364,7 +387,7 @@ Average number of admissions per student - 4:1
 <a name="UK">
 <div class="heading">
 
-<img class="icon" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png">
+<img class="country" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png">
 
 <p>
 
@@ -385,31 +408,31 @@ Average number of admissions per student - 2:1
   <div class="unis">
 
     <a href="https://www.manchester.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg" style="height: 70px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manchester%20crop.jpg">
     </a>
 
      <a href="https://www.ed.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png" style="height: 70px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/edinburgh.png">
     </a>
 
     <a href="https://www.ucl.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCL.png" style="height: 60px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/UCL.png">
     </a>
 
     <a href="https://warwick.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png" style="height: 60px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/warwick.png">
     </a>
 
     <a href="https://www.st-andrews.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png" style="height: 60px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png">
     </a>
 
     <a href="https://www.nottingham.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nottingham.png" style="height: 70px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nottingham.png">
     </a>
 
     <a href="https://www.ncad.ie/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/dublin.png" style="height: 80px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/dublin.png">
     </a>
 
   </div>
@@ -417,11 +440,11 @@ Average number of admissions per student - 2:1
   <div class="schools">
 
     <a href="https://www.eng.ed.ac.uk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/edinburgh.png" style="height: 80px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/edinburgh.png">
     </a>
 
     <a href="https://www.ucl.ac.uk/bartlett/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/UCL arch.png" style="height: 80px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/UCL arch.png">
     </a>
 
   </div>
@@ -438,7 +461,7 @@ Average number of admissions per student - 2:1
 <a name="CA">
 <div class="heading">
 
-<img class="icon" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png">
+<img class="country" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png">
 <p>
 
 <font class="face1">
@@ -457,23 +480,23 @@ Average number of admissions per student - 3:1
     <div class="unis">
 
     <a href="https://www.mcgill.ca/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/McGill.png" style="height: 35px;">
+    <img class="item small" src="https://Tiger85147.github.io/Uni%20logos/McGill.png">
     </a>
 
     <a href="https://www.utoronto.ca/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png" style="height: 75px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/toronto.png">
     </a>
 
     <a href="https://uwaterloo.ca/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo.png" style="margin-top: 20px; height: 55px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/waterloo.png">
     </a>
 
     <a href="http://umanitoba.ca/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/manitoba.png" style="height: 75px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/manitoba.png">
     </a>
 
     <a href="https://www.ucalgary.ca/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/calgary.png" style="height: 95px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/calgary.png">
     </a>
 
     </div>
@@ -481,26 +504,26 @@ Average number of admissions per student - 3:1
     <div class="schools">
 
     <a href="https://www.engineering.utoronto.ca/">
-      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png" style="height: 85px;">
+      <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/toronto.png">
     </a>
 
     <a href="https://www.artsci.utoronto.ca/">
-      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/torontolsa.png" style="height: 60px; margin-bottom: 10px">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/torontolsa.png">
     </a>
 
     <a href="https://uwaterloo.ca/engineering/">
-      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/waterloo.png" style="height: 75px; margin-bottom: 5px;">
+      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/waterloo.png">
 
     <a href="https://www.mcgill.ca/urbanplanning/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/McGill Arch1.png" style="height: 70px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/McGill Arch1.png">
     </a>
 
     <a href="http://umanitoba.ca/architecture/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/manitoba arch.png" style="height: 60px; margin-bottom: 15px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/manitoba arch.png">
     </a>
 
     <a href="https://sapl.ucalgary.ca/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/calgary arch.png" style="height: 80px;  margin-bottom: 10px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/calgary arch.png">
     </a>
 
   </div>
@@ -514,7 +537,7 @@ Average number of admissions per student - 3:1
 <a name="EU">
 <div class="heading">
 
-<img class="icon eulogo" src="https://Tiger85147.github.io/Country%20logos/Europe%20logo.png">
+<img class="country eulogo" src="https://Tiger85147.github.io/Country%20logos/Europe%20logo.png">
 <p>
 
 <font class="face1">
@@ -533,19 +556,19 @@ Average number of admissions per student - 2:1
   <div class="unis">
 
     <a href="https://www.naba.it/en">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/naba.png" style="height: 85px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/naba.png">
     </a>
 
     <a href="http://www.florencedesignacademy.com/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/aalto.png" style="height: 85px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/aalto.png">
     </a>
 
     <a href="https://www.aalto.fi/en">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/florence.png" style="height: 85px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/florence.png">
     </a>
 
     <a href="https://www.domusacademy.com/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/domus.png" style="height: 85px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/domus.png">
     </a>
 
   </div>
@@ -553,11 +576,11 @@ Average number of admissions per student - 2:1
   <div class="schools">
 
     <a href="https://www.aalto.fi/en/school-of-arts-design-and-architecture">
-      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/aalto design.png" style="height: 90px;">
+      <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/aalto design.png">
     </a>
 
     <a href="https://www.domusacademy.com/programs/design">
-      <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/domus design.png" style="height: 90px;">
+      <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/domus design.png">
     </a>
 
   </div>
@@ -574,9 +597,9 @@ Average number of admissions per student - 2:1
 
 <div class="heading dual">
 
-<div class="icons">
-<img class="icon two" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png">
-<img class="icon two" src="https://Tiger85147.github.io/Country%20logos/singapore logo.png">
+<div class="countrys">
+<img class="country two" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png">
+<img class="country two" src="https://Tiger85147.github.io/Country%20logos/singapore logo.png">
  </div>
 <p>
 
@@ -595,45 +618,45 @@ Average number of admissions per student - 3:1
 <div class="list hongkong">        
   <div class="unis">
     <a href="https://www.ust.hk/" style="padding-left: 0px;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png"  style="padding-left: 0px;"height=75vw>
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hkust.png"  style="padding-left: 0px;">
     </a>
 
     <a href="https://www.hku.hk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png" height=75vw>
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/hku2.png">
     </a>
 
     <a href="http://www.nus.edu.sg/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nus.png" height=65vw>
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nus.png">
     </a>
 
     <a href="https://www.lasalle.edu.sg/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/lasalle.png" height=65vw>
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/lasalle.png">
     </a>
 
   </div>
     <div class="schools">
     <a href="https://www.seng.ust.hk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png" height=65vw style="margin-top: 10px">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hkust.png">
     </a>
 
     <a href="https://engg.hku.hk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png" height=50vw style="margin-top: 20px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku.png">
     </a>
 
     <a href="https://www.arch.hku.hk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku arch.png" height=50vw style="margin-top: 25px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku arch.png">
     </a>
 
     <a href="https://www.fbe.hku.hk/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku business.png" height=70vw style="margin-top: 25px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/hku business.png">
     </a>
 
     <a href="https://www.sde.nus.edu.sg/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/nus design.png" height=55vw style="margin-top: 15px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/nus design.png">
     </a>
 
     <a href="https://www.lasallecollege.com/fashion-arts-design-school">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/lasalle arts.png" height=60vw style="margin-top: 15px;">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/lasalle arts.png">
     </a>
 
   </div>
@@ -649,10 +672,10 @@ Average number of admissions per student - 3:1
 
 <div class="heading dual">
 
-<div class="icons">
-<img class="icon two auslogo" src="https://Tiger85147.github.io/Country%20logos/australia.png">
+<div class="countrys">
+<img class="country two auslogo" src="https://Tiger85147.github.io/Country%20logos/australia.png">
 
-<img class="icon two" src="https://Tiger85147.github.io/Country%20logos/NZ logo.png">
+<img class="country two" src="https://Tiger85147.github.io/Country%20logos/NZ logo.png">
 
  </div>
 <p>
@@ -673,26 +696,26 @@ Average number of admissions per student - 3:1
   <div class="unis">
 
     <a href="https://www.rmit.edu.au/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/RMIT.png" height=100vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/RMIT.png">
     </a>
 
     <a href="https://www.unimelb.edu.au/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/melbourne.png" height=100vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/melbourne.png">
     </a>
 
     <a href="https://www.unitec.ac.nz/">
-    <img class="item unitec" src="https://Tiger85147.github.io/Uni%20logos/unitec.png" height=130vw>
+    <img class="item unitec vertical" src="https://Tiger85147.github.io/Uni%20logos/unitec.png">
     </a>
 
   </div>
     <div class="schools">
 
-    <a href="https://www.rmit.edu.au/study-with-us/architecture/architecture" style="text-decoration:none;">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/RMIT arch.png" height=100vw>
+    <a href="https://www.rmit.edu.au/study-with-us/architecture/architecture">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/RMIT arch.png">
     </a>
 
     <a href="https://fbe.unimelb.edu.au/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/melbourneeco.png" height=110vw style="margin-top: 10px;">
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/melbourneeco.png">
     </a>
 
   </div>
@@ -707,7 +730,7 @@ Average number of admissions per student - 3:1
 
 <div class="heading">
 
-<img class="icon icon2" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png">
+<img class="country country2" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png">
 
 <p class="india">
 
@@ -728,30 +751,30 @@ Average number of admissions per student - 3:1
 
   <div class="unis">
     <a href="https://www.ashoka.edu.in/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/ashoka.png" height=80vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/ashoka.png">
     </a>
 
     <a href="https://www.christuniversity.in/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/christ.jpg" height=90vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/christ2.png">
     </a>
 
     <a href="https://krea.edu.in/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/krea.png" height=90vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/krea.png">
     </a>
 
     <a href="https://www.siu.edu.in/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/symbiosis.png" height=90vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/symbiosis.png">
     </a>
 
     <a href="https://jgu.edu.in/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/jindal.png" height=90vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/jindal.png">
     </a>
 
   </div>
 
   <div class="schools">
     <a href="https://www.ssla.edu.in/">
-    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/symbiosisla.png" height=90vw>
+    <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/symbiosisla.png">
     </a>
   </div>
 
@@ -765,6 +788,10 @@ Average number of admissions per student - 3:1
 <div id="nav-footer"></div>
 
 <script>
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
 $(function(){
   $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
 });
