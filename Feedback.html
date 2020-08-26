@@ -128,7 +128,7 @@ form{
 }
 
 .event{
-  margin-top: 20px;
+  margin-top: 40px;
   width: 350px;
   opacity: 0.6;
 }
@@ -145,7 +145,7 @@ div.stars {
   float: right;
   align-items: center;
   margin-right: 80px;
-  width: 600px;
+  width: 700px;
 }
 
 .limit{
@@ -403,13 +403,13 @@ Feedback
 
   <input name="Grade" type="text" class="form-control" placeholder="Grade" required><br>
 
-  <select name="Event" class="form-control event" placeholder="Event Name" required>
+  <select name="Event" class="form-control event" placeholder="Event Name" id="event" onchange="NameDisplay()" required>
     <option value="" disabled selected hidden>Event Name</option>
-    <option value="Guides Learning - 29/08/2020">Ara - Guides Learning - 29/08/2020</option>
+    <option value="Ara - Guides Learning - 29/08/2020">Ara - Guides Learning - 29/08/2020</option>
   </select>
 
   <div class="stars form-control">
-    <font class="rating">How do you rate your experience?</font>
+    <font class="rating" id="rating">How do you rate your experience?</font>
     <div>
       <input class="star star-5" id="star-5" type="radio" name="star" value="1 star" required/>
       <label class="star star-5" for="star-5"></label>
@@ -450,6 +450,13 @@ Feedback
 <!-- END OF FOOTER -->
 
 <script>
+
+function NameDisplay(){
+    var e = document.getElementById("event");
+    var text = e.options[e.selectedIndex].value;
+
+    document.getElementById("rating").innerHTML = 'How do you rate your experience with' + "<br />" + text + '?';
+}
 
 $(function(){
   $("#nav-footer").load("https://araconsulting.co.in/footer.html");
