@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<title>Feedback Form</title>
+<head>
+  <meta name="Description" content="Contact Ara for best-in-class Admissions Counseling services">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ed5f2f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ed5f2f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175478151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175478151-1');
+</script>
+
+<style>
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #ed5f2f;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #ed5f2f;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #F62;
+}
+
+label.star:hover {
+  cursor: pointer;
+  font-weight: 900;
+  /*transform: rotate(-15deg) scale(1.3);*/
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  indent-text: 40mm;
+  padding-right: 150px;
+}
+
+.subtitle{
+  font-family: 'Hind Guntur';
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.logo{
+  width: 200px;
+  padding-left: 10px; 
+}
+
+.main{
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  font-family: 'Hind Guntur'
+}
+
+form{
+  transition: all 4s ease-in-out;
+}
+
+.form-control{
+  width: 23%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #ed5f2f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.event{
+  margin-top: 20px;
+  width: 350px;
+  opacity: 0.6;
+}
+
+.rating{
+  font-size: 20px;
+  color: #ed5f2f;
+  padding-right: 20px;
+  opacity: 0.6;
+}
+
+div.stars {
+  display: inline-flex;
+  float: right;
+  align-items: center;
+  margin-right: 80px;
+  width: 600px;
+}
+
+.limit{
+  width: 19.25%;
+}
+
+.area{
+  width: 94%;
+  margin-top: 10px;
+}
+
+.optionsbox{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  line-height: 50px;
+}
+
+.turn{
+  font-size: 20px;
+  color: #ed5f2f;
+  font-weight: 600;
+}
+
+.options{
+  flex: 1;
+  display: inline-block;
+  background-color: #ffffff;
+  color: rgba(237, 95, 47, 0.5);
+  border-radius: 10px;
+  transition: font-weight 0.5s;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.active, .options:hover{
+  font-weight: 600;
+  color: #ed5f2f;
+  border-radius: 10px;
+}
+
+.permissionbox{
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5px;
+}
+
+.disclaimer{
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5px;
+}
+
+.text{
+  font-size: 15px;
+  color: #000000;
+}
+
+.input{
+  height: 45px;
+}
+
+form .submit{
+  background-color: #ed5f2f;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 55px;
+}
+
+.end{
+  position: relative;
+  color: #ed5f2f;
+  font-size: 32px;
+  float: right;
+}
+
+form .submit:hover{
+  background-color:  #ba3f16;
+  cursor: pointer;
+}
+
+}
+
+@media screen and (max-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 40px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+}
+
+.subtitle{
+  font-family: 'Hind Guntur';
+  color: #ffffff;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.logo{
+  width: 90px;
+  padding-left: 3px;
+  padding-bottom: 4px; 
+}
+
+.main{
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Hind Guntur'
+}
+
+.form-control{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #ed5f2f;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.event{
+  opacity: 0.6;
+}
+
+.rating{
+  font-size: 18px;
+  color: #ed5f2f;
+  padding-right: 20px;
+  opacity: 0.6;
+}
+
+div.stars {
+  display: inline-flex;
+  flex-direction: column;
+  float: right;
+  align-items: center;
+}
+
+.area{
+  width: 100%;
+}
+
+.optionsbox{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.turn{
+  font-size: 18px;
+  color: #ed5f2f;
+  font-weight: 600;
+}
+
+.options{
+  flex: 1;
+  display: inline-block;
+  background-color: #ffffff;
+  color: rgba(237, 95, 47, 0.5);
+  transition: font-weight 0.5s;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.active, .options:hover{
+  font-weight: 600;
+  color: #ed5f2f;
+  border-radius: 10px;
+}
+
+.text{
+  font-size: 15px;
+  color: #000000;
+}
+
+.input{
+  height: 45px;
+}
+
+form .submit{
+  background-color: #ed5f2f;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 10px;
+  margin-right: 20px;
+}
+
+.end{
+  color: #ed5f2f;
+  font-size: 25px;
+  text-align: center;
+}
+
+form .submit:hover{
+  background-color:  #ba3f16;
+  cursor: pointer;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="titlebox">
+<br><br>
+<div class="title">
+Feedback
+</div>
+<br><br><br><br>
+
+
+
+
+</div>
+
+<div class="main"> 
+
+ <div class="contact-form">
+
+  <form id="contact-form" method="POST" action="https://formspree.io/rupali@araconsulting.co.in" enctype="multipart/form-data" target="_self">
+
+  <input name="Name" type="text" class="form-control" placeholder="Name" required>
+  
+  <input name="Phone" type="number" class="form-control" placeholder="Phone Number" required>
+
+  <input name="Email" type="text" class="form-control" placeholder="Email" required>
+
+  <input name="Grade" type="text" class="form-control" placeholder="Grade" required><br>
+
+  <select name="Event" class="form-control event" placeholder="Event Name" required>
+    <option value="" disabled selected hidden>Event Name</option>
+    <option value="Guides Learning - 29/08/2020">Ara - Guides Learning - 29/08/2020</option>
+  </select>
+
+  <div class="stars form-control">
+    <font class="rating">How do you rate your experience?</font>
+    <div>
+      <input class="star star-5" id="star-5" type="radio" name="star" required/>
+      <label class="star star-5" for="star-5"></label>
+      <input class="star star-4" id="star-4" type="radio" name="star" required/>
+      <label class="star star-4" for="star-4"></label>
+      <input class="star star-3" id="star-3" type="radio" name="star" required/>
+      <label class="star star-3" for="star-3"></label>
+      <input class="star star-2" id="star-2" type="radio" name="star" required/>
+      <label class="star star-2" for="star-2"></label>
+      <input class="star star-1" id="star-1" type="radio" name="star" required/>
+      <label class="star star-1" for="star-1"></label>
+    </div>
+  </div>
+
+  <textarea name="Likes" class="form-control area" placeholder="What did you like about today's session?" rows="4"></textarea><br>
+
+  <textarea name="Could have done better" class="form-control area" placeholder="What could we have done better?" rows="4"></textarea><br>
+
+  <input name="permission" type="checkbox" class="check" required> &nbsp <font class="text"> I would like Ara to contact me based on the information provided above.</font>
+  <br>
+  <hr>
+
+  <font class="text">Ara commits that your information shall not be used for anything except for the purpose stated above.</font>
+  <br>
+  <hr>
+
+<button name="submit" type="submit" class="form-control submit">Submit</button>
+
+<div class="end">We appreciate your Feedback!</div>
+
+  </form>
+ </div>
+
+</div>
+
+<!-- FOOTER START -->
+<div id="nav-footer"></div>
+<!-- END OF FOOTER -->
+
+<script>
+
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
+});
+
+</script>
+
+</body>
+</html>
