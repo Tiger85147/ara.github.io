@@ -54,8 +54,16 @@
     }
 }
 
+.titlebox{
+  padding-left: 0;
+}
+
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+.title{
+  margin-left: 10%;
+}
 
 .hat:before {
   content: "\e900";
@@ -94,7 +102,7 @@
   bottom: -20px;
   right: 30px;
   transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -138,7 +146,7 @@
     padding: 20px 0px 15px 430px;
 }
 
-.icon{
+.flaticon{
   padding-right: 10px;
 }
 
@@ -154,7 +162,6 @@
   padding-right: 150px;
 }
 
-
 .table{
   display: flex;
   flex-direction: column;
@@ -163,6 +170,8 @@
 .row{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .block{
@@ -203,7 +212,7 @@
 }
 
 
-.icon{
+.flaticon{
   width: 40px;
   color: white;
   margin-top: 0;
@@ -235,6 +244,9 @@
 
 @media screen and (max-width: 800px){
 
+.title{
+  margin-left: 5%;
+}
 
 .hat:before {
   content: "\e900";
@@ -295,7 +307,7 @@
     transition: 0.5s;
 }
 
-.icon{
+.flaticon{
   padding-right: 10px;
 }
 
@@ -329,6 +341,7 @@
 .table{
   display: flex;
   flex-direction: column;
+  padding-left: 5%;
 }
 
 .block{
@@ -366,7 +379,7 @@
   font-size: 15px;
 }
 
-.icon{
+.flaticon{
   width: 30px;
   color: white;
   margin-top: 0;
@@ -394,17 +407,17 @@ Ara's Services
 <div class="row">
  <a href="https://Tiger85147.github.io/Services/Counseling" target="_blank">
  <div class="block" style="margin-left: 0;" id="container">
-   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font id="text" class="blockheading">Counseling and Mentoring</font></span><i class="hat" id="hat"></i>
+   <span class="blockheadingbox" id="head"><img class="flaticon" src="https://Tiger85147.github.io/Misc/speech.png"> &nbsp <font id="text" class="blockheading">Counseling and Mentoring</font></span><i class="hat" id="hat"></i>
  </div>
  </a>
   <a href="https://Tiger85147.github.io/Services/Profile-Development" target="_blank">
  <div class="block" id="container">
-   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/profile.png">&nbsp &nbsp<font id="text" class="blockheading">Profile Development</font></span><i class="hat" id="hat"></i>
+   <span class="blockheadingbox" id="head"><img class="flaticon" src="https://Tiger85147.github.io/Misc/profile.png">&nbsp &nbsp<font id="text" class="blockheading">Profile Development</font></span><i class="hat" id="hat"></i>
  </div>
 </a>
   <a href="https://Tiger85147.github.io/Services/Shortlisting" target="_blank">
  <div class="block" id="container">
-   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/list.png"> &nbsp <font id="text" class="blockheading">Shortlisting</font></span><i class="hat" id="hat"></i>
+   <span class="blockheadingbox" id="head"><img class="flaticon" src="https://Tiger85147.github.io/Misc/list.png"> &nbsp <font id="text" class="blockheading">Shortlisting</font></span><i class="hat" id="hat"></i>
  </div>
  </a>
 </div>
@@ -412,22 +425,32 @@ Ara's Services
 <div class="row">
   <a href="https://Tiger85147.github.io/Services/Applications" target="_blank">
  <div class="block top" id="container" style="margin-left: 0;">
-   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/resume.png">&nbsp &nbsp<font id="text" class="blockheading">Applications
+   <span class="blockheadingbox" id="head"><img class="flaticon" src="https://Tiger85147.github.io/Misc/resume.png">&nbsp &nbsp<font id="text" class="blockheading">Applications
    </font></span><i class="hat" id="hat"></i>
  </div>
 </a>
   <a href="https://Tiger85147.github.io/Services/Periodic-Reviews" target="_blank">
  <div class="block" id="container">
-   <span class="blockheadingbox" id="head"> <img class="icon" src="https://Tiger85147.github.io/Misc/clock.png"> &nbsp <font id="text" class="blockheading">Periodic Reviews</font></span><i class="hat" id="hat"></i>
+   <span class="blockheadingbox" id="head"> <img class="flaticon" src="https://Tiger85147.github.io/Misc/clock.png"> &nbsp <font id="text" class="blockheading">Periodic Reviews</font></span><i class="hat" id="hat"></i>
 
  </div>
  </a>
   <a href="https://Tiger85147.github.io/Services/Travel-Assistance" target="_blank">
  <div class="block" id="container">
-   <span class="blockheadingbox" id="head"><img class="icon" src="https://Tiger85147.github.io/Misc/globe.png"> &nbsp <font id="text" class="blockheading">Travel Assistance</font></span><i class="hat" id="hat"></i>
+   <span class="blockheadingbox" id="head"><img class="flaticon" src="https://Tiger85147.github.io/Misc/globe.png"> &nbsp <font id="text" class="blockheading">Travel Assistance</font></span><i class="hat" id="hat"></i>
  </div>
  </a>
 </div>
+
+<div class="row">
+  <a href="https://Tiger85147.github.io/Services/Design-Portfolio" target="_blank">
+ <div class="block top" id="container" style="margin-left: 0">
+   <span class="blockheadingbox" id="head"><img class="flaticon" src="https://Tiger85147.github.io/Misc/portfolio.png">&nbsp &nbsp<font id="text" class="blockheading">Design Portfolio
+   </font></span><i class="hat" id="hat"></i>
+ </div>
+</a>
+</div>
+
 </div>
 
 <br>
@@ -439,7 +462,7 @@ Ara's Services
 <a href="https://Tiger85147.github.io/Services/Applications#mentor" target="_blank">
 <div id="cookieConsent">
 
-    <img class="icon" src="https://Tiger85147.github.io/Misc/essay.png">
+    <img class="flaticon" src="https://Tiger85147.github.io/Misc/essay.png">
 
     Exclusive Essay Review Service
 

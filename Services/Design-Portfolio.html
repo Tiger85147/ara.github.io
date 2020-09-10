@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<title>Design Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Fonts/ara.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Fonts/font-awesome.css">
+   <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ed5f2f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ed5f2f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175478151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175478151-1');
+</script>
+
+<style>
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+
+.hat:before {
+  content: "\e900";
+  font-size: 60px;
+  color: transparent; 
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  transform: rotate(40deg);
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  right: -25px;
+  top: -25px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 69px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  indent-text: 40mm;
+  padding-right: 368px;
+}
+
+.table{
+  display: flex;
+}
+
+.block {
+    float:right;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  position: relative;
+  background-color: #ed5f2f;
+  padding: 20px;
+  padding-right: 10px;
+  margin: 15px;
+  width: 390px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.first{
+  margin-left: 0px;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+  color: #ffffff;
+}
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 21px;
+  display: inline;
+}
+
+.contentheadingtext{
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.line{
+    white-space: nowrap;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+
+.flaticon{
+  width: 40px;
+  color: white;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.service{
+  display: flex;
+  direction: horizontal;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contentheading{
+  padding-right: 50px;
+  text-align: center;
+  flex: 1;
+}
+
+.right-title{
+  padding-right: 0;
+  margin-left: 40px;
+}
+
+.content {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  flex: 5;
+
+}
+
+
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+
+.hat:before {
+  content: "\e900";
+  font-size: 45px;
+  color: transparent; 
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  transform: rotate(40deg);
+}
+
+#container:hover > #hat:before {  
+  color: #ffffff; 
+  right: -20px;
+  top: -20px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 35px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+  indent-text: 40mm;
+}
+
+.titlebox{
+  padding-left: 3vw;
+  padding-right: 5vw;
+}
+
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.block{
+  position: relative;
+  background-color: #ed5f2f;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.block:hover{
+  background-color: #ba3f16;
+}
+
+#container:hover > #text {
+  color: white;
+}
+
+
+.blockheading{
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.blockcontent{
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.flaticon{
+  width: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contentheading{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contentheadingtext{
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.right-title{
+  float: top;
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.right-content{
+  padding-top: 80px;
+}
+
+.content {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: black;
+}
+
+}
+
+</style>
+</head>
+
+<body scroll="no" style="overflow: visible">
+
+<div id="nav-placeholder"></div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
+});
+</script>
+
+<div class="titlebox">
+<br><br><br>
+<div class="title">
+Design Portfolio
+</div>
+<div class="table">
+ <a href="#develop" style="text-decoration: none;">
+ <div class="block first" id="container">
+   <span class="blockheadingbox"><img class="flaticon" src="https://Tiger85147.github.io/Misc/develop.png"> &nbsp <font class="blockheading">Develop</font></span><i class="hat" id="hat"></i>
+ </div>
+ </a>
+  <a href="#requirements" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="flaticon" src="https://Tiger85147.github.io/Misc/requirements.png">&nbsp <font class="blockheading">Fulfil Requirements of Universities</font></span><i class="hat" id="hat"></i>
+ </div>
+</a>
+  <a href="#customize" style="text-decoration: none;">
+ <div class="block" id="container">
+   <span class="blockheadingbox"><img class="flaticon" src="https://Tiger85147.github.io/Misc/customize.png"> &nbsp <font class="blockheading">Customize Content</font></span><i class="hat" id="hat"></i>
+ </div>
+ </a>
+
+</div>
+
+<br>
+</div>
+
+
+<a name="develop">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="flaticon" src="https://Tiger85147.github.io/Misc/develop.png" style="padding-bottom: 10px;"> <br> <font class="contentheadingtext" style="color: #ed5f2f">Develop</font></div>
+<div class="content">
+
+Develop design skills, portfolio strategy and content for a carefully assembled and edited portfolio. For existing portfolios, we evaluate and help our students to understand its strengths and areas of improvements. Hence, we make required changes to meet the standards expected by top global Universities.
+
+</div>
+</div>
+</a>
+
+<a name="requirements">
+
+<div class="service" style="background-color: #ed5f2f;">
+     <div class="contentheading"><img class="flaticon" src="https://Tiger85147.github.io/Misc/requirements.png" style="padding-bottom: 10px;"><br> <font class="contentheadingtext" style="color: #ffffff">Fulfil distinctive requirements of different Universities</font></div>
+<div class="content" style="color: #ffffff">
+  Universities have varied expectations from Portfolio submissions such as Concepts, and/or
+  Working and/or Technique.
+</div>
+
+</div>
+</a>
+
+
+<a name="customize">
+
+<div class="service" style="background-color: #ffffff;">
+
+<div class="contentheading"><img class="flaticon" src="https://Tiger85147.github.io/Misc/customize.png" style="padding-bottom: 10px;"><br><font class="contentheadingtext" style="color: #ed5f2f">Customize Content and Submission Formats</font></div>
+<div class="content">
+Masters of Architecture programs require Digital Portfolio submissions and/or Video essays. The Submissions would include 3D models, Renderings, Drawings, Photographs, Paintings and Material Explorations – along with the Narrative of the Portfolio (Written and/or Video format).
+</div>
+</div>
+</a>
+
+
+
+
+
+
+<a id="button"></a>
+
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+<!-- FOOTER START -->
+<div id="nav-footer"></div>
+
+<script>
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+</script>
+<!-- END OF FOOTER -->
+
+
+
+</body>
+</html>
+
