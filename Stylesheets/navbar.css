@@ -8,6 +8,9 @@
   background: #000000;
 }
 
+.topnav{
+  z-index: 10;
+}
 
 .titlebox{
   background-image: url("https://Tiger85147.github.io/Misc/ara constellation.jpg");
