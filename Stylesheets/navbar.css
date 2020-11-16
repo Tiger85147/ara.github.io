@@ -135,7 +135,7 @@
 .titlebox .fa{
   font-size: 30px;
   margin: 5px;
-  color: #2a9df4;
+  color: #ffffff;
 }
 
 .titlebox .fa:hover{
@@ -151,7 +151,7 @@
 }
 
 .titlebox .fa-share-alt:hover{
-  color: #2a9df4;
+  color: #ffffff;
 }
 
 .topnav {
@@ -420,7 +420,7 @@ background: #ed5f2f;
 .titlebox .fa{
   font-size: 30px;
   margin: 5px;
-  color: #2a9df4;
+  color: #ffffff;
 }
 
 .titlebox .fa:hover{
@@ -432,7 +432,14 @@ background: #ed5f2f;
 
 .titlebox .fa-share-alt{
   font-size: 40px;
+  color: #ed5f2f;
 }
+
+.titlebox .fa-share-alt:hover{
+  color: #ffffff;
+}
+
+
 
 .topnav {
   overflow: hidden;
