@@ -362,6 +362,11 @@ $(function(){
 </script>
 
 <div class="titlebox">
+  <div class="share">
+  <i class="fa fa-share-alt" onclick="drop()"></i></a>
+  <a href="mailto:?subject=Ara Consulting&amp;body=https://araconsulting.co.in/Services/Shortlisting" title="Share by Email"><i class="fa fa-envelope" id="option1"></i></a>
+  <a href="whatsapp://send?text=https://araconsulting.co.in/Services/Shortlisting" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" id="option2"></i></a>
+  </div>
 <br><br><br>
 <div class="title">
 Shortlisting
@@ -509,6 +514,17 @@ btn.on('click', function(e) {
 $(function(){
   $("#nav-footer").load("https://araconsulting.co.in/footer.html");
 });
+
+function drop(){
+  if(document.getElementById("option1").style.display == "none"){
+    document.getElementById("option1").style.display = "inline-block";
+    document.getElementById("option2").style.display = "inline-block";
+  }
+  else {
+    document.getElementById("option1").style.display = "none";
+    document.getElementById("option2").style.display = "none";
+  }
+}
 </script>
 <!-- END OF FOOTER -->
 
