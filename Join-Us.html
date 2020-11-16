@@ -396,6 +396,17 @@ $(function(){
 $(function(){
   $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
 });
+
+function drop(){
+  if(document.getElementById("option1").style.display == "none"){
+    document.getElementById("option1").style.display = "inline-block";
+    document.getElementById("option2").style.display = "inline-block";
+  }
+  else {
+    document.getElementById("option1").style.display = "none";
+    document.getElementById("option2").style.display = "none";
+  }
+}
 </script>
 
 </body>
