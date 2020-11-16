@@ -30,6 +30,7 @@
 
 <style>
 
+
 .title{
   font-family:'Bitter', serif;
   text-align: left;
@@ -42,6 +43,35 @@
   text-align: left;
   color:#000000; 
   background-color:#ffffff;
+}
+
+.share{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  right: 1%;
+  top: 10%;
+}
+
+#option1{
+  display: none;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+}
+
+#option2{
+  display: none;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+}
+
+.titlebox .fa-share-alt:hover{
+  color: #2a9df4;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 800px){
@@ -61,19 +91,27 @@
   padding-bottom: 1.5vw;
 }
 
-.content .fa{
+.titlebox .fa{
   font-size: 30px;
   margin: 5px;
   color: #2a9df4;
 }
 
-.content .fa:hover{
+.titlebox .fa:hover{
   color: #ed5f2f;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
 }
 
+.titlebox .fa-share-alt{
+  font-size: 40px;
+  color: #ed5f2f;
+}
+
+.titlebox .fa-share-alt:hover{
+  color: #2a9df4;
+}
 }
 
 @media screen and (max-width: 800px){
@@ -92,17 +130,21 @@
   padding-bottom: 3vw;
 }
 
-.content .fa{
+.titlebox .fa{
   font-size: 30px;
   margin: 5px;
   color: #2a9df4;
 }
 
-.content .fa:hover{
+.titlebox .fa:hover{
   color: #ed5f2f;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
+}
+
+.titlebox .fa-share-alt{
+  font-size: 40px;
 }
 </style>
 </head>
@@ -112,6 +154,11 @@
 <div id="nav-placeholder"></div>
 
 <div class="titlebox">
+<div class="share">
+  <i class="fa fa-share-alt" onclick="drop()"></i></a>
+  <a href="mailto:?subject=Ara Consulting&amp;body=https://araconsulting.co.in/Genesis" title="Share by Email"><i class="fa fa-envelope" id="option1"></i></a>
+  <a href="whatsapp://send?text=araconsulting.co.in" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" id="option2"></i></a>
+</div>
 <br><br><br>
 <div class="title">
 Ara's Genesis</div>
@@ -151,21 +198,7 @@ Common among almost all of these: 1. Will call you a zillion times till you make
 
 Having lost some serious money, we became ‘Atmanirbhar’!  Surprised ourselves with the quality of admissions we got for our son and for some of his close friends in our very first attempt.  Two in global top-10 Universities.  Ten more in global top-35 Universities.  80% of these were in Computer Science Engineering! <br><br> 
 
-<!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<a class="a2a_button_facebook"><i class="fa fa-facebook"></i></a>
-<a class="a2a_button_google_gmail"><i class="fa fa-google"></i></a>
-<a class="a2a_button_email"><i class="fa fa-envelope"></i></a>
-<a class="a2a_button_whatsapp"><i class="fa fa-whatsapp"></i></a>
-</div>
-<script>
-var a2a_config = a2a_config || {};
-a2a_config.num_services = 4;
-</script>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
-
-That is how Ara was born.  <br><br>
+That is how Ara was born.<br><br>
 
 And yes, your experience with Ara will be like ‘none of the above’!  Guaranteed! 
 
@@ -173,81 +206,30 @@ And yes, your experience with Ara will be like ‘none of the above’!  Guarant
 
 <div id="nav-footer"></div>
 
-<div class="footer">
-  <br>
-  <div class="contain">
-
-  <div class="col">
-    <a href="https://araconsulting.co.in/" class="footlink"><h1>Home</h1></a>
-  </div>
-
-  <div class="col">
-    <h1>About Us</h1>
-    <ul>
-      <a href="https://araconsulting.co.in/Genesis" class="footlink"><li>Genesis</li></a>
-      <a href="https://araconsulting.co.in/Overview" class="footlink"><li>Overview</li></a>
-      <a href="https://araconsulting.co.in/Mission-and-Values" class="footlink"><li>Mission and Values</li></a>
-      <a href="https://araconsulting.co.in/Leadership" class="footlink"><li>Leadership</li></a>
-      <a href="https://araconsulting.co.in/Join-Us" class="footlink"><li>Join Us</li></a>
-    </ul>
-  </div>
-
-  <div class="col">
-    <a href="https://araconsulting.co.in/Our-Admissions" class="footlink"><h1>Our Admissions</h1></a>
-    <ul>
-      <a href="https://araconsulting.co.in/Our-Admissions#US" class="footlink"><li>US</li></a>
-      <a href="https://araconsulting.co.in/Our-Admissions#UK" class="footlink"><li>UK</li></a>
-      <a href="https://araconsulting.co.in/Our-Admissions#CA" class="footlink"><li>Canada</li></a>
-      <a href="https://araconsulting.co.in/Our-Admissions#EU" class="footlink"><li>Europe</li></a>
-      <a href="https://araconsulting.co.in/Our-Admissions#HKS" class="footlink"><li>Hong Kong & Singapore</li></a>
-      <a href="https://araconsulting.co.in/Our-Admissions#AUS" class="footlink"><li>Australia & New Zealand</li></a>      
-      <a href="https://araconsulting.co.in/Our-Admissions#IN" class="footlink"><li>India</li></a>
-    </ul>
-  </div>
-
-  <div class="col">
-    <a href="https://Tiger85147.github.io/Our-Services"><h1>Our Services</h1></a>
-    <ul>
-      <a href="https://araconsulting.co.in/Services/Counseling" class="footlink"><li>Counseling</li></a>
-      <a href="https://araconsulting.co.in/Services/Profile-Development" class="footlink"><li>Profile Development</li></a>
-      <a href="https://araconsulting.co.in/Services/Shortlisting" class="footlink"><li>Shortlisting</li></a>
-      <a href="https://araconsulting.co.in/Services/Applications" class="footlink"><li>Applications</li></a>
-      <a href="https://araconsulting.co.in/Services/Periodic-Reviews" class="footlink"><li>Periodic Reviews</li></a>
-      <a href="https://araconsulting.co.in/Services/Travel-Assistance" class="footlink"><li>Travel Assistance</li></a>
-      <a href="https://araconsulting.co.in/Services/Design-Portfolio" class="footlink"><li>Design Portfolio</li></a>
-      <a href="https://araconsulting.co.in/Services/Review-Service" class="footlink"><li>Essay Review Service</li></a>
-    </ul>
-  </div>
-
-  <div class="col">
-    <a href="https://araconsulting.co.in/Testimonials" class="footlink"><h1>Testimonials</h1></a>
-  </div>
-
-  <div class="col">
-    <a href="https://araconsulting.co.in/Contact-Us" class="footlink"><h1>Contact Us</h1></a>
-  </div>
-
-  <div class="col social">
-    <h1>Social</h1>
-    <ul>
-             <li><a href="whatsapp://send?text=araconsulting.co.in" data-action="share/whatsapp/share" class="icoWhatsApp" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
-             <li><a href="https://www.facebook.com/Ara-Consulting-100181021706038" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="https://www.linkedin.com/company/53506321/admin/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="https://www.instagram.com/AraConsulting2020/" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"></i></a></li>
-    </ul>
-  </div>
-<div class="clearfix"></div>
-<div class="footer-bottom">
-  &copy2020 araconsulting | All Rights Reserved
-</div>
-</div>
-
-</div>
-
 <script>
 $(function(){
   $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
 });
+
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+function drop(){
+  if(document.getElementById("option1").style.display == "none"){
+    document.getElementById("option1").style.display = "inline-block";
+    document.getElementById("option2").style.display = "inline-block";
+  }
+  else {
+    document.getElementById("option1").style.display = "none";
+    document.getElementById("option2").style.display = "none";
+  }
+}
+
+function getUrl(){
+  return "mailto:?subject=I wanted you to see this site&amp;body=Check out this site" + window.location.href + ".";
+}
+</script>
 </script>
 
 </body>
