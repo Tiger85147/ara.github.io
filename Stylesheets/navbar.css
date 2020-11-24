@@ -8,6 +8,16 @@
   background: #000000;
 }
 
+.invite{
+  content: url("https://araconsulting.co.in/Misc/Ara%20Logo%20Final%20Extra%20Crop.png");
+  height: 22px;
+  padding-bottom: 4px;
+}
+
+#invitelink:hover > .invite{
+  content: url('https://araconsulting.co.in/Misc/Ara Logo Crop White.png');
+}
+
 .topnav{
   z-index: 10;
 }
