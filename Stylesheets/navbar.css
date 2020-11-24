@@ -8,6 +8,10 @@
   background: #000000;
 }
 
+.services:hover{
+  cursor: pointer;
+}
+
 .invite{
   content: url("https://araconsulting.co.in/Misc/Ara%20Logo%20Final%20Extra%20Crop.png");
   height: 22px;
