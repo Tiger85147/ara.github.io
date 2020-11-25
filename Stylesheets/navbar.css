@@ -41,6 +41,16 @@
   top: 10%;
 }
 
+.sharebutton{
+  width: 30px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+.sharebutton:hover{
+  cursor: pointer;
+}
+
 #option1{
   display: none;
   transition: .5s;
