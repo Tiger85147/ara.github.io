@@ -441,6 +441,29 @@ background: #ed5f2f;
   background-position: 10% 10%;
 }
 
+.share .fa{
+  font-size: 30px;
+  margin: 5px;
+  color: #ffffff;
+}
+
+.share .fa:hover{
+  color: #ed5f2f;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.share .fa-share-alt{
+  font-size: 40px;
+  color: #ed5f2f;
+}
+
+.share .fa-share-alt:hover{
+  color: #ffffff;
+}
+
+
 
 .topnav {
   overflow: hidden;
