@@ -36,10 +36,60 @@
 <style>
 
 .sec a{
-  text-decoration:none;
+  text-decoration: none;
 }
 
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
+
+.degrees{
+  position: absolute;
+  right: 5%;
+}
+
+.dropbutton {
+  background-color: #ed5f2f;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  padding-top: 20px;
+  min-width: 200px;
+  border: none;
+}
+
+.dropdwn {
+  font-family: 'Hind Guntur', sans-serif;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.dropdown-contnt {
+  display: none;
+  position: absolute;
+  width: 250px;
+  right: 25%;
+  bottom: 80%;
+  font-weight: 900;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown-contnt a {
+  color: #ed5f2f;
+  padding: 5px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contnt a:hover {background-color: #ddd;}
+
+.dropdwn:hover .dropdown-contnt {display: inline-block;}
+
+.dropbutton .fa{
+  margin-left: 10px;
+}
+
 
 .title{
   font-family: 'Bitter', serif;
@@ -56,10 +106,18 @@
   background-color:#ffffff;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  vertical-align: middle;
+  flex-wrap: nowrap;
+}
+
+.inheading{
+  width: 500px;
+  display: inline-block;
 }
 
 .dual{
@@ -79,6 +137,7 @@
 
 .two{
   height: 100px;
+  display: inline-block;
 }
 
 .uslogo{
@@ -87,10 +146,6 @@
 
 .eulogo{
   margin-right: 65px;
-}
-
-.auslogo{
-  margin-left: 85px;
 }
 
 .face1{
@@ -176,6 +231,10 @@
 }
 
 @media screen and (max-width: 800px){
+
+.degrees{
+  display: none;
+}
 
 .title{
   font-family:'Bitter', serif;
@@ -289,11 +348,9 @@ Ara's Admissions
 <a name="US">
 
 <div class="heading">
-
 <img class="country uslogo" src="https://Tiger85147.github.io/Country%20logos/US%20logo.png">
 
-<p>
-
+<div class="inheading">
 <font class="face1">
 United States<br>
 </font>
@@ -302,8 +359,30 @@ United States<br>
 Average number of admissions per student - 4:1
 </font>
 
-</p>
+</div>
 
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Bachelors<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Computer Science</a>
+      <a>Computer Engineering</a>
+      <a>Engineering, Artifical Intelligence</a>
+      <a>Systems Engineering & Design</a>
+      <a>Public Health</a>
+  </div>
+</div>
+<div class="dropdwn">
+  <button class="dropbutton">Masters<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Architecture</a>
+      <a>Design</a>
+      <a>Urban Planning</a>
+      <a>Regional and Urban Planning</a>
+      <a>Landscape Architecture</a>
+  </div>
+</div>
+</div>
 </div>
 
 <div class="sec">
@@ -411,7 +490,7 @@ Average number of admissions per student - 4:1
 
 <img class="country" src="https://Tiger85147.github.io/Country%20logos/UK%20logo.png">
 
-<p>
+<div class="inheading">
 
 <font class="face1">
 United Kingdom<br>
@@ -420,8 +499,26 @@ United Kingdom<br>
 <font class="face2">
 Average number of admissions per student - 2:1
 </font>
+</div>
 
-</p>
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Bachelors<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Computer Science, Honors</a>
+      <a>Product Design</a>
+      <a>Architecture</a>
+  </div>
+</div>
+<div class="dropdwn">
+  <button class="dropbutton">Masters<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Computer Science</a>
+      <a>Architectural Design</a>
+  </div>
+</div>
+</div>
+</div>
 
 </div>
 <div class="sec">
@@ -449,6 +546,10 @@ Average number of admissions per student - 2:1
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/st%20andrews%20crop.png">
     </a>
 
+    <a target="_blank" href="https://www.qmul.ac.uk/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/mary.png">
+    </a>
+
     <a target="_blank" href="https://www.nottingham.ac.uk/">
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nottingham.png">
     </a>
@@ -469,6 +570,10 @@ Average number of admissions per student - 2:1
     <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/UCL arch.png">
     </a>
 
+    <a target="_blank" href="https://www.qmul.ac.uk/busman/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/marybusiness.png">
+    </a>
+
   </div>
 
 </div>
@@ -484,7 +589,8 @@ Average number of admissions per student - 2:1
 <div class="heading">
 
 <img class="country" src="https://Tiger85147.github.io/Country%20logos/Canada%20logo.png">
-<p>
+
+<div class="inheading">
 
 <font class="face1">
 Canada<br> 
@@ -494,7 +600,24 @@ Canada<br>
 Average number of admissions per student - 3:1
 </font>
 
-</p>
+</div>
+
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Bachelors<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Computer Science</a>
+  </div>
+</div>
+<div class="dropdwn">
+  <button class="dropbutton">Masters<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Urban Planning</a>
+      <a>City Planning</a>
+      <a>Landscape Architecture</a>
+  </div>
+</div>
+</div>
 
 </div>
 <div class="sec">
@@ -560,7 +683,8 @@ Average number of admissions per student - 3:1
 <div class="heading">
 
 <img class="country eulogo" src="https://Tiger85147.github.io/Country%20logos/Europe%20logo.png">
-<p>
+
+<div class="inheading">
 
 <font class="face1">
 Europe<br> 
@@ -570,7 +694,26 @@ Europe<br>
 Average number of admissions per student - 2:1
 </font>
 
-</p>
+</div>
+
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Bachelors<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Design</a>
+      <a>Set Design</a>
+      <a>Design, Integrated Masters</a>
+  </div>
+</div>
+<div class="dropdwn">
+  <button class="dropbutton">Masters<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Design</a>
+      <a>Interior and Living Design</a>
+      <a>Design, Integrated Masters</a>
+  </div>
+</div>
+</div>
 
 </div>
 <div class="sec">
@@ -622,9 +765,9 @@ Average number of admissions per student - 2:1
 <div class="countrys">
 <img class="country two" src="https://Tiger85147.github.io/Country%20logos/HK%20Logo.png">
 <img class="country two" src="https://Tiger85147.github.io/Country%20logos/singapore logo.png">
- </div>
-<p>
+</div>
 
+<div class="inheading">
 <font class="face1">
 Hong Kong & Singapore<br>
 </font>
@@ -632,8 +775,28 @@ Hong Kong & Singapore<br>
 <font class="face2">
 Average number of admissions per student - 3:1
 </font>
+</div>
 
-</p>
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Bachelors<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Global Engineering and Business Program, Double Degree</a>
+      <a>Engineering</a>
+      <a>Engineering Sciences</a>
+      <a>Computer Science</a>
+      <a>Business Administration</a>
+      <a>Architectural Studies</a>
+      <a>Interior Design, Honors</a>
+  </div>
+</div>
+<div class="dropdwn">
+  <button class="dropbutton">Masters<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Design, Technology and Sustainability</a>
+  </div>
+</div>
+</div>
 
 </div>
 <div class="sec">
@@ -698,10 +861,9 @@ Average number of admissions per student - 3:1
 <img class="country two auslogo" src="https://Tiger85147.github.io/Country%20logos/australia.png">
 
 <img class="country two" src="https://Tiger85147.github.io/Country%20logos/NZ logo.png">
+</div>
 
- </div>
-<p>
-
+<div class="inheading">
 <font class="face1">
 Australia & New Zealand<br>
 </font>
@@ -710,7 +872,16 @@ Australia & New Zealand<br>
 Average number of admissions per student - 3:1
 </font>
 
-</p>
+</div>
+
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Masters<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Architecture</a>
+  </div>
+</div>
+</div>
 
 </div>
 <div class="sec">
@@ -754,7 +925,7 @@ Average number of admissions per student - 3:1
 
 <img class="country country2" src="https://Tiger85147.github.io/Country%20logos/India%20Logo%202.png">
 
-<p class="india">
+<div class="inheading"> <p class="india">
 
 <font class="face1">
 India<br>
@@ -764,7 +935,20 @@ India<br>
 Average number of admissions per student - 3:1
 </font>
 
-</p>
+</p></div>
+
+<div class="degrees">
+<div class="dropdwn">
+  <button class="dropbutton">Bachelors<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-contnt">
+      <a>Economics, Honors</a>
+      <a>Politics and History</a>
+      <a>Political Science</a>
+      <a>History</a>
+      <a>Liberal Arts</a>
+  </div>
+</div>
+</div>
 
 </div>
 
@@ -788,6 +972,10 @@ Average number of admissions per student - 3:1
     <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/school/symbiosis.png">
     </a>
 
+    <a target="_blank" href="https://www.nmims.edu/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/nm.png">
+    </a>
+
     <a target="_blank" href="https://jgu.edu.in/">
     <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/jindal.png">
     </a>
@@ -801,6 +989,10 @@ Average number of admissions per student - 3:1
   <div class="schools">
     <a target="_blank" href="https://www.ssla.edu.in/">
     <img class="item vertical" src="https://Tiger85147.github.io/Uni%20logos/symbiosisla.png">
+    </a>
+
+    <a target="_blank" href="https://jgu.edu.in/jslh/">
+    <img class="item" src="https://Tiger85147.github.io/Uni%20logos/school/jindalliberal.png">
     </a>
   </div>
 
