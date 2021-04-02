@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<title>Financial Planning</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/navbar.css">
+  <link rel="stylesheet" href="https://Tiger85147.github.io/Stylesheets/login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://Tiger85147.github.io/Misc/Ara%20Icon.ico">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ed5f2f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ed5f2f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ed5f2f">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175478151-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175478151-1');
+</script>
+
+<style>
+
+.content{
+  font-family: 'Hind Guntur', sans-serif;
+  text-align: left;
+  color:#000000;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 800px){
+  
+.title{
+  font-family:'Bitter', serif;
+  font-size: 70px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 15px solid #ed5f2f;
+  padding-bottom: 2px;
+  padding-right: 150px;
+}
+
+.content{
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.5vw;
+  padding-bottom: 3vw;
+  background-color: #ffffff;
+}
+
+}
+
+@media screen and (max-width: 800px){
+
+.title{
+  font-family:'Bitter', serif;
+  font-size: 40px;
+  text-align: left;
+  color: #ffffff;
+  display:inline-block;
+  border-bottom: 1vw solid #ed5f2f;
+  padding-bottom: 0.1vw;
+}
+
+.content{
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3vw;
+  padding-bottom: 15vw;
+  background-color: #ffffff;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="titlebox">
+  <div class="share">
+  <img src="https://araconsulting.co.in/Misc/sharebutton.png" class="sharebutton" onclick="drop()"></img></a>
+  <a href="mailto:?subject=Ara Consulting&amp;body=https://araconsulting.co.in/Services/Periodic-Reviews" title="Share by Email"><i class="fa fa-envelope" id="option1"></i></a>
+  <a href="whatsapp://send?text=https://araconsulting.co.in/Services/Periodic-Reviews" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" id="option2"></i></a>
+  </div>
+<br><br><br>
+<div class="title">
+Financial Planning</div>
+<br><br><br><br>
+</div>
+
+
+<div class="content">
+World's top Universities are expensive to study in.  <br><br>
+ 
+Well, education cost is one of the biggest expenditures we incur in our life (after buying or building a house).  Having said that, we don't call it an expenditure. It is an investment!  With a very high ROI (Return on Investment)!  <br><br>
+
+The total cost of studying at such Universities is called 'Cost of Attendance'.  This includes Tuition, Stay, Food, Insurance and some living expenses.  However, this Cost of Attendance does not include travel cost, other costs (of living) that are not related to the University.  This also does not include the cost incurred at the time of applications and the 'shifting/moving' cost. <br><br>
+  
+</div>
+
+<!-- FOOTER START -->
+<div id="nav-footer"></div>
+
+<script>
+$(function(){
+  $("#nav-footer").load("https://araconsulting.co.in/footer.html");
+});
+
+$(function(){
+  $("#nav-placeholder").load("https://araconsulting.co.in/nav.html");
+});
+
+function drop(){
+  if(document.getElementById("option1").style.display == "none"){
+    document.getElementById("option1").style.display = "inline-block";
+    document.getElementById("option2").style.display = "inline-block";
+  }
+  else {
+    document.getElementById("option1").style.display = "none";
+    document.getElementById("option2").style.display = "none";
+  }
+}
+</script>
+<!-- END OF FOOTER -->
+
+
+</body>
+</html>
+
