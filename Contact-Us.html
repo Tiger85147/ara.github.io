@@ -42,6 +42,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.fa-whatsapp{
+  color: #25D366;
+}
+
 @media screen and (max-width: 1920px) and (min-width: 800px){
 
 .title{
@@ -146,6 +150,18 @@ form .submit:hover{
   border-radius: 2px;
   line-height: 55px;
   width: 100%;
+}
+
+.callcontainer{
+  align-items: center;
+}
+
+.call{
+  width: 89%;
+}
+
+.whatsapp{
+  width: 10.5%;
 }
 
 .appt:hover{
@@ -258,10 +274,6 @@ form .submit:hover{
   background-color: #ba3f16;
 }
 
-.call{
-  display: none;
-}
-
 .fa-phone{
   position: absolute;
   right: 10px;
@@ -326,8 +338,12 @@ Contact
 
  </div>
 
-<div class="appt call"><a style="text-decoration: none;" href="tel:+918383031486">Contact Us at +91 98202 37322</div></a>
+<div class="callcontainer">
 
+<div class="appt whatsapp"><a href="https://api.whatsapp.com/send?phone=+919820237322&text=" class="float" target="_blank" style="text-decoration: none;"><i class="fa fa-whatsapp" aria-hidden="true"></i></div></a>
+<div class="appt call"><a style="text-decoration: none;" href="tel:+918383031486">Call Us at +91 98202 37322</div></a>
+
+</div>
 <div class="line"></div>
 
 <script src="https://www.appointletcdn.com/loader/loader.min.js" async="" defer=""></script>
